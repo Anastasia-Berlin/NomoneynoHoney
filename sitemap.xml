@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://www.nomoneynohoney.io/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.nomoneynohoney.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nomoneynohoney.io/en/"/>
+    <lastmod>2025-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nomoneynohoney.io/services/performance-marketing.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.nomoneynohoney.io/services/performance-marketing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nomoneynohoney.io/en/services/performance-marketing.html"/>
+    <lastmod>2025-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nomoneynohoney.io/services/content-creation.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.nomoneynohoney.io/services/content-creation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nomoneynohoney.io/en/services/content-creation.html"/>
+    <lastmod>2025-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nomoneynohoney.io/services/webentwicklung.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.nomoneynohoney.io/services/webentwicklung.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nomoneynohoney.io/en/services/webentwicklung.html"/>
+    <lastmod>2025-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nomoneynohoney.io/services/automation-agenten.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.nomoneynohoney.io/services/automation-agenten.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nomoneynohoney.io/en/services/automation-agenten.html"/>
+    <lastmod>2025-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nomoneynohoney.io/services/seo-geo.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.nomoneynohoney.io/services/seo-geo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nomoneynohoney.io/en/services/seo-geo.html"/>
+    <lastmod>2025-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nomoneynohoney.io/karriere.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.nomoneynohoney.io/karriere.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nomoneynohoney.io/en/karriere.html"/>
+    <lastmod>2025-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nomoneynohoney.io/angebot.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.nomoneynohoney.io/angebot.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nomoneynohoney.io/en/angebot.html"/>
+    <lastmod>2025-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nomoneynohoney.io/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.nomoneynohoney.io/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nomoneynohoney.io/en/blog.html"/>
+    <lastmod>2025-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nomoneynohoney.io/kontakt.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.nomoneynohoney.io/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nomoneynohoney.io/en/kontakt.html"/>
+    <lastmod>2025-05-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nomoneynohoney.io/impressum.html</loc>
+    <lastmod>2025-05-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nomoneynohoney.io/datenschutz.html</loc>
+    <lastmod>2025-05-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

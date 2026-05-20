@@ -18,8 +18,8 @@
 }
 
 @keyframes pulseBtnGlow {
-  0%, 100% { box-shadow: 0 0 20px rgba(200, 245, 96, 0.25); }
-  50% { box-shadow: 0 0 50px rgba(200, 245, 96, 0.55); }
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 107, 157, 0.25); }
+  50% { box-shadow: 0 0 50px rgba(255, 107, 157, 0.55); }
 }
 
 @keyframes fadeInUp {
@@ -105,8 +105,8 @@
 }
 
 @keyframes glowPulse {
-  0%, 100% { box-shadow: 0 0 20px rgba(168, 216, 234, 0.2); }
-  50% { box-shadow: 0 0 50px rgba(168, 216, 234, 0.45); }
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 184, 48, 0.2); }
+  50% { box-shadow: 0 0 50px rgba(255, 184, 48, 0.45); }
 }
 
 @keyframes rabbitWave {
@@ -224,7 +224,7 @@
 
 /* ─── HOVER EFFECTS ─── */
 .hover-glow:hover {
-  box-shadow: 0 0 40px rgba(168, 216, 234, 0.3) !important;
+  box-shadow: 0 0 40px rgba(255, 107, 157, 0.3) !important;
 }
 
 .hover-lift:hover {
@@ -316,12 +316,12 @@
 
 .bunny-float__btn:hover {
   transform: scale(1.15);
-  box-shadow: 0 12px 40px rgba(200, 245, 96, 0.3);
+  box-shadow: 0 12px 40px rgba(255, 107, 157, 0.3);
   animation-play-state: paused;
 }
 
 .bunny-float__popup {
-  background: rgba(20, 20, 35, 0.92);
+  background: rgba(13, 10, 15, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -354,7 +354,7 @@
 .bunny-float__cta {
   display: inline-block;
   background: var(--color-accent-lime);
-  color: #0a0a14;
+  color: #0D0A0F;
   font-weight: 700;
   font-size: 0.9rem;
   padding: 10px 20px;
@@ -374,10 +374,10 @@
   bottom: 32px;
   left: 32px;
   z-index: 9100;
-  background: rgba(20, 20, 35, 0.95);
+  background: rgba(13, 10, 15, 0.97);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(200, 245, 96, 0.25);
+  border: 1px solid rgba(255, 107, 157, 0.25);
   border-radius: 16px;
   padding: 20px 24px 20px 20px;
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
@@ -423,7 +423,7 @@
 .exit-toast__cta {
   display: inline-block;
   background: var(--color-accent-lime);
-  color: #0a0a14;
+  color: #0D0A0F;
   font-weight: 700;
   font-size: 0.85rem;
   padding: 8px 18px;

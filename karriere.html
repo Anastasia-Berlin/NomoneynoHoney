@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karriere — NoMoneyNoHoney.io</title>
+  <meta name="description" content="Wachse mit uns. Wir suchen Menschen, die lieber Ergebnisse liefern als PowerPoints erstellen. Remote-first, flexibel, mit echtem Team-Spirit."/>
+  <meta name="keywords" content="Karriere Marketing Agentur, Jobs Remote Marketing, Performance Marketing Manager, Content Creator Stelle, SEO Jobs, KI Marketing Jobs"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.nomoneynohoney.io/karriere.html"/>
+  <meta property="og:type" content="website"/><meta property="og:title" content="Karriere — NoMoneyNoHoney.io"/>
+  <meta property="og:description" content="Wachse mit uns. Remote-first, ergebnisorientiert, menschlich."/>
+  <meta property="og:image" content="https://www.nomoneynohoney.io/assets/og-image.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/main.css"/><link rel="stylesheet" href="css/components.css"/><link rel="stylesheet" href="css/animations.css"/>
+
+  <style>
+    /* ── KARRIERE PAGE STYLES ── */
+
+    /* Hero */
+    .karriere-hero {
+      padding: calc(80px + 80px) 0 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .karriere-hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(200, 245, 96, 0.1);
+      border: 1px solid rgba(200, 245, 96, 0.3);
+      border-radius: 50px;
+      padding: 8px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--color-accent-lime);
+      margin-bottom: 24px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .karriere-hero__badge-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--color-accent-lime);
+      border-radius: 50%;
+      animation: pulseGreenDot 2s ease-in-out infinite;
+    }
+    @keyframes pulseGreenDot {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(200, 245, 96, 0.5); }
+      50% { box-shadow: 0 0 0 6px rgba(200, 245, 96, 0); }
+    }
+    .karriere-hero__h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    .karriere-hero__sub {
+      font-size: 1.15rem;
+      color: var(--color-text-muted);
+      max-width: 600px;
+      margin: 0 auto 40px;
+      line-height: 1.65;
+    }
+    .karriere-hero__stats {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+      margin-top: 56px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+    .karriere-hero__stat {
+      text-align: center;
+    }
+    .karriere-hero__stat-num {
+      display: block;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--color-accent-lime);
+      line-height: 1;
+    }
+    .karriere-hero__stat-label {
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+      margin-top: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .karriere-hero__scroll {
+      margin-top: 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: var(--color-text-muted);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .karriere-hero__scroll-arrow {
+      width: 28px;
+      height: 28px;
+      border: 1.5px solid rgba(255,255,255,0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      animation: bounceDown 2s ease-in-out infinite;
+    }
+
+    /* Perks Grid */
+    .perks-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .perk-card {
+      padding: 28px 24px;
+      text-align: center;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    .perk-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(200, 245, 96, 0.3);
+    }
+    .perk-card__icon {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 14px;
+    }
+    .perk-card__title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 8px;
+    }
+    .perk-card__desc {
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+      line-height: 1.5;
+    }
+
+    /* Culture / Day in the life */
+    .day-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .day-timeline::before {
+      content: '';
+      position: absolute;
+      left: 52px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, transparent, rgba(200,245,96,0.4) 10%, rgba(168,216,234,0.3) 50%, rgba(123,94,167,0.3) 90%, transparent);
+    }
+    .day-item {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      padding: 24px 0;
+      position: relative;
+    }
+    .day-item__time {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--color-accent-lime);
+      letter-spacing: 0.05em;
+      min-width: 48px;
+      padding-top: 3px;
+      text-align: right;
+    }
+    .day-item__dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--color-accent-blue);
+      border: 2px solid var(--color-bg-primary);
+      flex-shrink: 0;
+      margin-top: 5px;
+      position: relative;
+      z-index: 1;
+    }
+    .day-item__dot--lime { background: var(--color-accent-lime); }
+    .day-item__dot--purple { background: var(--color-accent-purple); }
+    .day-item__body {
+      flex: 1;
+      padding-bottom: 8px;
+    }
+    .day-item__emoji {
+      font-size: 1.2rem;
+      margin-bottom: 4px;
+      display: block;
+    }
+    .day-item__title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: 4px;
+    }
+    .day-item__desc {
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+      line-height: 1.55;
+    }
+
+    /* Job Accordion */
+    .job-accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .job-accordion-card {
+      border-radius: var(--radius-card);
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+      overflow: hidden;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .job-accordion-card:hover,
+    .job-accordion-card.is-open {
+      border-color: rgba(200,245,96,0.2);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+    }
+    .job-accordion-card.is-open .job-acc__arrow {
+      transform: rotate(180deg);
+    }
+    .job-acc__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 32px;
+      cursor: pointer;
+      user-select: none;
+      gap: 16px;
+    }
+    .job-acc__header:focus-visible {
+      outline: 2px solid var(--color-accent-lime);
+      outline-offset: -2px;
+    }
+    .job-acc__left {
+      flex: 1;
+    }
+    .job-acc__category {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-accent-lime);
+      margin-bottom: 6px;
+    }
+    .job-acc__title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 10px;
+    }
+    .job-acc__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .job-acc__tag {
+      font-size: 0.78rem;
+      padding: 4px 12px;
+      border-radius: 50px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--color-text-muted);
+    }
+    .job-acc__arrow {
+      font-size: 1.2rem;
+      color: var(--color-text-muted);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      flex-shrink: 0;
+    }
+    .job-acc__body {
+      display: none;
+      padding: 0 32px 32px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .job-acc__body.is-open {
+      display: block;
+      animation: fadeInUp 0.35s ease;
+    }
+    .job-acc__section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin: 24px 0 10px;
+    }
+    .job-acc__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .job-acc__list li {
+      font-size: 0.9rem;
+      color: var(--color-text-primary);
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.5;
+    }
+    .job-acc__list li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--color-accent-lime);
+      font-size: 0.8rem;
+    }
+    .job-acc__cta {
+      margin-top: 28px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .job-acc__desc {
+      font-size: 0.92rem;
+      color: var(--color-text-muted);
+      line-height: 1.65;
+      margin-top: 16px;
+    }
+
+    /* Hiring Process */
+    .hiring-process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative;
+    }
+    .hiring-process::before {
+      content: '';
+      position: absolute;
+      top: 28px;
+      left: 12.5%;
+      right: 12.5%;
+      height: 2px;
+      background: linear-gradient(to right, var(--color-accent-lime), var(--color-accent-blue), var(--color-accent-purple), var(--color-accent-lime));
+      opacity: 0.3;
+    }
+    .hiring-step {
+      text-align: center;
+      padding: 0 16px;
+    }
+    .hiring-step__num {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+      border: 2px solid rgba(200,245,96,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--color-accent-lime);
+      margin: 0 auto 20px;
+      position: relative;
+      z-index: 1;
+      background: var(--color-bg-primary);
+    }
+    .hiring-step__icon {
+      font-size: 1.4rem;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .hiring-step__title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 8px;
+    }
+    .hiring-step__desc {
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+      line-height: 1.55;
+    }
+
+    /* Culture quote */
+    .culture-quote {
+      text-align: center;
+      padding: 60px 40px;
+      border-radius: var(--radius-card);
+      background: rgba(255,255,255,0.025);
+      border: 1px solid rgba(255,255,255,0.07);
+      position: relative;
+      overflow: hidden;
+    }
+    .culture-quote::before {
+      content: '"';
+      position: absolute;
+      top: -20px;
+      left: 32px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 10rem;
+      font-weight: 800;
+      color: var(--color-accent-lime);
+      opacity: 0.06;
+      line-height: 1;
+    }
+    .culture-quote__text {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.2rem, 3vw, 1.8rem);
+      font-weight: 700;
+      color: var(--color-text-primary);
+      line-height: 1.4;
+      max-width: 680px;
+      margin: 0 auto 24px;
+    }
+    .culture-quote__author {
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+    }
+    .culture-quote__author strong {
+      color: var(--color-accent-lime);
+    }
+
+    /* No-fit CTA */
+    .nofit-cta {
+      border-radius: var(--radius-card);
+      background: linear-gradient(135deg, rgba(200,245,96,0.06) 0%, rgba(168,216,234,0.06) 50%, rgba(123,94,167,0.06) 100%);
+      border: 1px solid rgba(200,245,96,0.15);
+      padding: 72px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .nofit-cta__bunny {
+      font-size: 4rem;
+      display: block;
+      margin-bottom: 8px;
+      animation: bunnyBounce 3s ease-in-out infinite;
+    }
+    .nofit-cta__gag {
+      font-size: 0.9rem;
+      color: var(--color-accent-lime);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .nofit-cta__title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 800;
+      color: var(--color-text-primary);
+      margin-bottom: 12px;
+    }
+    .nofit-cta__sub {
+      color: var(--color-text-muted);
+      font-size: 1rem;
+      max-width: 480px;
+      margin: 0 auto 32px;
+      line-height: 1.6;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .perks-grid { grid-template-columns: repeat(2, 1fr); }
+      .hiring-process { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+      .hiring-process::before { display: none; }
+    }
+    @media (max-width: 640px) {
+      .perks-grid { grid-template-columns: 1fr 1fr; }
+      .hiring-process { grid-template-columns: 1fr 1fr; }
+      .job-acc__header { padding: 20px; }
+      .job-acc__body { padding: 0 20px 24px; }
+      .karriere-hero__stats { gap: 24px; }
+      .day-timeline::before { display: none; }
+      .culture-quote { padding: 40px 24px; }
+      .nofit-cta { padding: 48px 24px; }
+    }
+  </style>
+</head>
+<body>
+<div class="bg-mesh" aria-hidden="true"><div class="bg-mesh__blob bg-mesh__blob--1"></div><div class="bg-mesh__blob bg-mesh__blob--2"></div><div class="bg-mesh__blob bg-mesh__blob--3"></div><div class="bg-mesh__blob bg-mesh__blob--4"></div></div>
+
+<header class="header" id="header">
+  <nav class="header__nav container">
+    <a href="/" class="header__logo">NoMoneyNoHoney.io</a>
+    <div class="header__menu"><ul class="header__nav-list">
+      <li><a href="/" class="header__nav-link" data-i18n="nav.home">Home</a></li>
+      <li class="header__nav-item">
+        <button class="header__nav-link header__dropdown-toggle" aria-expanded="false"><span data-i18n="nav.services">Services</span><svg class="header__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></button>
+        <div class="header__dropdown">
+          <a href="services/performance-marketing.html" class="header__dropdown-item"><img src="assets/rabbits/rabbit-performance.svg" alt="" class="header__dropdown-mini" width="32" height="32"/><span data-i18n="nav.service.performance">Performance Marketing</span></a>
+          <a href="services/content-creation.html" class="header__dropdown-item"><img src="assets/rabbits/rabbit-content.svg" alt="" class="header__dropdown-mini" width="32" height="32"/><span data-i18n="nav.service.content">Content Creation</span></a>
+          <a href="services/webentwicklung.html" class="header__dropdown-item"><img src="assets/rabbits/rabbit-web.svg" alt="" class="header__dropdown-mini" width="32" height="32"/><span data-i18n="nav.service.web">Webentwicklung</span></a>
+          <a href="services/automation-agenten.html" class="header__dropdown-item"><img src="assets/rabbits/rabbit-automation.svg" alt="" class="header__dropdown-mini" width="32" height="32"/><span data-i18n="nav.service.automation">Automation & Agenten</span></a>
+          <a href="services/seo-geo.html" class="header__dropdown-item"><img src="assets/rabbits/rabbit-seo.svg" alt="" class="header__dropdown-mini" width="32" height="32"/><span data-i18n="nav.service.seo">SEO & GEO</span></a>
+        </div>
+      </li>
+      <li><a href="karriere.html" class="header__nav-link header__nav-link--active" data-i18n="nav.career">Karriere</a></li>
+      <li><a href="blog.html" class="header__nav-link" data-i18n="nav.blog">Blog</a></li>
+    </ul></div>
+    <div class="header__actions">
+      <button class="lang-toggle" id="langToggle"><span id="langFlag">🇩🇪</span><span id="langText">DE</span></button>
+      <a href="angebot.html" class="btn btn--cta" data-i18n="nav.quote">Angebot einholen</a>
+    </div>
+    <button class="header__hamburger" id="hamburgerBtn" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+<div class="header__mobile-overlay" id="mobileOverlay">
+  <button class="lang-toggle" id="mobileLangToggle"><span id="mobileLangFlag">🇩🇪</span><span>DE / EN</span></button>
+  <nav class="header__mobile-nav">
+    <a href="/" class="header__mobile-link" data-i18n="nav.home">Home</a>
+    <a href="services/performance-marketing.html" class="header__mobile-link" data-i18n="nav.service.performance">Performance Marketing</a>
+    <a href="services/content-creation.html" class="header__mobile-link" data-i18n="nav.service.content">Content Creation</a>
+    <a href="services/webentwicklung.html" class="header__mobile-link" data-i18n="nav.service.web">Webentwicklung</a>
+    <a href="services/automation-agenten.html" class="header__mobile-link" data-i18n="nav.service.automation">Automation & Agenten</a>
+    <a href="services/seo-geo.html" class="header__mobile-link" data-i18n="nav.service.seo">SEO & GEO</a>
+    <a href="karriere.html" class="header__mobile-link" data-i18n="nav.career">Karriere</a>
+    <a href="blog.html" class="header__mobile-link" data-i18n="nav.blog">Blog</a>
+    <a href="angebot.html" class="btn btn--cta btn--lg" style="margin-top:16px" data-i18n="nav.quote">Angebot einholen</a>
+  </nav>
+</div>
+
+<main>
+
+  <!-- ① HERO -->
+  <section class="karriere-hero">
+    <div class="container">
+      <div class="karriere-hero__badge">
+        <span class="karriere-hero__badge-dot"></span>
+        Wir stellen ein — 3 offene Stellen
+      </div>
+      <h1 class="karriere-hero__h1">
+        <span class="text-gradient">Kein Büro-Bullshit.</span><br>
+        Nur echte Arbeit, echte Ergebnisse.
+      </h1>
+      <p class="karriere-hero__sub">
+        Wir sind eine kleine Crew, die lieber schnell umsetzt als lang diskutiert. Remote-first, direkt, und ja — wir meinen es ernst mit dem "Team-Spirit".
+      </p>
+      <div class="hero__ctas" style="justify-content:center;">
+        <a href="#jobs" class="btn btn--cta btn--lg btn--pulse">Offene Stellen ansehen</a>
+        <a href="#culture" class="btn btn--ghost btn--lg">Wie wir arbeiten ↓</a>
+      </div>
+
+      <div class="karriere-hero__stats anim-init">
+        <div class="karriere-hero__stat">
+          <span class="karriere-hero__stat-num">100%</span>
+          <span class="karriere-hero__stat-label">Remote möglich</span>
+        </div>
+        <div class="karriere-hero__stat">
+          <span class="karriere-hero__stat-num">0</span>
+          <span class="karriere-hero__stat-label">Sinnlose Meetings</span>
+        </div>
+        <div class="karriere-hero__stat">
+          <span class="karriere-hero__stat-num">50+</span>
+          <span class="karriere-hero__stat-label">Zufriedene Kunden</span>
+        </div>
+        <div class="karriere-hero__stat">
+          <span class="karriere-hero__stat-num">∞</span>
+          <span class="karriere-hero__stat-label">Lernmöglichkeiten</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ② PERKS & BENEFITS -->
+  <section class="section" style="background:rgba(123,94,167,0.03);">
+    <div class="container">
+      <div class="section-header section-header--center anim-init">
+        <p class="section-label">Was du bekommst</p>
+        <h2 class="section-title">Keine leeren Versprechen.</h2>
+        <p class="section-sub" style="margin-top:12px;color:var(--color-text-muted);max-width:520px;margin-left:auto;margin-right:auto;">Was "marktgerecht" wirklich bedeutet — und was noch dazukommt.</p>
+      </div>
+      <div class="perks-grid" style="margin-top:48px;">
+        <div class="glass-card perk-card anim-init anim-delay-1">
+          <span class="perk-card__icon" aria-hidden="true">🏠</span>
+          <p class="perk-card__title">Remote First</p>
+          <p class="perk-card__desc">Arbeit von wo du willst — zu Hause, im Co-Working oder am Strand. Hauptsache WLAN und gute Ergebnisse.</p>
+        </div>
+        <div class="glass-card perk-card anim-init anim-delay-2">
+          <span class="perk-card__icon" aria-hidden="true">⏰</span>
+          <p class="perk-card__title">Flexible Arbeitszeiten</p>
+          <p class="perk-card__desc">Kein 9-to-5-Zwang. Du hast Core Hours von 10–15 Uhr — den Rest teilst du dir frei ein.</p>
+        </div>
+        <div class="glass-card perk-card anim-init anim-delay-3">
+          <span class="perk-card__icon" aria-hidden="true">📚</span>
+          <p class="perk-card__title">Learning Budget</p>
+          <p class="perk-card__desc">500€ pro Jahr für Kurse, Bücher und Konferenzen. Weil stehenbleiben keine Option ist.</p>
+        </div>
+        <div class="glass-card perk-card anim-init anim-delay-4">
+          <span class="perk-card__icon" aria-hidden="true">🤖</span>
+          <p class="perk-card__title">KI-Tool-Stack</p>
+          <p class="perk-card__desc">Du arbeitest mit den besten KI-Tools am Markt — ChatGPT Pro, Midjourney, Claude, Make und mehr. Alles bezahlt.</p>
+        </div>
+        <div class="glass-card perk-card anim-init anim-delay-1">
+          <span class="perk-card__icon" aria-hidden="true">📈</span>
+          <p class="perk-card__title">Wachstum sichtbar</p>
+          <p class="perk-card__desc">Du siehst direkt, was deine Arbeit bewirkt — Kampagnenzahlen, Rankings, Umsatz. Kein Blindflug.</p>
+        </div>
+        <div class="glass-card perk-card anim-init anim-delay-2">
+          <span class="perk-card__icon" aria-hidden="true">🏖️</span>
+          <p class="perk-card__title">30 Tage Urlaub</p>
+          <p class="perk-card__desc">Vollzeit heißt bei uns 30 Tage Urlaub — und wir berechnen sie nicht mit Feiertagen gegen.</p>
+        </div>
+        <div class="glass-card perk-card anim-init anim-delay-3">
+          <span class="perk-card__icon" aria-hidden="true">🧠</span>
+          <p class="perk-card__title">Direkte Verantwortung</p>
+          <p class="perk-card__desc">Keine Praktikantenaufgaben. Du bekommst echte Kunden, echte Budgets, echte Entscheidungen — von Tag 1.</p>
+        </div>
+        <div class="glass-card perk-card anim-init anim-delay-4">
+          <span class="perk-card__icon" aria-hidden="true">🐰</span>
+          <p class="perk-card__title">Team-Vibes</p>
+          <p class="perk-card__desc">Kein Micro-Management. Dafür regelmäßige Off-Sites, ehrliches Feedback und ein Team, das füreinander einsteht.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ③ CULTURE / EIN TAG BEI UNS -->
+  <section class="section" id="culture">
+    <div class="container">
+      <div class="section-header section-header--center anim-init" style="margin-bottom:56px;">
+        <p class="section-label">Kultur</p>
+        <h2 class="section-title">Ein Tag bei NoMoneyNoHoney.io</h2>
+        <p class="section-sub" style="margin-top:12px;color:var(--color-text-muted);max-width:500px;margin:12px auto 0;">Spoiler: Keine Statusmeetings ohne Agenda, keine Beschäftigungstherapie.</p>
+      </div>
+
+      <div class="day-timeline anim-init">
+        <div class="day-item">
+          <span class="day-item__time">9:00</span>
+          <span class="day-item__dot day-item__dot--lime"></span>
+          <div class="day-item__body">
+            <span class="day-item__emoji">☕</span>
+            <p class="day-item__title">Async Check-in</p>
+            <p class="day-item__desc">Jeder postet ein kurzes Update im Team-Chat — was läuft, was blockt, was heute fertig wird. Kein Call, kein Pflicht-Meeting.</p>
+          </div>
+        </div>
+        <div class="day-item">
+          <span class="day-item__time">10:00</span>
+          <span class="day-item__dot"></span>
+          <div class="day-item__body">
+            <span class="day-item__emoji">🎯</span>
+            <p class="day-item__title">Deep Work Block</p>
+            <p class="day-item__desc">Ungestörte Fokuszeit. Kampagnen optimieren, Artikel schreiben, Code schreiben — whatever dein Job ist. Notifications aus.</p>
+          </div>
+        </div>
+        <div class="day-item">
+          <span class="day-item__time">12:30</span>
+          <span class="day-item__dot day-item__dot--purple"></span>
+          <div class="day-item__body">
+            <span class="day-item__emoji">💬</span>
+            <p class="day-item__title">Kurzes Kunden-Sync (wenn nötig)</p>
+            <p class="day-item__desc">Kundencalls auf max. 30 Minuten getrimmt. Ergebnisse besprechen, nächste Schritte festlegen, fertig. Kein Small-Talk-Pflichtprogramm.</p>
+          </div>
+        </div>
+        <div class="day-item">
+          <span class="day-item__time">14:00</span>
+          <span class="day-item__dot day-item__dot--lime"></span>
+          <div class="day-item__body">
+            <span class="day-item__emoji">🤖</span>
+            <p class="day-item__title">Experiment-Zeit</p>
+            <p class="day-item__desc">Jeden Tag ein bisschen Zeit für Neues: KI-Tools testen, Automations bauen, eine neue Taktik ausprobieren. Innovation ist Pflicht, nicht Bonus.</p>
+          </div>
+        </div>
+        <div class="day-item">
+          <span class="day-item__time">16:00</span>
+          <span class="day-item__dot"></span>
+          <div class="day-item__body">
+            <span class="day-item__emoji">📊</span>
+            <p class="day-item__title">Daten-Check & Wrap-up</p>
+            <p class="day-item__desc">Zahlen checken, Ergebnisse dokumentieren, Learnings teilen. Was hat funktioniert? Was morgen anders? Feierabend — wann du willst.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="culture-quote anim-init" style="margin-top:60px;">
+        <p class="culture-quote__text">"Wir haben keine Ausreden-Kultur. Wir haben eine Lösungs-Kultur. Jeder Fehler ist ein Lernmoment — solange man ehrlich damit ist."</p>
+        <p class="culture-quote__author">— <strong>Anastasia</strong>, Gründerin NoMoneyNoHoney.io</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ④ WERTE -->
+  <section class="section" style="background:rgba(168,216,234,0.03);">
+    <div class="container">
+      <div class="section-header section-header--center anim-init">
+        <p class="section-label">Was uns antreibt</p>
+        <h2 class="section-title">Unsere Werte — keine PR-Floskeln.</h2>
+      </div>
+      <div class="values-grid" style="margin-top:48px;">
+        <div class="glass-card value-card anim-init anim-delay-1">
+          <span class="value-card__icon" aria-hidden="true">🎯</span>
+          <h3 class="value-card__title">Ergebnisse über Prozesse</h3>
+          <p class="value-card__desc">Wir messen uns am Output, nicht an der Anzahl der Meetings. Ein gutes Ergebnis in 3 Stunden ist besser als ein mittelmäßiges in 8.</p>
+        </div>
+        <div class="glass-card value-card anim-init anim-delay-2">
+          <span class="value-card__icon" aria-hidden="true">🔍</span>
+          <h3 class="value-card__title">Transparenz als Standard</h3>
+          <p class="value-card__desc">Intern wie extern: Wir sagen, was ist. Kein politisches Spielchen, keine beschönigten Reports, kein Verstecken von schlechten Zahlen.</p>
+        </div>
+        <div class="glass-card value-card anim-init anim-delay-3">
+          <span class="value-card__icon" aria-hidden="true">⚡</span>
+          <h3 class="value-card__title">Speed als Wettbewerbsvorteil</h3>
+          <p class="value-card__desc">Märkte ändern sich schnell. Wir auch. Eine Entscheidung jetzt ist oft besser als eine perfekte Entscheidung in zwei Wochen.</p>
+        </div>
+        <div class="glass-card value-card anim-init anim-delay-4">
+          <span class="value-card__icon" aria-hidden="true">🤝</span>
+          <h3 class="value-card__title">Ehrlichkeit über Höflichkeit</h3>
+          <p class="value-card__desc">Konstruktives Feedback ist ein Geschenk — auch wenn es gerade wehtut. Wir wachsen durch direkte Kommunikation, nicht trotz ihr.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑤ OFFENE STELLEN -->
+  <section class="section" id="jobs">
+    <div class="container">
+      <div class="section-header section-header--center anim-init">
+        <p class="section-label">Offene Stellen</p>
+        <h2 class="section-title">Dein nächster Move.</h2>
+        <p style="margin-top:12px;color:var(--color-text-muted);max-width:480px;margin-left:auto;margin-right:auto;">Klick auf eine Stelle um alle Details zu sehen.</p>
+      </div>
+
+      <div class="job-accordion anim-init" style="margin-top:48px;">
+
+        <!-- JOB 1 -->
+        <div class="job-accordion-card" data-job="1">
+          <div class="job-acc__header" role="button" tabindex="0" aria-expanded="false">
+            <div class="job-acc__left">
+              <p class="job-acc__category">Performance</p>
+              <h3 class="job-acc__title">Performance Marketing Manager (m/w/d)</h3>
+              <div class="job-acc__tags">
+                <span class="job-acc__tag">📋 Vollzeit</span>
+                <span class="job-acc__tag">📍 Remote / Berlin</span>
+                <span class="job-acc__tag">💰 48–65k €</span>
+                <span class="job-acc__tag">🚀 Ab sofort</span>
+              </div>
+            </div>
+            <span class="job-acc__arrow" aria-hidden="true">▾</span>
+          </div>
+          <div class="job-acc__body">
+            <p class="job-acc__desc">Du bist der Typ, der morgens zuerst die Kampagnenzahlen checkt — und dabei aufgeregt wird, nicht gestresst. Google Ads und Meta Ads sind für dich keine Tools, sondern Werkzeuge, die du mit Präzision einsetzt.</p>
+
+            <p class="job-acc__section-title">Was du bei uns machst</p>
+            <ul class="job-acc__list">
+              <li>Planung, Aufbau und Optimierung von Google Ads, Meta Ads und LinkedIn Campaigns für unsere Kunden</li>
+              <li>Entwicklung von datengetriebenen Bidding-Strategien (Smart Bidding, ROAS-Ziele, Portfolio-Bidding)</li>
+              <li>A/B-Testing von Anzeigentexten, Landingpages und Creatives</li>
+              <li>Monatliche Performance-Reports mit klaren Handlungsempfehlungen</li>
+              <li>Enger Austausch mit dem Content-Team für kanalübergreifende Kampagnen</li>
+            </ul>
+
+            <p class="job-acc__section-title">Was du mitbringst</p>
+            <ul class="job-acc__list">
+              <li>Min. 2 Jahre Erfahrung im bezahlten Performance-Marketing</li>
+              <li>Nachweisliche Erfolge mit ROAS-Steigerungen oder CPL-Optimierungen</li>
+              <li>Sicherer Umgang mit Google Analytics 4, Looker Studio und Meta Ads Manager</li>
+              <li>Analytisches Denken und Lust, tief in Daten einzutauchen</li>
+              <li>Nice to have: Erfahrung mit KI-basierten Automatisierungen im Ads-Kontext</li>
+            </ul>
+
+            <p class="job-acc__section-title">Was dich erwartet</p>
+            <ul class="job-acc__list">
+              <li>Direkte Zusammenarbeit mit der Gründerin — kein Mittelmanagement-Layer</li>
+              <li>Budgets von 5k–50k€/Monat pro Kunde: echter Gestaltungsspielraum</li>
+              <li>Vollständiger KI-Tool-Stack (ChatGPT Pro, Claude, Make) bereits vorhanden</li>
+              <li>Learning Budget 500€/Jahr + Zugang zu allen internen Schulungen</li>
+            </ul>
+
+            <div class="job-acc__cta">
+              <a href="kontakt.html" class="btn btn--cta">Jetzt bewerben →</a>
+              <span style="font-size:0.85rem;color:var(--color-text-muted);">CV + 3 Sätze warum du — reicht völlig.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- JOB 2 -->
+        <div class="job-accordion-card" data-job="2">
+          <div class="job-acc__header" role="button" tabindex="0" aria-expanded="false">
+            <div class="job-acc__left">
+              <p class="job-acc__category">Content</p>
+              <h3 class="job-acc__title">Content Creator — Social & Web (m/w/d)</h3>
+              <div class="job-acc__tags">
+                <span class="job-acc__tag">📋 Vollzeit / Part-time</span>
+                <span class="job-acc__tag">📍 Remote</span>
+                <span class="job-acc__tag">💰 36–52k €</span>
+                <span class="job-acc__tag">🚀 Ab sofort</span>
+              </div>
+            </div>
+            <span class="job-acc__arrow" aria-hidden="true">▾</span>
+          </div>
+          <div class="job-acc__body">
+            <p class="job-acc__desc">Du scrollst durch Social Media und denkst "das hätte ich besser gemacht" — und du hast recht. Du weißt, wie man Hooks schreibt, die stoppen, und Content, der konvertiert. Algorithmen sind für dich kein Mysterium, sondern Spielzeug.</p>
+
+            <p class="job-acc__section-title">Was du bei uns machst</p>
+            <ul class="job-acc__list">
+              <li>Entwicklung und Umsetzung von Content-Strategien für B2C und B2B-Kunden auf Instagram, LinkedIn und TikTok</li>
+              <li>Schreiben von SEO-optimierten Blog-Artikeln (1.200–2.000 Wörter) inklusive Keyword-Cluster-Aufbau</li>
+              <li>Erstellung von Video-Skripten und Captions für Reels, Shorts und Story-Formate</li>
+              <li>Content-Kalender planen und eigenverantwortlich umsetzen</li>
+              <li>Nutzung von KI-Tools zur Content-Skalierung — ohne den menschlichen Touch zu verlieren</li>
+            </ul>
+
+            <p class="job-acc__section-title">Was du mitbringst</p>
+            <ul class="job-acc__list">
+              <li>Portfolio mit nachweisbaren Content-Erfolgen (Reichweite, Engagement, Conversions)</li>
+              <li>Gespür für Storytelling, Tonalität und Zielgruppenpsychologie</li>
+              <li>Grundkenntnisse in SEO (Keyword-Recherche, On-Page-Optimierung)</li>
+              <li>Selbstständige Arbeitsweise und Termintreue — du brauchst keinen Babysitter</li>
+            </ul>
+
+            <p class="job-acc__section-title">Was dich erwartet</p>
+            <ul class="job-acc__list">
+              <li>Kreative Freiheit innerhalb der Markenstrategie — deine Ideen zählen</li>
+              <li>Zugang zu Premium-KI-Tools für Bild, Text und Video</li>
+              <li>Part-time ab 20h/Woche möglich — ideal für Freelancer, die Stabilität suchen</li>
+              <li>Direktes Feedback auf deine Arbeit — keine Kommentarlosigkeit</li>
+            </ul>
+
+            <div class="job-acc__cta">
+              <a href="kontakt.html" class="btn btn--cta">Jetzt bewerben →</a>
+              <span style="font-size:0.85rem;color:var(--color-text-muted);">Portfolio-Link + kurze Vorstellung genügt.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- JOB 3 -->
+        <div class="job-accordion-card" data-job="3">
+          <div class="job-acc__header" role="button" tabindex="0" aria-expanded="false">
+            <div class="job-acc__left">
+              <p class="job-acc__category">Tech</p>
+              <h3 class="job-acc__title">Frontend Developer — Web & Landingpages (m/w/d)</h3>
+              <div class="job-acc__tags">
+                <span class="job-acc__tag">📋 Vollzeit</span>
+                <span class="job-acc__tag">📍 Remote / Hamburg</span>
+                <span class="job-acc__tag">💰 52–72k €</span>
+                <span class="job-acc__tag">🚀 Ab sofort</span>
+              </div>
+            </div>
+            <span class="job-acc__arrow" aria-hidden="true">▾</span>
+          </div>
+          <div class="job-acc__body">
+            <p class="job-acc__desc">Du baust Websites, die nicht nur gut aussehen, sondern auch schnell laden und konvertieren. Lighthouse-Score unter 90 ist für dich kein Zielwert, sondern ein Fehler. Performance, Ästhetik und UX — alles drei, gleichzeitig.</p>
+
+            <p class="job-acc__section-title">Was du bei uns machst</p>
+            <ul class="job-acc__list">
+              <li>Entwicklung von Performance-optimierten Websites und Landingpages (HTML/CSS/JS oder moderne Frameworks)</li>
+              <li>Core Web Vitals auf grün halten — LCP, CLS, INP als tägliche KPIs</li>
+              <li>Implementierung von Tracking (GA4, GTM, Meta Pixel) und Conversion-Optimierung</li>
+              <li>Enge Zusammenarbeit mit dem Design- und Content-Team für pixel-genaue Umsetzung</li>
+              <li>Aufbau und Pflege von wiederverwendbaren Komponenten-Bibliotheken</li>
+            </ul>
+
+            <p class="job-acc__section-title">Was du mitbringst</p>
+            <ul class="job-acc__list">
+              <li>Solide HTML, CSS und JavaScript-Kenntnisse — Frameworks (React, Vue) ein Plus</li>
+              <li>Verständnis für Web-Performance-Optimierung (Lazy Loading, Caching, Code-Splitting)</li>
+              <li>Grundwissen in SEO-relevanter Markup-Struktur (Schema, Semantics, Accessibility)</li>
+              <li>Erfahrung mit CMS-Integration (WordPress, Webflow oder ähnliches)</li>
+            </ul>
+
+            <p class="job-acc__section-title">Was dich erwartet</p>
+            <ul class="job-acc__list">
+              <li>Projekte mit messbarem Impact: du siehst, wie deine Arbeit Conversions steigert</li>
+              <li>Moderner Tech-Stack und kein Legacy-Ballast</li>
+              <li>Option auf Hardware-Budget für deinen idealen Dev-Setup</li>
+              <li>Mitsprache bei Architektur-Entscheidungen von Anfang an</li>
+            </ul>
+
+            <div class="job-acc__cta">
+              <a href="kontakt.html" class="btn btn--cta">Jetzt bewerben →</a>
+              <span style="font-size:0.85rem;color:var(--color-text-muted);">GitHub-Link oder live Projekt — wir schauen uns gerne an, was du gebaut hast.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑥ HIRING PROCESS -->
+  <section class="section" style="background:rgba(200,245,96,0.02);">
+    <div class="container">
+      <div class="section-header section-header--center anim-init">
+        <p class="section-label">So läuft es ab</p>
+        <h2 class="section-title">Vom Bewerben zum ersten Tag — in 4 Schritten.</h2>
+        <p style="margin-top:12px;color:var(--color-text-muted);">Kein endloser Bewerbungsprozess. Kein Ghosting. Versprochen.</p>
+      </div>
+      <div class="hiring-process anim-init" style="margin-top:64px;">
+        <div class="hiring-step">
+          <div class="hiring-step__num">1</div>
+          <span class="hiring-step__icon" aria-hidden="true">📩</span>
+          <h3 class="hiring-step__title">Bewerbung</h3>
+          <p class="hiring-step__desc">Schick uns CV + 3 Sätze warum du. Kein Anschreiben-Roman nötig. Wir antworten innerhalb von 48h.</p>
+        </div>
+        <div class="hiring-step">
+          <div class="hiring-step__num">2</div>
+          <span class="hiring-step__icon" aria-hidden="true">☎️</span>
+          <h3 class="hiring-step__title">Kennenlernen (30 Min)</h3>
+          <p class="hiring-step__desc">Kurzes Video-Call mit Anastasia. Kein HR-Theater — wir reden direkt über die Stelle, dich und uns.</p>
+        </div>
+        <div class="hiring-step">
+          <div class="hiring-step__num">3</div>
+          <span class="hiring-step__icon" aria-hidden="true">🧪</span>
+          <h3 class="hiring-step__title">Mini-Challenge</h3>
+          <p class="hiring-step__desc">Eine kurze, reale Aufgabe (max. 2h). Kein unbezahltes Probearbeiten — wir respektieren deine Zeit.</p>
+        </div>
+        <div class="hiring-step">
+          <div class="hiring-step__num">4</div>
+          <span class="hiring-step__icon" aria-hidden="true">🚀</span>
+          <h3 class="hiring-step__title">Angebot & Start</h3>
+          <p class="hiring-step__desc">Bei Match folgt innerhalb von 3 Werktagen ein konkretes Angebot. Starttermin flexibel abstimmen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑦ NO FIT / SPONTANEOUS APPLICATION -->
+  <section class="section--lg">
+    <div class="container">
+      <div class="nofit-cta anim-init">
+        <span class="nofit-cta__bunny" aria-hidden="true">🐰</span>
+        <span class="nofit-cta__gag">No Money No Honey → Go to Bunny!</span>
+        <h2 class="nofit-cta__title">Keine passende Stelle dabei?</h2>
+        <p class="nofit-cta__sub">Wir wachsen schnell — und suchen immer nach Ausnahmetalenten, die lieber machen als reden. Schick uns einfach eine Initiativbewerbung.</p>
+        <div class="hero__ctas" style="justify-content:center;">
+          <a href="kontakt.html" class="btn btn--cta btn--lg">Initiativbewerbung senden</a>
+          <a href="angebot.html" class="btn btn--ghost btn--lg">Einfach mal reden →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer"><div class="container"><div class="footer__grid">
+  <div class="footer__brand"><a href="/" class="footer__logo">NoMoneyNoHoney.io</a><p class="footer__tagline" data-i18n="footer.tagline">Marketing, das wirklich funktioniert.</p><div class="footer__social"><a href="#" class="footer__social-link" aria-label="LinkedIn">in</a><a href="#" class="footer__social-link" aria-label="Instagram">ig</a><a href="#" class="footer__social-link" aria-label="Twitter/X">𝕏</a></div></div>
+  <div class="footer__col"><h4 data-i18n="footer.services">Services</h4><ul><li><a href="services/performance-marketing.html" data-i18n="nav.service.performance">Performance Marketing</a></li><li><a href="services/content-creation.html" data-i18n="nav.service.content">Content Creation</a></li><li><a href="services/webentwicklung.html" data-i18n="nav.service.web">Webentwicklung</a></li><li><a href="services/automation-agenten.html" data-i18n="nav.service.automation">Automation & Agenten</a></li><li><a href="services/seo-geo.html" data-i18n="nav.service.seo">SEO & GEO</a></li></ul></div>
+  <div class="footer__col"><h4 data-i18n="footer.company">Unternehmen</h4><ul><li><a href="karriere.html" data-i18n="footer.career">Karriere</a></li><li><a href="blog.html" data-i18n="footer.blog">Blog</a></li><li><a href="kontakt.html" data-i18n="footer.contact">Kontakt</a></li></ul></div>
+  <div class="footer__col"><h4 data-i18n="footer.legal">Rechtliches</h4><ul><li><a href="impressum.html" data-i18n="footer.imprint">Impressum</a></li><li><a href="datenschutz.html" data-i18n="footer.privacy">Datenschutz</a></li></ul></div>
+</div><div class="footer__bottom"><p data-i18n="footer.copyright">© 2025 NoMoneyNoHoney.io. Alle Rechte vorbehalten.</p><p style="font-size:0.8rem;color:var(--color-text-muted)">Made with 🍯 in Germany</p></div></div></footer>
+
+<script src="js/i18n.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/animations.js" defer></script>
+
+<script>
+// Job Accordion
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.job-accordion-card').forEach(card => {
+    const header = card.querySelector('.job-acc__header');
+    const body = card.querySelector('.job-acc__body');
+    if (!header || !body) return;
+
+    const toggle = () => {
+      const isOpen = card.classList.contains('is-open');
+      // Close all
+      document.querySelectorAll('.job-accordion-card').forEach(c => {
+        c.classList.remove('is-open');
+        c.querySelector('.job-acc__body')?.classList.remove('is-open');
+        c.querySelector('.job-acc__header')?.setAttribute('aria-expanded', 'false');
+      });
+      // Open current if it was closed
+      if (!isOpen) {
+        card.classList.add('is-open');
+        body.classList.add('is-open');
+        header.setAttribute('aria-expanded', 'true');
+        // Smooth scroll into view
+        setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 100);
+      }
+    };
+
+    header.addEventListener('click', toggle);
+    header.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+    });
+  });
+});
+</script>
+</body>
+</html>

@@ -183,11 +183,13 @@
     <div class="ticker__track">
       <span class="ticker__item">Performance Marketing</span>
       <span class="ticker__item">Content Creation</span>
+      <span class="ticker__item ticker__item--bunny">🐰 No Money No Honey → Go to Bunny!</span>
       <span class="ticker__item">Webentwicklung</span>
       <span class="ticker__item">Automation & Agenten</span>
       <span class="ticker__item">SEO & GEO</span>
       <span class="ticker__item">Performance Marketing</span>
       <span class="ticker__item">Content Creation</span>
+      <span class="ticker__item ticker__item--bunny">🐰 No Money No Honey → Go to Bunny!</span>
       <span class="ticker__item">Webentwicklung</span>
       <span class="ticker__item">Automation & Agenten</span>
       <span class="ticker__item">SEO & GEO</span>
@@ -245,6 +247,7 @@
       </div>
       <div class="pain-transition anim-init">
         <p class="pain-transition__text" data-i18n="pain.transition">Genau dafür gibt es uns.</p>
+        <p class="bunny-gag" aria-hidden="true">No Money No Honey? <a href="angebot.html" class="bunny-gag__link">Go to Bunny! 🐰</a></p>
         <span class="pain-transition__arrow" aria-hidden="true">↓</span>
       </div>
     </div>
@@ -482,6 +485,7 @@
           <span class="text-gradient" data-i18n="finalcta.title">Bereit, dass dein Marketing endlich Honey bringt?</span>
         </h2>
         <p class="final-cta__sub" data-i18n="finalcta.sub">Kein Commitment. Kein Risiko. Nur ein Gespräch, das alles ändern könnte.</p>
+        <p class="final-cta__bunny">No Money No Honey? — <strong>Go to Bunny! 🐰</strong></p>
         <a href="angebot.html" class="btn btn--cta btn--lg btn--pulse" data-i18n="finalcta.cta">Kostenloses Erstgespräch buchen</a>
       </div>
     </div>
@@ -535,6 +539,26 @@
     </div>
   </div>
 </footer>
+
+<!-- FLOATING BUNNY WIDGET -->
+<div class="bunny-float" id="bunnyFloat" role="complementary" aria-label="NoMoneyNoHoney Maskottchen">
+  <button class="bunny-float__btn" id="bunnyToggle" aria-expanded="false" aria-label="No Money No Honey - Go to Bunny">
+    <span class="bunny-float__emoji" aria-hidden="true">🐰</span>
+  </button>
+  <div class="bunny-float__popup" id="bunnyPopup" aria-hidden="true">
+    <p class="bunny-float__phrase">No Money No Honey?</p>
+    <p class="bunny-float__punchline">→ <strong>Go to Bunny!</strong></p>
+    <a href="angebot.html" class="bunny-float__cta">Jetzt starten ✨</a>
+  </div>
+</div>
+
+<!-- EXIT INTENT TOAST -->
+<div class="exit-toast" id="exitToast" role="alert" aria-live="assertive" aria-hidden="true">
+  <button class="exit-toast__close" id="exitToastClose" aria-label="Schließen">✕</button>
+  <p class="exit-toast__text">Psst… No Money No Honey? 🐰</p>
+  <p class="exit-toast__sub"><strong>Go to Bunny</strong> — dein kostenloses Erstgespräch wartet.</p>
+  <a href="angebot.html" class="exit-toast__cta">Los geht's →</a>
+</div>
 
 <script src="js/i18n.js" defer></script>
 <script src="js/main.js" defer></script>

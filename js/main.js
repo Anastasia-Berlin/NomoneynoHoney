@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initDropdowns();
   setActiveNavLink();
+  initBunnyWidget();
+  initExitIntent();
 });
 
 function initStickyHeader() {
@@ -224,3 +226,75 @@ function initContactForm() {
 
 window.initMultiStepForm = initMultiStepForm;
 window.initContactForm = initContactForm;
+
+/* ─── FLOATING BUNNY WIDGET ─── */
+function initBunnyWidget() {
+  const toggle = document.getElementById('bunnyToggle');
+  const popup = document.getElementById('bunnyPopup');
+  if (!toggle || !popup) return;
+
+  let isOpen = false;
+
+  toggle.addEventListener('click', () => {
+    isOpen = !isOpen;
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    if (isOpen) {
+      popup.classList.add('bunny-float__popup--visible');
+      popup.setAttribute('aria-hidden', 'false');
+    } else {
+      popup.classList.remove('bunny-float__popup--visible');
+      popup.setAttribute('aria-hidden', 'true');
+    }
+  });
+
+  // Close on outside click
+  document.addEventListener('click', (e) => {
+    const widget = document.getElementById('bunnyFloat');
+    if (widget && !widget.contains(e.target) && isOpen) {
+      isOpen = false;
+      toggle.setAttribute('aria-expanded', 'false');
+      popup.classList.remove('bunny-float__popup--visible');
+      popup.setAttribute('aria-hidden', 'true');
+    }
+  });
+}
+
+/* ─── EXIT INTENT TOAST ─── */
+function initExitIntent() {
+  const toast = document.getElementById('exitToast');
+  const closeBtn = document.getElementById('exitToastClose');
+  if (!toast) return;
+
+  let shown = false;
+  const storageKey = 'nmnh_exit_toast_shown';
+
+  // Only show once per session
+  if (sessionStorage.getItem(storageKey)) return;
+
+  const showToast = () => {
+    if (shown) return;
+    shown = true;
+    sessionStorage.setItem(storageKey, '1');
+    toast.classList.add('exit-toast--visible');
+    toast.setAttribute('aria-hidden', 'false');
+
+    // Auto-dismiss after 8s
+    setTimeout(hideToast, 8000);
+  };
+
+  const hideToast = () => {
+    toast.classList.remove('exit-toast--visible');
+    toast.setAttribute('aria-hidden', 'true');
+  };
+
+  // Trigger on mouse leaving the viewport (top)
+  document.addEventListener('mouseleave', (e) => {
+    if (e.clientY < 10) showToast();
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', hideToast);
+
+  // Also hide when user clicks the CTA
+  const cta = toast.querySelector('.exit-toast__cta');
+  if (cta) cta.addEventListener('click', hideToast);
+}

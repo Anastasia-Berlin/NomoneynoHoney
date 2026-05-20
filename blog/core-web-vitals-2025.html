@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Core Web Vitals: Warum deine Website 2 Sekunden zu langsam ist | NoMoneyNoHoney.io</title>
+  <meta name="description" content="LCP, CLS, INP — was Core Web Vitals wirklich bedeuten und wie du deine Website-Performance in 30 Tagen messbar verbessern kannst. Mit Tools und konkreten Tipps."/>
+  <meta name="keywords" content="Core Web Vitals 2025, LCP verbessern, CLS beheben, INP optimieren, Website Performance, Lighthouse Score, Google PageSpeed, Web Performance Optimierung"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.nomoneynohoney.io/blog/core-web-vitals-2025.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="Core Web Vitals: Warum deine Website 2 Sekunden zu langsam ist"/>
+  <meta property="og:description" content="LCP, CLS, INP erklärt — und wie du deine Website in 30 Tagen auf 98 Lighthouse Score bringst."/>
+  <meta property="og:image" content="https://www.nomoneynohoney.io/assets/og-image.png"/>
+  <meta property="article:published_time" content="2025-02-18"/>
+  <meta property="article:author" content="NoMoneyNoHoney.io"/>
+  <meta property="article:section" content="Webentwicklung"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Core Web Vitals: Warum deine Website 2 Sekunden zu langsam ist","datePublished":"2025-02-18","author":{"@type":"Organization","name":"NoMoneyNoHoney.io","url":"https://www.nomoneynohoney.io"},"publisher":{"@type":"Organization","name":"NoMoneyNoHoney.io"},"description":"LCP, CLS, INP erklärt — mit konkreten Tipps zur Website-Performance-Optimierung.","mainEntityOfPage":"https://www.nomoneynohoney.io/blog/core-web-vitals-2025.html"}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/main.css"/><link rel="stylesheet" href="../css/components.css"/><link rel="stylesheet" href="../css/animations.css"/>
+</head>
+<body>
+<div class="bg-mesh" aria-hidden="true"><div class="bg-mesh__blob bg-mesh__blob--1"></div><div class="bg-mesh__blob bg-mesh__blob--2"></div><div class="bg-mesh__blob bg-mesh__blob--3"></div><div class="bg-mesh__blob bg-mesh__blob--4"></div></div>
+
+<header class="header" id="header">
+  <nav class="header__nav container">
+    <a href="../" class="header__logo">NoMoneyNoHoney.io</a>
+    <div class="header__menu"><ul class="header__nav-list">
+      <li><a href="../" class="header__nav-link">Home</a></li>
+      <li class="header__nav-item">
+        <button class="header__nav-link header__dropdown-toggle" aria-expanded="false"><span>Services</span><svg class="header__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></button>
+        <div class="header__dropdown">
+          <a href="../services/performance-marketing.html" class="header__dropdown-item"><img src="../assets/rabbits/rabbit-performance.svg" alt="" class="header__dropdown-mini" width="32" height="32"/><span>Performance Marketing</span></a>
+          <a href="../services/content-creation.html" class="header__dropdown-item"><img src="../assets/rabbits/rabbit-content.svg" alt="" class="header__dropdown-mini" width="32" height="32"/><span>Content Creation</span></a>
+          <a href="../services/webentwicklung.html" class="header__dropdown-item"><img src="../assets/rabbits/rabbit-web.svg" alt="" class="header__dropdown-mini" width="32" height="32"/><span>Webentwicklung</span></a>
+          <a href="../services/automation-agenten.html" class="header__dropdown-item"><img src="../assets/rabbits/rabbit-automation.svg" alt="" class="header__dropdown-mini" width="32" height="32"/><span>Automation & Agenten</span></a>
+          <a href="../services/seo-geo.html" class="header__dropdown-item"><img src="../assets/rabbits/rabbit-seo.svg" alt="" class="header__dropdown-mini" width="32" height="32"/><span>SEO & GEO</span></a>
+        </div>
+      </li>
+      <li><a href="../karriere.html" class="header__nav-link">Karriere</a></li>
+      <li><a href="../blog.html" class="header__nav-link header__nav-link--active">Blog</a></li>
+    </ul></div>
+    <div class="header__actions">
+      <button class="lang-toggle" id="langToggle"><span id="langFlag">🇩🇪</span><span id="langText">DE</span></button>
+      <a href="../angebot.html" class="btn btn--cta">Angebot einholen</a>
+    </div>
+    <button class="header__hamburger" id="hamburgerBtn" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+<div class="header__mobile-overlay" id="mobileOverlay">
+  <button class="lang-toggle" id="mobileLangToggle"><span id="mobileLangFlag">🇩🇪</span><span>DE / EN</span></button>
+  <nav class="header__mobile-nav">
+    <a href="../" class="header__mobile-link">Home</a>
+    <a href="../services/performance-marketing.html" class="header__mobile-link">Performance Marketing</a>
+    <a href="../services/content-creation.html" class="header__mobile-link">Content Creation</a>
+    <a href="../services/webentwicklung.html" class="header__mobile-link">Webentwicklung</a>
+    <a href="../services/automation-agenten.html" class="header__mobile-link">Automation & Agenten</a>
+    <a href="../services/seo-geo.html" class="header__mobile-link">SEO & GEO</a>
+    <a href="../karriere.html" class="header__mobile-link">Karriere</a>
+    <a href="../blog.html" class="header__mobile-link">Blog</a>
+    <a href="../angebot.html" class="btn btn--cta btn--lg" style="margin-top:16px">Angebot einholen</a>
+  </nav>
+</div>
+
+<main>
+  <div class="article-hero">
+    <div class="container">
+      <nav class="article-breadcrumb" aria-label="Breadcrumb">
+        <a href="../">Home</a><span class="article-breadcrumb__sep">›</span>
+        <a href="../blog.html">Blog</a><span class="article-breadcrumb__sep">›</span>
+        <span>Core Web Vitals 2025</span>
+      </nav>
+
+      <span class="blog-card__category blog-card__category--tech">Tech</span>
+      <h1 class="article-title" style="margin-top:16px;">Core Web Vitals: Warum deine Website 2 Sekunden zu langsam ist</h1>
+
+      <div class="article-meta">
+        <span class="article-meta__item">📅 18. Februar 2025</span>
+        <span class="article-meta__item">⏱ 7 min Lesezeit</span>
+        <span class="article-meta__item">✍️ NoMoneyNoHoney.io</span>
+      </div>
+
+      <p class="article-intro">
+        Jede Sekunde, die deine Website länger lädt, kostet dich Besucher, Rankings und Umsatz.
+        Das ist keine Meinung — das sind Googles eigene Studiendaten. Und trotzdem haben die meisten
+        Websites Core Web Vitals, die im roten Bereich hängen. Wir erklären, was LCP, CLS und INP
+        wirklich bedeuten, wie du sie misst und — vor allem — wie du sie in 30 Tagen gezielt verbesserst.
+      </p>
+
+      <figure class="article-hero__image">
+        <div class="article-hero__image-inner" role="img" aria-label="Core Web Vitals Dashboard mit LCP, CLS und INP Werten — grün für gut, gelb für verbesserungswürdig, rot für schlecht">
+          <span style="font-size:5rem;position:relative;z-index:1;">⚡</span>
+          <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(200,245,96,0.2) 0%,transparent 60%),radial-gradient(ellipse at 70% 50%,rgba(168,216,234,0.15) 0%,transparent 60%);"></div>
+          <div style="position:absolute;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:16px;z-index:1;flex-wrap:wrap;justify-content:center;">
+            <span class="badge badge--blue">LCP</span>
+            <span class="badge badge--blue">CLS</span>
+            <span class="badge badge--blue">INP</span>
+            <span class="badge badge--lime">Lighthouse Score</span>
+          </div>
+        </div>
+        <figcaption class="article-inline-image__caption">Core Web Vitals messen die echte Nutzererfahrung — Google nutzt sie als Ranking-Faktor</figcaption>
+      </figure>
+
+      <div class="article-keyword-box">
+        <span class="badge badge--blue">Core Web Vitals</span>
+        <span class="badge badge--blue">LCP optimieren</span>
+        <span class="badge badge--blue">CLS beheben</span>
+        <span class="badge badge--blue">INP verbessern</span>
+        <span class="badge badge--blue">Lighthouse</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="article-layout">
+        <aside class="article-toc" aria-label="Inhaltsverzeichnis">
+          <p class="article-toc__title">Inhaltsverzeichnis</p>
+          <ol class="article-toc__list">
+            <li><a href="#was-sind-cwv">Was sind Core Web Vitals?</a></li>
+            <li><a href="#lcp">LCP: Warum deine Seite zu langsam lädt</a></li>
+            <li><a href="#cls">CLS: Das unsichtbare Layout-Problem</a></li>
+            <li><a href="#inp">INP: Die neue Interaktivitäts-Metrik</a></li>
+            <li><a href="#tools">Tools zum Messen</a></li>
+            <li><a href="#30-tage">In 30 Tagen besser werden</a></li>
+            <li><a href="#fazit">Fazit</a></li>
+          </ol>
+        </aside>
+
+        <article class="article-body">
+
+          <h2 id="was-sind-cwv">Was sind Core Web Vitals — und warum sollte dich das interessieren?</h2>
+          <p>Core Web Vitals sind Googles standardisierte Metriken für die Nutzererfahrung einer Website. Sie messen nicht, wie schön deine Seite aussieht, sondern wie sie sich <em>anfühlt</em>: Lädt sie schnell? Springt das Layout herum? Reagiert sie sofort auf Klicks?</p>
+          <p>Seit dem Page Experience Update sind Core Web Vitals ein direkter Google-Ranking-Faktor. Das bedeutet: Eine schlechte Performance kostet dich nicht nur Besucher, die abspringen — sie kostet dich auch Rankings. <a href="../services/seo-geo.html">Gute SEO</a> beginnt deshalb heute immer mit einer sauberen technischen Basis.</p>
+
+          <div class="article-callout">
+            <p class="article-callout__label">📊 Die Zahlen sprechen eine klare Sprache</p>
+            <p>Google-Studien zeigen: Jede <strong>100ms LCP-Verbesserung</strong> erhöht die Conversion Rate im Schnitt um 8%. Bei E-Commerce-Websites mit 1 Mio. € Jahresumsatz = 80.000 € Mehrumsatz durch technische Optimierung allein.</p>
+          </div>
+
+          <h2 id="lcp">LCP — Largest Contentful Paint: Warum deine Seite zu langsam lädt</h2>
+          <p>LCP misst, wie lange es dauert, bis das <strong>größte sichtbare Element</strong> im Viewport geladen ist — typischerweise ein Hero-Bild, ein H1 oder ein Video. Google-Benchmark: <strong>unter 2,5 Sekunden</strong>. Alles über 4 Sekunden gilt als "schlecht".</p>
+          <p>Die häufigsten LCP-Killer: Nicht-optimierte Bilder (WebP statt JPEG), fehlende Preload-Hints für kritische Ressourcen, langsame Server-Antwortzeiten (TTFB über 600ms), blockierendes JavaScript und CSS.</p>
+
+          <figure class="article-inline-image">
+            <div class="article-inline-image__visual" role="img" aria-label="LCP Benchmark-Vergleich: unter 2,5 Sekunden ist gut (grün), 2,5 bis 4 Sekunden muss verbessert werden (gelb), über 4 Sekunden ist schlecht (rot)">
+              <div style="display:flex;gap:16px;z-index:1;position:relative;">
+                <div class="glass-card" style="padding:20px;text-align:center;border-color:rgba(100,220,100,0.4);min-width:120px;">
+                  <div style="font-size:1.5rem;margin-bottom:6px;">✅</div>
+                  <div style="font-size:0.9rem;font-weight:700;color:#6ddc6d;">&lt; 2,5s</div>
+                  <div style="font-size:0.72rem;color:var(--color-text-muted);margin-top:4px;">Gut</div>
+                </div>
+                <div class="glass-card" style="padding:20px;text-align:center;border-color:rgba(255,165,0,0.4);min-width:120px;">
+                  <div style="font-size:1.5rem;margin-bottom:6px;">⚠️</div>
+                  <div style="font-size:0.9rem;font-weight:700;color:#ffa500;">2,5–4s</div>
+                  <div style="font-size:0.72rem;color:var(--color-text-muted);margin-top:4px;">Verbesserungswürdig</div>
+                </div>
+                <div class="glass-card" style="padding:20px;text-align:center;border-color:rgba(255,80,80,0.4);min-width:120px;">
+                  <div style="font-size:1.5rem;margin-bottom:6px;">❌</div>
+                  <div style="font-size:0.9rem;font-weight:700;color:#ff5050;">&gt; 4s</div>
+                  <div style="font-size:0.72rem;color:var(--color-text-muted);margin-top:4px;">Schlecht</div>
+                </div>
+              </div>
+            </div>
+            <figcaption class="article-inline-image__caption">LCP-Benchmarks nach Google — so schnell muss das größte sichtbare Element laden</figcaption>
+          </figure>
+
+          <h2 id="cls">CLS — Cumulative Layout Shift: Das unsichtbare Layout-Problem</h2>
+          <p>CLS misst, wie stark sich deine Seite während des Ladens visuell verschiebt. Du kennst das: Du willst auf einen Button klicken, das Layout springt — und du klickst auf das Falsche. Frustrierend für Nutzer, teuer für Conversions. Google-Benchmark: <strong>unter 0,1</strong>.</p>
+          <p>Typische CLS-Ursachen: Bilder ohne definierte Dimensionen (width/height), nachträglich geladene Ads oder Embeds, dynamisch eingefügte Banner, Webfonts, die beim Laden das Layout verschieben. Die Lösung ist fast immer dasselbe: <strong>Platzhalterdimensionen für alle Elemente definieren</strong>, bevor sie geladen sind.</p>
+
+          <h2 id="inp">INP — Interaction to Next Paint: Die neue Interaktivitäts-Metrik</h2>
+          <p>INP hat seit März 2024 FID (First Input Delay) abgelöst und misst die <strong>gesamte Reaktionszeit</strong> einer Seite auf Nutzerinteraktionen — nicht nur den ersten Klick. Benchmark: <strong>unter 200ms</strong>. Schlecht: über 500ms.</p>
+          <p>INP-Probleme entstehen meist durch schweres JavaScript, das den Main Thread blockiert. Long Tasks (über 50ms) sind der häufigste Schuldige. Lösung: JavaScript-Execution in kleinere Chunks aufteilen, Code-Splitting nutzen und nicht-kritisches JS verzögert laden.</p>
+
+          <h2 id="tools">Tools zum Messen — diese solltest du kennen</h2>
+          <ul>
+            <li><strong>Google PageSpeed Insights</strong> — Kostenlos, zeigt Lab- und Field-Daten. Der erste Anlaufpunkt.</li>
+            <li><strong>Lighthouse</strong> (in Chrome DevTools) — Detaillierter Audit direkt im Browser, ideal für Entwickler.</li>
+            <li><strong>Google Search Console</strong> → Core Web Vitals Report — Zeigt echte Nutzerdaten aus deinem Traffic.</li>
+            <li><strong>WebPageTest.org</strong> — Advanced Testing mit Filmstrip, Wasserfall und Global-Testing.</li>
+            <li><strong>Chrome User Experience Report (CrUX)</strong> — Aggregierte Felddaten über echte Chrome-Nutzer.</li>
+          </ul>
+
+          <div class="article-callout article-callout--purple">
+            <p class="article-callout__label">💡 Wichtig zu verstehen</p>
+            <p>Lighthouse zeigt <strong>Lab-Daten</strong> (simuliert). Google Search Console zeigt <strong>Field-Daten</strong> (echte Nutzer). Für Rankings zählen die Field-Daten. Optimiere nach Lab — messe den Erfolg in Field.</p>
+          </div>
+
+          <h2 id="30-tage">In 30 Tagen besser werden — unser Prioritäts-Playbook</h2>
+          <p><strong>Woche 1 — Audit &amp; Quick Wins:</strong> Bilder in WebP konvertieren, lazy loading aktivieren, Bild-Dimensionen definieren. Das allein verbessert LCP und CLS in den meisten Fällen messbar.</p>
+          <p><strong>Woche 2 — Caching &amp; Server:</strong> Browser-Caching konfigurieren, CDN einbinden, TTFB unter 200ms bringen. Bei WordPress: WP Rocket oder LiteSpeed Cache.</p>
+          <p><strong>Woche 3 — JavaScript &amp; CSS:</strong> Render-blocking Resources eliminieren, CSS Critical Path inlinen, nicht-kritisches JS defer/async laden. Code-Splitting bei React/Next.js implementieren.</p>
+          <p><strong>Woche 4 — Fonts &amp; Third-Party Scripts:</strong> Google Fonts self-hosten, Font-Display: swap setzen, Third-Party Scripts auditieren und nicht-kritische entfernen oder verzögern.</p>
+          <p>Unser <a href="../services/webentwicklung.html">Webentwicklungs-Team</a> hat diesen Prozess in über 50 Website-Projekten verfeinert. Das Ergebnis: Ø 98 Lighthouse Score bei Auslieferung — keine leere Versprechen.</p>
+
+          <h2 id="fazit">Fazit: Performance ist kein nettes Extra, sondern Grundlage</h2>
+          <p>Core Web Vitals sind Googles Messung dafür, ob deine Website respektiert, dass Zeit der wertvollste Rohstoff deiner Besucher ist. Eine langsame Website sagt: "Deine Zeit ist mir egal." Eine schnelle Website sagt: "Ich bin bereit, wenn du es bist." Welche Botschaft willst du senden?</p>
+
+          <div class="article-cta">
+            <h2 class="article-cta__title">Wie schnell ist deine Website wirklich?</h2>
+            <p class="article-cta__sub">Wir machen einen kostenlosen Performance-Check und zeigen dir, welche 3 Maßnahmen die größte Wirkung haben — priorisiert nach ROI.</p>
+            <a href="../angebot.html" class="btn btn--cta btn--lg btn--pulse">Kostenlosen Performance-Check anfragen →</a>
+          </div>
+
+          <a href="../blog.html" class="article-back">← Zurück zum Blog</a>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="container"><div class="footer__grid">
+  <div class="footer__brand"><a href="../" class="footer__logo">NoMoneyNoHoney.io</a><p class="footer__tagline">Marketing, das wirklich funktioniert.</p><div class="footer__social"><a href="#" class="footer__social-link" aria-label="LinkedIn">in</a><a href="#" class="footer__social-link" aria-label="Instagram">ig</a><a href="#" class="footer__social-link" aria-label="Twitter/X">𝕏</a></div></div>
+  <div class="footer__col"><h4>Services</h4><ul><li><a href="../services/performance-marketing.html">Performance Marketing</a></li><li><a href="../services/content-creation.html">Content Creation</a></li><li><a href="../services/webentwicklung.html">Webentwicklung</a></li><li><a href="../services/automation-agenten.html">Automation & Agenten</a></li><li><a href="../services/seo-geo.html">SEO & GEO</a></li></ul></div>
+  <div class="footer__col"><h4>Unternehmen</h4><ul><li><a href="../karriere.html">Karriere</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../kontakt.html">Kontakt</a></li></ul></div>
+  <div class="footer__col"><h4>Rechtliches</h4><ul><li><a href="../impressum.html">Impressum</a></li><li><a href="../datenschutz.html">Datenschutz</a></li></ul></div>
+</div><div class="footer__bottom"><p>© 2025 NoMoneyNoHoney.io. Alle Rechte vorbehalten.</p><p style="font-size:0.8rem;color:var(--color-text-muted)">Made with 🍯 in Germany</p></div></div></footer>
+<script src="../js/i18n.js" defer></script><script src="../js/main.js" defer></script><script src="../js/animations.js" defer></script>
+</body></html>

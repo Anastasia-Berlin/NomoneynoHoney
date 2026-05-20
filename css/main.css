@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
-  --color-bg-dark: #0a0a0f;
-  --color-bg-mid: #0f0f1a;
-  --color-glass: rgba(255, 255, 255, 0.07);
-  --color-glass-border: rgba(255, 255, 255, 0.12);
-  --color-accent-blue: #A8D8EA;
-  --color-accent-purple: #7B5EA7;
-  --color-accent-lime: #C8F560;
-  --color-text-primary: #F0F0F5;
-  --color-text-muted: #8A8A9A;
+  --color-bg-dark: #080F0D;
+  --color-bg-mid: #0D1A16;
+  --color-glass: rgba(255, 107, 157, 0.06);
+  --color-glass-border: rgba(255, 107, 157, 0.15);
+  --color-accent-pink: #FF6B9D;
+  --color-accent-mint: #00E5B0;
+  --color-accent-gold: #FFB830;
+  /* Legacy aliases so existing selectors still work */
+  --color-accent-blue: #00E5B0;
+  --color-accent-purple: #FF6B9D;
+  --color-accent-lime: #FFB830;
+  --color-text-primary: #F0FBF8;
+  --color-text-muted: #7AADA0;
   --blur-glass: blur(20px);
   --radius-card: 20px;
-  --shadow-glow: 0 0 40px rgba(168, 216, 234, 0.15);
-  --shadow-glow-strong: 0 0 60px rgba(168, 216, 234, 0.25);
-  --shadow-glow-lime: 0 0 40px rgba(200, 245, 96, 0.2);
-  --shadow-glow-pain: 0 0 40px rgba(255, 100, 100, 0.1);
+  --shadow-glow: 0 0 40px rgba(255, 107, 157, 0.18);
+  --shadow-glow-strong: 0 0 60px rgba(255, 107, 157, 0.30);
+  --shadow-glow-lime: 0 0 40px rgba(0, 229, 176, 0.22);
+  --shadow-glow-pain: 0 0 40px rgba(255, 80, 80, 0.12);
   --transition-smooth: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   --max-width: 1400px;
   --header-height: 80px;
@@ -42,7 +46,7 @@ body {
 }
 
 ::selection {
-  background: var(--color-accent-blue);
+  background: var(--color-accent-pink);
   color: var(--color-bg-dark);
 }
 
@@ -108,10 +112,12 @@ p {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, var(--color-accent-blue), var(--color-accent-purple), var(--color-accent-lime));
+  background: linear-gradient(135deg, #FF6B9D, #00E5B0, #FFB830, #FF6B9D);
+  background-size: 300% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  animation: gradientShift 5s ease infinite;
 }
 
 .text-center { text-align: center; }
@@ -124,7 +130,7 @@ p {
   font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--color-accent-blue);
+  color: var(--color-accent-mint);
   margin-bottom: 1rem;
 }
 
@@ -185,7 +191,7 @@ p {
 .bg-mesh__blob--1 {
   width: 700px;
   height: 700px;
-  background: var(--color-accent-blue);
+  background: #FF6B9D;
   top: -200px;
   left: -200px;
   animation-delay: 0s;
@@ -195,7 +201,7 @@ p {
 .bg-mesh__blob--2 {
   width: 600px;
   height: 600px;
-  background: var(--color-accent-purple);
+  background: #00E5B0;
   top: 40%;
   right: -150px;
   animation-delay: -8s;
@@ -205,7 +211,7 @@ p {
 .bg-mesh__blob--3 {
   width: 500px;
   height: 500px;
-  background: #1a1a2e;
+  background: #FFB830;
   bottom: -100px;
   left: 30%;
   animation-delay: -15s;
@@ -215,7 +221,7 @@ p {
 .bg-mesh__blob--4 {
   width: 400px;
   height: 400px;
-  background: var(--color-accent-blue);
+  background: #FF1B8D;
   top: 60%;
   left: -100px;
   animation-delay: -5s;

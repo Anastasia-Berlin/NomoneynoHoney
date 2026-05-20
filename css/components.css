@@ -1173,7 +1173,9 @@
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .service-checkboxes { grid-template-columns: 1fr; }
   .blog-grid { grid-template-columns: 1fr; }
-  .testimonial-card { min-width: 290px; }
+  .testimonial-card { min-width: 260px; padding: 24px 20px; }
+  .testimonial-card__quote { font-size: 0.9rem; line-height: 1.65; }
+  .testimonial-card__quote-icon { font-size: 2rem; }
   .job-card { flex-direction: column; }
   .values-grid { grid-template-columns: repeat(2, 1fr); }
   .final-cta { padding: 60px 24px; }
@@ -1183,6 +1185,28 @@
 @media (max-width: 480px) {
   .stats-grid { grid-template-columns: 1fr 1fr; }
   .values-grid { grid-template-columns: 1fr; }
+
+  /* ─── TESTIMONIALS: eine Karte vollbreit, scroll-snap ─── */
+  .testimonials-carousel {
+    gap: 12px;
+    padding-inline: 4px;
+  }
+  .testimonial-card {
+    min-width: calc(100vw - 48px);
+    max-width: calc(100vw - 48px);
+    padding: 20px 18px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+  .testimonial-card__quote {
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+  .testimonial-card__quote-icon { font-size: 1.8rem; }
+  .testimonial-card__avatar { width: 40px; height: 40px; font-size: 0.9rem; }
+  .testimonial-card__author { gap: 10px; padding-top: 14px; }
+  .testimonial-card__name { font-size: 0.85rem; }
+  .testimonial-card__role { font-size: 0.75rem; }
 }
 
 /* ─── BLOG ARTICLE PAGE ─── */

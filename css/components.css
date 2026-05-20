@@ -205,6 +205,15 @@
   gap: 12px;
 }
 
+/* Stretched link — makes the entire card clickable */
+.service-card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: var(--radius-card);
+}
+
 .service-card__link svg {
   width: 16px;
   height: 16px;

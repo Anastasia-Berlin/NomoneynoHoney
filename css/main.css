@@ -479,6 +479,24 @@ p {
   position: relative;
   overflow: hidden;
   padding-top: var(--header-height);
+  background-image: url('../assets/hero-bg.png');
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 6, 18, 0.88) 0%,
+    rgba(8, 6, 18, 0.75) 40%,
+    rgba(8, 6, 18, 0.2) 65%,
+    transparent 100%
+  );
+  z-index: 0;
 }
 
 .hero__content {
@@ -491,6 +509,7 @@ p {
 
 .hero__text {
   z-index: 1;
+  position: relative;
 }
 
 .hero__label {
@@ -531,6 +550,10 @@ p {
   margin-bottom: 48px;
 }
 
+.hero__mascot-space {
+  /* placeholder — bunny is now the full hero background */
+}
+
 .hero__mascot {
   display: flex;
   align-items: center;
@@ -550,6 +573,7 @@ p {
   inset: 0;
   pointer-events: none;
   overflow: hidden;
+  z-index: 1;
 }
 
 /* ─── TICKER ─── */

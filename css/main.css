@@ -485,6 +485,22 @@ p {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    background-image: url('../assets/hero-bg-mobile.jpg');
+    background-position: center top;
+    min-height: 100svh;
+  }
+  .hero::before {
+    background: linear-gradient(
+      180deg,
+      rgba(8, 6, 18, 0.82) 0%,
+      rgba(8, 6, 18, 0.65) 50%,
+      rgba(8, 6, 18, 0.85) 100%
+    );
+  }
+}
+
 .hero::before {
   content: '';
   position: absolute;

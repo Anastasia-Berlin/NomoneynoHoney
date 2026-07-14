@@ -99,46 +99,90 @@
             <p style="color:var(--color-text-muted);margin-bottom:32px;font-size:0.9rem;" data-i18n="contact.form.sub">Wir antworten innerhalb von 24h — versprochen.</p>
 
             <form id="contactForm" novalidate>
-              <div class="form-group" style="margin-bottom:20px;">
-                <label class="form-label" for="contactName" data-i18n="contact.form.name">Dein Name *</label>
-                <input type="text" id="contactName" name="name" class="form-input" required data-i18n-placeholder="contact.form.namePlaceholder" placeholder="Max Mustermann"/>
+
+              <!-- Vorname + Nachname nebeneinander -->
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;">
+                <div class="form-group">
+                  <label class="form-label" for="contactVorname">Vorname *</label>
+                  <input type="text" id="contactVorname" name="vorname" class="form-input" required placeholder="Max"/>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contactNachname">Nachname *</label>
+                  <input type="text" id="contactNachname" name="nachname" class="form-input" required placeholder="Mustermann"/>
+                </div>
               </div>
+
+              <!-- E-Mail -->
               <div class="form-group" style="margin-bottom:20px;">
-                <label class="form-label" for="contactEmail" data-i18n="contact.form.email">E-Mail-Adresse *</label>
-                <input type="email" id="contactEmail" name="email" class="form-input" required data-i18n-placeholder="contact.form.emailPlaceholder" placeholder="max@beispiel.de"/>
+                <label class="form-label" for="contactEmail">E-Mail-Adresse *</label>
+                <input type="email" id="contactEmail" name="email" class="form-input" required placeholder="max@beispiel.de"/>
               </div>
+
+              <!-- Sternzeichen -->
               <div class="form-group" style="margin-bottom:20px;">
-                <label class="form-label" for="contactCompany" data-i18n="contact.form.company">Unternehmen</label>
-                <input type="text" id="contactCompany" name="company" class="form-input" data-i18n-placeholder="contact.form.companyPlaceholder" placeholder="Dein Unternehmen (optional)"/>
-              </div>
-              <div class="form-group" style="margin-bottom:20px;">
-                <label class="form-label" for="contactSubject" data-i18n="contact.form.subject">Betreff *</label>
-                <select id="contactSubject" name="subject" class="form-input" required>
-                  <option value="" data-i18n="contact.form.subjectDefault">Bitte wählen...</option>
-                  <option value="performance" data-i18n="nav.service.performance">Performance Marketing</option>
-                  <option value="content" data-i18n="nav.service.content">Content Creation</option>
-                  <option value="web" data-i18n="nav.service.web">Webentwicklung</option>
-                  <option value="automation" data-i18n="nav.service.automation">Automation & Agenten</option>
-                  <option value="seo" data-i18n="nav.service.seo">SEO & GEO</option>
-                  <option value="other" data-i18n="contact.form.subjectOther">Anderes Thema</option>
+                <label class="form-label" for="contactSternzeichen">Sternzeichen ✨ <span style="font-size:0.75rem;color:var(--color-text-muted);font-weight:400;">(wichtig für die Kompatibilität 🔮)</span></label>
+                <select id="contactSternzeichen" name="sternzeichen" class="form-input">
+                  <option value="">Bitte wählen...</option>
+                  <option value="widder">♈ Widder (21. März – 19. April)</option>
+                  <option value="stier">♉ Stier (20. April – 20. Mai)</option>
+                  <option value="zwillinge">♊ Zwillinge (21. Mai – 20. Juni)</option>
+                  <option value="krebs">♋ Krebs (21. Juni – 22. Juli)</option>
+                  <option value="loewe">♌ Löwe (23. Juli – 22. August)</option>
+                  <option value="jungfrau">♍ Jungfrau (23. August – 22. September)</option>
+                  <option value="waage">♎ Waage (23. September – 22. Oktober)</option>
+                  <option value="skorpion">♏ Skorpion (23. Oktober – 21. November)</option>
+                  <option value="schuetze">♐ Schütze (22. November – 21. Dezember)</option>
+                  <option value="steinbock">♑ Steinbock (22. Dezember – 19. Januar)</option>
+                  <option value="wassermann">♒ Wassermann (20. Januar – 18. Februar)</option>
+                  <option value="fische">♓ Fische (19. Februar – 20. März)</option>
                 </select>
               </div>
+
+              <!-- Betreff -->
+              <div class="form-group" style="margin-bottom:20px;">
+                <label class="form-label" for="contactSubject">Worum geht's? *</label>
+                <select id="contactSubject" name="subject" class="form-input" required>
+                  <option value="">Bitte wählen...</option>
+                  <optgroup label="🚀 Unsere Services">
+                    <option value="performance">🎯 Performance Marketing</option>
+                    <option value="content">🎨 Content Creation</option>
+                    <option value="web">💻 Webentwicklung</option>
+                    <option value="automation">🤖 Automation & KI-Agenten</option>
+                    <option value="seo">🔍 SEO & GEO</option>
+                    <option value="allgemein">💬 Allgemeine Anfrage</option>
+                  </optgroup>
+                  <optgroup label="🤔 Sonstiges...">
+                    <option value="agentur-kaufen">🏦 Ich möchte euch kaufen (bitte keine)</option>
+                    <option value="zocken">🎮 Zocken — wann habt ihr Zeit?</option>
+                    <option value="honey-emergency">🍯 Honey Emergency (DRINGEND)</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <!-- Nachricht -->
               <div class="form-group" style="margin-bottom:24px;">
-                <label class="form-label" for="contactMessage" data-i18n="contact.form.message">Nachricht *</label>
-                <textarea id="contactMessage" name="message" class="form-input" rows="5" required data-i18n-placeholder="contact.form.messagePlaceholder" placeholder="Was können wir für dich tun?" style="resize:vertical;min-height:120px;"></textarea>
+                <label class="form-label" for="contactMessage">Deine Nachricht *</label>
+                <textarea id="contactMessage" name="message" class="form-input" rows="5" required placeholder="Was können wir für dich tun? Je mehr Details, desto besser! 🐰" style="resize:vertical;min-height:120px;"></textarea>
               </div>
+
+              <!-- Datenschutz -->
               <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:24px;">
-                <input type="checkbox" id="contactPrivacy" name="privacy" required style="margin-top:3px;accent-color:var(--color-accent-lime);"/>
-                <label for="contactPrivacy" style="font-size:0.85rem;color:var(--color-text-muted);line-height:1.5;" data-i18n="contact.form.privacy">Ich habe die <a href="datenschutz.html" style="color:var(--color-accent-blue);">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Daten einverstanden.</label>
+                <input type="checkbox" id="contactPrivacy" name="privacy" required style="margin-top:3px;accent-color:var(--color-accent-lime);flex-shrink:0;"/>
+                <label for="contactPrivacy" style="font-size:0.85rem;color:var(--color-text-muted);line-height:1.5;">
+                  Ich habe die <a href="datenschutz.html" style="color:var(--color-accent-blue);">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Daten einverstanden.
+                </label>
               </div>
-              <div id="contactError" style="display:none;color:#ff6b6b;font-size:0.85rem;margin-bottom:16px;padding:12px;background:rgba(255,107,107,0.1);border-radius:8px;border:1px solid rgba(255,107,107,0.3);" data-i18n="contact.form.error">Bitte fülle alle Pflichtfelder aus.</div>
-              <button type="submit" class="btn btn--cta" style="width:100%;" data-i18n="contact.form.send">Nachricht senden</button>
+
+              <div id="contactError" style="display:none;color:#ff6b6b;font-size:0.85rem;margin-bottom:16px;padding:12px;background:rgba(255,107,107,0.1);border-radius:8px;border:1px solid rgba(255,107,107,0.3);">
+                Bitte fülle alle Pflichtfelder aus. ✋
+              </div>
+              <button type="submit" class="btn btn--cta" style="width:100%;">Nachricht senden 🐰</button>
             </form>
 
             <div id="contactSuccess" style="display:none;text-align:center;padding:40px 20px;">
-              <div style="font-size:3rem;margin-bottom:16px;">✅</div>
-              <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1.3rem;color:var(--color-text-primary);margin-bottom:8px;" data-i18n="contact.success.title">Nachricht gesendet!</h3>
-              <p style="color:var(--color-text-muted);" data-i18n="contact.success.text">Wir melden uns innerhalb von 24 Stunden bei dir.</p>
+              <div style="font-size:3rem;margin-bottom:16px;">🐰</div>
+              <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1.3rem;color:var(--color-text-primary);margin-bottom:8px;">Nachricht gesendet!</h3>
+              <p style="color:var(--color-text-muted);">Der Bunny kümmert sich drum — wir melden uns innerhalb von 24 Stunden. 🍯</p>
             </div>
           </div>
         </div>
@@ -193,12 +237,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!form) return;
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const name = document.getElementById('contactName').value.trim();
+    const vorname = document.getElementById('contactVorname').value.trim();
+    const nachname = document.getElementById('contactNachname').value.trim();
     const email = document.getElementById('contactEmail').value.trim();
     const subject = document.getElementById('contactSubject').value;
     const message = document.getElementById('contactMessage').value.trim();
     const privacy = document.getElementById('contactPrivacy').checked;
-    if (!name || !email || !subject || !message || !privacy) {
+    if (!vorname || !nachname || !email || !subject || !message || !privacy) {
       errorDiv.style.display = 'block';
       return;
     }

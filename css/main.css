@@ -501,18 +501,29 @@ p {
   }
 }
 
+.hero__video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+  z-index: 0;
+}
+
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(8, 6, 18, 0.88) 0%,
-    rgba(8, 6, 18, 0.75) 40%,
-    rgba(8, 6, 18, 0.2) 65%,
+    rgba(8, 6, 18, 0.94) 0%,
+    rgba(8, 6, 18, 0.88) 35%,
+    rgba(8, 6, 18, 0.30) 62%,
     transparent 100%
   );
-  z-index: 0;
+  z-index: 1;
 }
 
 .hero__content {
@@ -589,7 +600,18 @@ p {
   inset: 0;
   pointer-events: none;
   overflow: hidden;
-  z-index: 1;
+  z-index: 2;
+}
+
+/* Container above gradient overlay */
+.hero > .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Mobile: Video ausblenden, Bild als Fallback */
+@media (max-width: 768px) {
+  .hero__video-bg { display: none; }
 }
 
 /* ─── TICKER ─── */

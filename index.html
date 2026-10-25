@@ -1,549 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NoMoneyNoHoney.io — Performance Marketing Agentur</title>
-  <meta name="description" content="NoMoneyNoHoney.io — Full-Service Digital Marketing Agentur für Performance Marketing, Content Creation, Webentwicklung, KI-Automation & SEO/GEO. Kein Budget? Kein Honey."/>
-  <meta name="keywords" content="Marketing Agentur, Performance Marketing, Google Ads, Meta Ads, SEO, Content Creation, Webentwicklung, KI Automation, GEO Optimierung, Deutschland"/>
-  <meta name="robots" content="index, follow"/>
-  <link rel="canonical" href="https://www.nomoneynohoney.io/" data-base="https://www.nomoneynohoney.io/"/>
-  <link rel="alternate" hreflang="de" href="https://www.nomoneynohoney.io/"/>
-  <link rel="alternate" hreflang="en" href="https://www.nomoneynohoney.io/en/"/>
-  <link rel="alternate" hreflang="x-default" href="https://www.nomoneynohoney.io/"/>
-
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://www.nomoneynohoney.io/"/>
-  <meta property="og:title" content="NoMoneyNoHoney.io — Performance Marketing Agentur"/>
-  <meta property="og:description" content="Kein Budget? Kein Honey. Wir verbinden Performance, Kreativität und KI-Technologie für echte Ergebnisse."/>
-  <meta property="og:image" content="https://www.nomoneynohoney.io/assets/og-image.png"/>
-  <meta property="og:locale" content="de_DE"/>
-  <meta property="og:locale:alternate" content="en_US"/>
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="NoMoneyNoHoney.io — Performance Marketing Agentur"/>
-  <meta name="twitter:description" content="Kein Budget? Kein Honey. Full-Service Digital Marketing Agentur."/>
-  <meta name="twitter:image" content="https://www.nomoneynohoney.io/assets/og-image.png"/>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/main.css"/>
-  <link rel="stylesheet" href="css/components.css"/>
-  <link rel="stylesheet" href="css/animations.css"/>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://www.nomoneynohoney.io/#organization",
-        "name": "NoMoneyNoHoney.io",
-        "url": "https://www.nomoneynohoney.io",
-        "logo": "https://www.nomoneynohoney.io/assets/logo.png",
-        "description": "Full-Service Digital Marketing Agentur für Performance Marketing, Content Creation, Webentwicklung, KI-Automation und SEO/GEO Optimierung.",
-        "email": "hello@nomoneynohoney.io",
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "DE"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/company/nomoneynohoney",
-          "https://www.instagram.com/nomoneynohoney.io"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "sales",
-          "email": "hello@nomoneynohoney.io",
-          "availableLanguage": ["German", "English"]
-        }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://www.nomoneynohoney.io/#website",
-        "url": "https://www.nomoneynohoney.io",
-        "name": "NoMoneyNoHoney.io",
-        "publisher": {"@id": "https://www.nomoneynohoney.io/#organization"}
-      }
-    ]
-  }
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10100e">
+  <meta name="description" content="No Money No Honey. Wir verbinden Performance Marketing, Content, Webentwicklung, KI-Automation und SEO & GEO zu deinem digitalen Wachstumssystem.">
+  <title>No Money No Honey — Make some noise. Make some honey.</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/fonts.css">
+  <link rel="preload" as="image" href="/assets/bunny-hero.jpg">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/experience.css">
+  <link rel="stylesheet" href="/visual-refinement.css">
+  <link rel="stylesheet" href="/process-scroll.css">
+  <link rel="stylesheet" href="/shell-refinement.css">
+  <script src="/app.js" defer></script>
+  <script src="/experience.js" defer></script>
+<noscript><style>.process-node{opacity:1}.intro-loader{display:none}.line>span,.reveal{transform:none;opacity:1}.reveal-words{color:var(--text)}.service-detail[hidden]{display:block!important}.cinema{height:100svh;min-height:660px}.cinema-copy{transform:translateY(-45%)}</style></noscript>
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://nomoneynohoney.io/">
+<meta property="og:url" content="https://nomoneynohoney.io/">
 </head>
-<body>
+<body class="home-page">
+  <a class="skip-link" href="#main">Zum Inhalt</a>
+  <div class="intro-loader" aria-hidden="true"><span class="loader-bunny">↗</span><span>ENTER THE HONEYVERSE</span><span class="loader-number">000</span><div class="loader-line"></div></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor-label" aria-hidden="true">EXPLORE ↗</div>
 
-<!-- Animated Background -->
-<div class="bg-mesh" aria-hidden="true">
-  <div class="bg-mesh__blob bg-mesh__blob--1"></div>
-  <div class="bg-mesh__blob bg-mesh__blob--2"></div>
-  <div class="bg-mesh__blob bg-mesh__blob--3"></div>
-  <div class="bg-mesh__blob bg-mesh__blob--4"></div>
-</div>
+<header class="site-header"><a class="brand brand-v2 brand-line" href="/" aria-label="No Money No Honey — Startseite"><svg class="brand-mark brand-mark-v2 brand-mark-line" viewBox="0 0 64 72" aria-hidden="true"><path class="rabbit-line" d="M29 64C20 61 12 54 13 45C14 39 20 35 25 35C22 25 14 7 18 4C23 1 32 20 34 31C38 19 47 2 51 5C56 9 45 31 42 35C51 37 57 44 55 52C53 60 45 65 36 66" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-words">NO MONEY<br>NO HONEY</span></a><nav class="desktop-nav" aria-label="Hauptnavigation"><details class="expertise-menu"><summary>Expertise<i aria-hidden="true"></i></summary><div class="expertise-dropdown"><a href="/services/performance-marketing.html">Performance Marketing</a><a href="/services/content-creation.html">Content Creation</a><a href="/services/webentwicklung.html">Webentwicklung</a><a href="/services/automation-agenten.html">Automation & KI</a><a href="/services/seo-geo.html">SEO & GEO</a></div></details><a href="/#approach">Unser Ansatz</a><a href="/blog.html">Insights</a><a href="/karriere.html">Karriere</a></nav><div class="header-right"><a class="header-contact-link mono" href="/kontakt.html">BERLIN</a><button class="button button-small contact-trigger">LET’S TALK <span>↗</span></button><button class="menu-toggle" aria-label="Menü öffnen" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span></button></div></header><nav class="mobile-menu" id="mobile-menu" aria-label="Mobile Navigation" hidden><a class="mobile-home" href="/">Start</a><p class="mono mobile-category">EXPERTISE</p><a class="mobile-service" href="/services/performance-marketing.html">Performance Marketing</a><a class="mobile-service" href="/services/content-creation.html">Content Creation</a><a class="mobile-service" href="/services/webentwicklung.html">Webentwicklung</a><a class="mobile-service" href="/services/automation-agenten.html">Automation & KI</a><a class="mobile-service" href="/services/seo-geo.html">SEO & GEO</a><div class="mobile-other"><a href="/blog.html">Insights</a><a href="/karriere.html">Karriere</a><a href="/kontakt.html">Kontakt</a></div><button class="contact-trigger">Projekt starten</button></nav>
 
-<!-- HEADER -->
-<header class="header" id="header">
-  <nav class="header__nav container" role="navigation" aria-label="Main navigation">
-    <a href="/" class="header__logo" aria-label="NoMoneyNoHoney.io — Startseite">NoMoneyNoHoney.io</a>
+<main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true"><div class="hero-image"></div><div class="hero-image-shade"></div><div class="orbital orbital-one"></div><div class="orbital orbital-two"></div></div>
+      <div class="hero-coordinate mono" aria-hidden="true">NMNH — DIGITAL GROWTH STUDIO<br>52°31′ N &nbsp; 13°24′ E / BERLIN</div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="orange-square"></span> STRATEGY. CREATIVITY. TECHNOLOGY.</div>
+        <h1 id="hero-title"><span class="line"><span>NO MONEY.</span></span><span class="line honey-line"><span>NO HONEY<span class="hero-dot">.</span></span></span></h1>
+        <p>Dein Studio für Performance, Content<br>und digitale Erlebnisse.<br><strong>Aufmerksamkeit, die etwas bewegt.</strong></p>
+        <div class="hero-actions"><button class="button contact-trigger">LASS UNS WAS BEWEGEN <span>↗</span></button><a class="text-link" href="#services">Entdecke den Unterschied <span>↓</span></a></div>
+      </div>
+      <div class="specimen-label mono" aria-hidden="true"><span class="label-cross">+</span><div>THE HONEY BUNNY<br><span>BUILT DIFFERENT. BY DESIGN.</span></div><span class="specimen-line"></span></div>
+      <div class="hero-bottom"><a class="scroll-hint mono" href="#approach"><span class="scroll-icon">↓</span> SCROLL TO FEEL THE DIFFERENCE</a><p>Dein nächstes Level.<br>Unser natürliches Habitat.</p><span class="hero-index mono">EST. IN BERLIN <span>© 2026</span></span></div>
+    </section>
 
-    <div class="header__menu" id="headerMenu">
-      <ul class="header__nav-list">
-        <li><a href="/" class="header__nav-link" data-i18n="nav.home">Home</a></li>
-        <li class="header__nav-item">
-          <button class="header__nav-link header__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
-            <span data-i18n="nav.services">Services</span>
-            <svg class="header__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
-          </button>
-          <div class="header__dropdown" role="menu">
-            <a href="services/performance-marketing.html" class="header__dropdown-item" role="menuitem">
-              <img src="assets/rabbits/rabbit-performance.png" alt="" class="header__dropdown-mini" width="32" height="32"/>
-              <span data-i18n="nav.service.performance">Performance Marketing</span>
-            </a>
-            <a href="services/content-creation.html" class="header__dropdown-item" role="menuitem">
-              <img src="assets/rabbits/rabbit-content.png" alt="" class="header__dropdown-mini" width="32" height="32"/>
-              <span data-i18n="nav.service.content">Content Creation</span>
-            </a>
-            <a href="services/webentwicklung.html" class="header__dropdown-item" role="menuitem">
-              <img src="assets/rabbits/rabbit-web.png" alt="" class="header__dropdown-mini" width="32" height="32"/>
-              <span data-i18n="nav.service.web">Webentwicklung</span>
-            </a>
-            <a href="services/automation-agenten.html" class="header__dropdown-item" role="menuitem">
-              <img src="assets/rabbits/rabbit-automation.png" alt="" class="header__dropdown-mini" width="32" height="32"/>
-              <span data-i18n="nav.service.automation">Automation & Agenten</span>
-            </a>
-            <a href="services/seo-geo.html" class="header__dropdown-item" role="menuitem">
-              <img src="assets/rabbits/rabbit-seo.png" alt="" class="header__dropdown-mini" width="32" height="32"/>
-              <span data-i18n="nav.service.seo">SEO & GEO</span>
-            </a>
-          </div>
-        </li>
-        <li><a href="karriere.html" class="header__nav-link" data-i18n="nav.career">Karriere</a></li>
-        <li><a href="blog.html" class="header__nav-link" data-i18n="nav.blog">Blog</a></li>
-      </ul>
-    </div>
+<div class="signal-ribbon" aria-label="Unsere fünf verbundenen Disziplinen"><span class="ribbon-status mono"><i></i> FIVE DISCIPLINES.<br>ONE GROWTH SYSTEM.</span><div class="ribbon-services"><a href="/services/performance-marketing.html"><span>01</span> PERFORMANCE</a><a href="/services/content-creation.html"><span>02</span> CONTENT</a><a href="/services/webentwicklung.html"><span>03</span> WEB</a><a href="/services/automation-agenten.html"><span>04</span> AUTOMATION</a><a href="/services/seo-geo.html"><span>05</span> SEO & GEO</a></div><span class="ribbon-end" aria-hidden="true">↗</span></div>
 
-    <div class="header__actions">
-      <button class="lang-toggle" id="langToggle" aria-label="Sprache wechseln / Switch language">
-        <span id="langFlag">🇩🇪</span>
-        <span id="langText">DE</span>
-      </button>
-      <a href="angebot.html" class="btn btn--cta" data-i18n="nav.quote">Angebot einholen</a>
-    </div>
+    <section class="approach section-pad" id="approach" aria-labelledby="approach-title">
+      <div class="section-meta"><span class="mono"><span class="orange-square"></span> 01 / THE MINDSET</span><span class="mono muted">LESS NOISE. MORE SIGNAL.</span></div>
+      <div class="approach-layout"><div class="side-note mono">NO MONEY NO HONEY?<br><span>GO TO BUNNY.</span><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M10 10h75v75M85 10 10 85" fill="none" stroke="currentColor" stroke-width="2"/></svg></div><div><h2 class="reveal-words" id="approach-title">Die Welt braucht nicht mehr Marketing. Sie braucht Marketing, das etwas bewegt.</h2><div class="approach-bottom"><p>Wir verbinden kreative Ideen mit Daten und Technologie. Damit dein Content auffällt, deine Website überzeugt und aus Interesse echte Nachfrage wird.</p><p>Fünf Disziplinen. Ein Team.<br><strong>Alles auf dein Wachstum ausgerichtet.</strong></p></div></div></div>
+      <div class="honey-lab" aria-label="Creative Minds plus Performance DNA ergibt The Honey Effect"><div class="lab-header mono"><span>THE FORMULA BEHIND THE FEELING</span><span class="lab-status">SYSTEM CONNECTED <i></i></span></div><svg class="fusion-lines" viewBox="0 0 1000 270" preserveAspectRatio="none" aria-hidden="true"><path d="M220 135H430Q500 135 560 135H780"/><path class="fusion-flow" d="M220 135H430Q500 135 560 135H780" pathLength="1"/></svg><div class="formula-node formula-creative"><div class="formula-glyph creative-glyph" aria-hidden="true"><i></i><i></i><i></i><b>✳</b></div><div><span class="mono">IMAGINATION WITHOUT LIMITS</span><h3>CREATIVE<br>MINDS.</h3></div></div><span class="formula-operator" aria-hidden="true">+</span><div class="formula-node formula-data"><div class="formula-glyph dna-glyph" aria-hidden="true"><i style="--strand:0"></i><i style="--strand:1"></i><i style="--strand:2"></i><i style="--strand:3"></i><i style="--strand:4"></i><i style="--strand:5"></i><i style="--strand:6"></i><i style="--strand:7"></i><i style="--strand:8"></i></div><div><span class="mono">DIRECTION THROUGH DATA</span><h3>PERFORMANCE<br>DNA.</h3></div></div><span class="formula-operator equals" aria-hidden="true">=</span><div class="formula-result"><div class="honey-core" aria-hidden="true"><i></i><i></i><span>↗</span></div><span class="mono">THIS IS WHERE IT CLICKS.</span><h3>THE HONEY<br><em>EFFECT.</em></h3></div></div>
+    </section>
 
-    <button class="header__hamburger" id="hamburgerBtn" aria-label="Menü öffnen" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-</header>
-
-<!-- MOBILE OVERLAY -->
-<div class="header__mobile-overlay" id="mobileOverlay" role="dialog" aria-modal="true" aria-label="Navigation">
-  <button class="lang-toggle" id="mobileLangToggle" style="margin-bottom:24px">
-    <span id="mobileLangFlag">🇩🇪</span>
-    <span>DE / EN</span>
-  </button>
-  <nav class="header__mobile-nav">
-    <a href="/" class="header__mobile-link" data-i18n="nav.home">Home</a>
-    <a href="services/performance-marketing.html" class="header__mobile-link" data-i18n="nav.service.performance">Performance Marketing</a>
-    <a href="services/content-creation.html" class="header__mobile-link" data-i18n="nav.service.content">Content Creation</a>
-    <a href="services/webentwicklung.html" class="header__mobile-link" data-i18n="nav.service.web">Webentwicklung</a>
-    <a href="services/automation-agenten.html" class="header__mobile-link" data-i18n="nav.service.automation">Automation & Agenten</a>
-    <a href="services/seo-geo.html" class="header__mobile-link" data-i18n="nav.service.seo">SEO & GEO</a>
-    <a href="karriere.html" class="header__mobile-link" data-i18n="nav.career">Karriere</a>
-    <a href="blog.html" class="header__mobile-link" data-i18n="nav.blog">Blog</a>
-    <a href="angebot.html" class="btn btn--cta btn--lg" style="margin-top:16px" data-i18n="nav.quote">Angebot einholen</a>
-  </nav>
-</div>
-
-<main>
-
-  <!-- SECTION 1: HERO -->
-  <section class="hero" id="hero">
-    <video class="hero__video-bg" autoplay muted loop playsinline poster="assets/hero-bg.png" aria-hidden="true">
-      <source src="assets/hero-bg.mp4" type="video/mp4">
-    </video>
-    <div id="heroParticles" class="hero__particles" aria-hidden="true"></div>
-    <div class="container">
-      <div class="hero__content">
-        <div class="hero__text">
-          <div class="hero__label" data-i18n="hero.label">🚀 Full-Service Digital Marketing</div>
-          <h1 class="hero__h1">
-            <span class="text-gradient" data-i18n="hero.h1">Dein Marketing läuft. Dein Umsatz nicht?</span>
-          </h1>
-          <p class="hero__sub" data-i18n="hero.sub">Wir verbinden Performance, Kreativität und Technologie — damit aus deinen Klicks echte Kunden werden.</p>
-          <div class="hero__ctas">
-            <a href="angebot.html" class="btn btn--cta btn--lg btn--pulse" data-i18n="hero.cta1">Jetzt Angebot einholen</a>
-            <a href="#services" class="btn btn--ghost btn--lg" data-i18n="hero.cta2">Services entdecken</a>
-          </div>
+    <section class="services section-pad" id="services" aria-labelledby="services-title">
+      <div class="section-meta"><span class="mono"><span class="orange-square"></span> 02 / THE TOOLKIT</span><span class="mono muted">FIVE DISCIPLINES. ZERO SILOS.</span></div>
+      <div class="section-heading"><h2 id="services-title">DEIN VORSPRUNG.<br><span class="outline-text">UNSER HANDWERK.</span></h2><p>Von der ersten Aufmerksamkeit bis zur nächsten Conversion. Wir denken zusammen, was zusammen wächst.</p></div>
+      <div class="service-layout">
+        <div class="service-list">
+          <article class="service-item active" data-service="0"><h3><button aria-expanded="true" aria-controls="service-content-0"><span class="service-number mono">01</span><span>Performance<br class="mobile-break"> Marketing</span><span class="service-toggle">↗</span></button></h3><div id="service-content-0" class="service-detail"><p>Klicks sind der Anfang. Kunden das Ziel. Wir entwickeln und optimieren Kampagnen, die auf dein Business einzahlen.</p><div class="service-tags mono"><span>PAID SOCIAL</span><span>GOOGLE ADS</span><span>TRACKING</span></div><a href="/services/performance-marketing.html" class="service-link">Performance entdecken <span>↗</span></a></div></article>
+          <article class="service-item" data-service="1"><h3><button aria-expanded="false" aria-controls="service-content-1"><span class="service-number mono">02</span><span>Content Creation</span><span class="service-toggle">↗</span></button></h3><div id="service-content-1" class="service-detail" hidden><p>Content, der nicht vorbeizieht. Sondern hängen bleibt. Von der ersten Idee bis zum Video, das deine Marke unverwechselbar macht.</p><div class="service-tags mono"><span>VIDEO & REELS</span><span>UGC</span><span>AD CREATIVES</span></div><a href="/services/content-creation.html" class="service-link">Content entdecken <span>↗</span></a></div></article>
+          <article class="service-item" data-service="2"><h3><button aria-expanded="false" aria-controls="service-content-2"><span class="service-number mono">03</span><span>Webentwicklung</span><span class="service-toggle">↗</span></button></h3><div id="service-content-2" class="service-detail" hidden><p>Ein Auftritt, der Eindruck macht. Und Menschen weiterbringt. Wir verbinden markantes Design mit klarer Nutzerführung und schneller Technik.</p><div class="service-tags mono"><span>WEB DESIGN</span><span>DEVELOPMENT</span><span>UX & CRO</span></div><a href="/services/webentwicklung.html" class="service-link">Webentwicklung entdecken <span>↗</span></a></div></article>
+          <article class="service-item" data-service="3"><h3><button aria-expanded="false" aria-controls="service-content-3"><span class="service-number mono">04</span><span>Automation & KI</span><span class="service-toggle">↗</span></button></h3><div id="service-content-3" class="service-detail" hidden><p>Weniger Routine. Mehr Raum für das Wesentliche. Wir bauen Workflows und KI-Agenten, die Aufgaben übernehmen und deine Systeme verbinden.</p><div class="service-tags mono"><span>AI AGENTS</span><span>WORKFLOWS</span><span>CRM INTEGRATION</span></div><a href="/services/automation-agenten.html" class="service-link">Automation entdecken <span>↗</span></a></div></article>
+          <article class="service-item" data-service="4"><h3><button aria-expanded="false" aria-controls="service-content-4"><span class="service-number mono">05</span><span>SEO & GEO</span><span class="service-toggle">↗</span></button></h3><div id="service-content-4" class="service-detail" hidden><p>Sei die Antwort auf die richtigen Fragen. Wir machen deine Marke in Suchmaschinen und KI-Antworten sichtbar — mit Strategie, Struktur und relevantem Content.</p><div class="service-tags mono"><span>ORGANIC SEARCH</span><span>AI VISIBILITY</span><span>CONTENT STRATEGY</span></div><a href="/services/seo-geo.html" class="service-link">SEO & GEO entdecken <span>↗</span></a></div></article>
         </div>
-        <div class="hero__mascot-space" aria-hidden="true"></div>
+<div class="service-visual engine-v2" aria-hidden="true" data-active="0"><div class="engine-grid"></div><div class="engine-top mono"><span>THE CONNECTED GROWTH ENGINE</span><span class="visual-code">[ 01 / 05 ]</span></div><canvas class="engine-canvas"></canvas><div class="engine-scene engine-paid"><h4>FROM ATTENTION<br><em>TO ACTION.</em></h4><span class="engine-label label-google">GOOGLE</span><span class="engine-label label-meta">META</span><span class="engine-label label-tiktok">TIKTOK</span><div class="target-core"><span class="mono">THE RIGHT</span><strong>AUDIENCE.</strong><span class="target-dot"></span></div><div class="engine-bottom"><span>REICHWEITE</span><i>→</i><span>RELEVANZ</span><i>→</i><strong>NACHFRAGE</strong></div></div><div class="engine-scene engine-creative"><h4>MAKE THEM<br><em>FEEL SOMETHING.</em></h4><div class="creative-cards"><div class="creative-card card-back"><span class="mono">THE IDEA</span><span>FEEL.<br>DON’T<br>SCROLL.</span></div><div class="creative-card card-front"><img src="/assets/bunny-breakthrough.jpg" alt=""><span>STAY<br>CURIOUS.</span><i>✳</i></div><span class="creative-frame mono">01:24 / YOUR NEXT OBSESSION</span></div><div class="engine-bottom"><span>IDEE</span><i>→</i><span>STORY</span><i>→</i><strong>VERBINDUNG</strong></div></div><div class="engine-scene engine-build"><h4>EVERY LAYER.<br><em>ONE EXPERIENCE.</em></h4><div class="web-stack"><div class="web-layer web-base"><span class="mono">03 / CODE & PERFORMANCE</span><div class="code-lines"><i></i><i></i><i></i><i></i></div></div><div class="web-layer web-middle"><span class="mono">02 / USER EXPERIENCE</span><div class="ux-wire"><i></i><i></i><i></i></div></div><div class="web-layer web-front"><span class="mono">01 / BRAND & DESIGN</span><strong>BUILT<br>DIFFERENT.</strong><i>↗</i></div></div><div class="engine-bottom"><span>DESIGN</span><i>+</i><span>UX</span><i>+</i><strong>TECHNOLOGIE</strong></div></div><div class="engine-scene engine-automate"><h4>YOUR TOOLS.<br><em>FINALLY TALKING.</em></h4><div class="workflow-graphic"><svg viewBox="0 0 500 300" preserveAspectRatio="none"><path d="M70 65C170 65 130 150 250 150S330 50 430 50M70 235C170 235 130 150 250 150S330 250 430 250M250 150H430"/><path class="workflow-pulse" d="M70 65C170 65 130 150 250 150S330 50 430 50M70 235C170 235 130 150 250 150S330 250 430 250M250 150H430"/></svg><span class="flow-node flow-in">LEAD<br><small>NEW CONNECTION</small></span><span class="flow-node flow-data">CRM<br><small>YOUR DATA</small></span><span class="flow-core">AI<small>ORCHESTRATION</small></span><span class="flow-node flow-out">FOLLOW-UP<small>THE RIGHT MOMENT</small></span><span class="flow-node flow-report">REPORTING<small>THE FULL PICTURE</small></span><span class="flow-node flow-action">ACTION ↗</span></div><div class="engine-bottom"><span>VERBINDEN</span><i>→</i><span>ENTLASTEN</span><i>→</i><strong>WEITERDENKEN</strong></div></div><div class="engine-scene engine-search"><h4>BE SEEN.<br><em>BE THE ANSWER.</em></h4><div class="search-universe"><div class="search-sphere"><i></i><i></i><i></i><strong>YOUR<br>BRAND.</strong></div><div class="search-result result-classic"><span class="mono">SEARCH</span><i></i><i></i><small>RELEVANTE INHALTE</small></div><div class="search-result result-ai"><span class="mono">AI ANSWERS ✳</span><i></i><i></i><small>KLARE ANTWORTEN</small></div><span class="search-beam beam-one"></span><span class="search-beam beam-two"></span></div><div class="engine-bottom"><span>STRUKTUR</span><i>+</i><span>RELEVANZ</span><i>=</i><strong>SICHTBARKEIT</strong></div></div><span class="engine-caption mono">SERVICE-KONZEPT / KEINE KUNDENDATEN</span></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- TICKER -->
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker__track">
-      <span class="ticker__item">Performance Marketing</span>
-      <span class="ticker__item">Content Creation</span>
-      <span class="ticker__item ticker__item--bunny">🐰 No Money No Honey → Go to Bunny!</span>
-      <span class="ticker__item">Webentwicklung</span>
-      <span class="ticker__item">Automation & Agenten</span>
-      <span class="ticker__item">SEO & GEO</span>
-      <span class="ticker__item">Performance Marketing</span>
-      <span class="ticker__item">Content Creation</span>
-      <span class="ticker__item ticker__item--bunny">🐰 No Money No Honey → Go to Bunny!</span>
-      <span class="ticker__item">Webentwicklung</span>
-      <span class="ticker__item">Automation & Agenten</span>
-      <span class="ticker__item">SEO & GEO</span>
-    </div>
-  </div>
+    <section id="honey-effect" class="cinema" aria-labelledby="cinema-title"><div class="cinema-sticky"><div class="cinema-strips" aria-hidden="true"><div class="cinema-strip" style="--i:0"></div><div class="cinema-strip" style="--i:1"></div><div class="cinema-strip" style="--i:2"></div><div class="cinema-strip" style="--i:3"></div><div class="cinema-strip" style="--i:4"></div><div class="cinema-strip" style="--i:5"></div><div class="cinema-strip" style="--i:6"></div><div class="cinema-strip" style="--i:7"></div></div><div class="cinema-shade"></div><div class="cinema-top mono"><span>03 / THE HONEY EFFECT</span><span>KEEP SCROLLING TO BREAK THROUGH ↓</span></div><div class="cinema-copy"><span class="mono cinema-kicker">MITTELMASS HAT GENUG FANS.</span><h2 id="cinema-title">BREAK THE<br><span>ORDINARY.</span></h2><p>Deine Marke hat mehr verdient als einen Platz im Feed.<br>Gib ihr einen Platz im Kopf.</p></div><div class="cinema-bottom mono"><span>CREATIVE WITHOUT LIMITS.<br>STRATEGY WITH DIRECTION.</span><span class="cinema-percent">000%</span></div></div></section>
 
-  <!-- SECTION 2: STATS -->
-  <section class="section" id="stats">
-    <div class="container">
-      <div class="section-header section-header--center anim-init">
-        <p class="section-label">Ergebnisse</p>
-        <p class="text-primary" style="font-size:1.1rem; font-weight:500; max-width:600px; margin:0 auto;" data-i18n="stats.title">Zahlen, die für sich sprechen. Wir auch — aber die sagen mehr.</p>
-      </div>
-      <div class="stats-grid">
-        <div class="glass-card stat-card anim-init anim-delay-1">
-          <span class="stat-card__number" data-count="247" data-prefix="+" data-suffix="%" aria-label="+247 Prozent">+247%</span>
-          <span class="stat-card__label" data-i18n="stats.roasLabel">Durchschn. ROAS-Steigerung</span>
-        </div>
-        <div class="glass-card stat-card anim-init anim-delay-2">
-          <span class="stat-card__number" data-count="50" data-suffix="+" aria-label="50 Plus">50+</span>
-          <span class="stat-card__label" data-i18n="stats.clientsLabel">Begeisterte Kunden</span>
-        </div>
-        <div class="glass-card stat-card anim-init anim-delay-3">
-          <span class="stat-card__number" aria-label="3,2 Millionen Euro">3,2M€</span>
-          <span class="stat-card__label" data-i18n="stats.budgetLabel">Verwaltetes Werbebudget</span>
-        </div>
-        <div class="glass-card stat-card anim-init anim-delay-4">
-          <span class="stat-card__number" data-count="98" data-suffix="%" aria-label="98 Prozent">98%</span>
-          <span class="stat-card__label" data-i18n="stats.satisfactionLabel">Kundenzufriedenheit</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section class="difference section-pad" aria-labelledby="difference-title"><div class="section-meta"><span class="mono"><span class="orange-square"></span> THE WAY WE WORK</span><span class="mono muted">DIREKT. GEMEINSAM. NACH VORN.</span></div><div class="difference-heading"><h2 id="difference-title">KEIN AUTOPILOT.<br><span class="orange-text">ECHTER ANTRIEB.</span></h2><p>Du bekommst kein isoliertes Maßnahmenpaket. Sondern Menschen, die dein Business verstehen und mit dir weiterdenken.</p></div><div class="principles"><article class="reveal"><span class="principle-icon">↗</span><span class="mono">01 / FOKUS</span><h3>Dein Ziel.<br>Unser Maßstab.</h3><p>Wir definieren gemeinsam, was Erfolg für dich bedeutet. Und richten Strategie, Kreation und Optimierung daran aus.</p></article><article class="reveal"><span class="principle-icon icon-star">✳</span><span class="mono">02 / KLARHEIT</span><h3>Volle Sicht.<br>Klare Worte.</h3><p>Du weißt, was wir tun und warum. Mit transparentem Reporting und einem persönlichen Ansprechpartner.</p></article><article class="reveal"><span class="principle-icon">∞</span><span class="mono">03 / WEITERDENKEN</span><h3>Gute Ideen.<br>Besser vernetzt.</h3><p>Performance lernt von Content. Web lernt aus Daten. KI schafft Freiraum. So arbeitet dein Marketing zusammen.</p></article></div></section>
 
-  <!-- SECTION 3: PAIN POINTS -->
-  <section class="section" style="background: rgba(255,80,80,0.03);">
-    <div class="container">
-      <div class="section-header section-header--center anim-init">
-        <p class="section-label" style="color:#FF8080;">Pain Points</p>
-        <h2 class="section-title" data-i18n="pain.title">Erkennst du dich hier wieder?</h2>
-      </div>
-      <div class="grid-3">
-        <div class="glass-card pain-card anim-init anim-delay-1">
-          <span class="pain-card__icon" aria-hidden="true">💸</span>
-          <p class="pain-card__text" data-i18n="pain.p1">Du investierst in Ads, aber weißt nicht, was wirklich funktioniert.</p>
-        </div>
-        <div class="glass-card pain-card anim-init anim-delay-2">
-          <span class="pain-card__icon" aria-hidden="true">😶</span>
-          <p class="pain-card__text" data-i18n="pain.p2">Deine Website existiert — aber Google findet sie auf Seite 47.</p>
-        </div>
-        <div class="glass-card pain-card anim-init anim-delay-3">
-          <span class="pain-card__icon" aria-hidden="true">⏰</span>
-          <p class="pain-card__text" data-i18n="pain.p3">Du verbringst Stunden mit Aufgaben, die eine KI in Sekunden erledigt.</p>
-        </div>
-      </div>
-      <div class="pain-transition anim-init">
-        <p class="pain-transition__text" data-i18n="pain.transition">Genau dafür gibt es uns.</p>
-        <p class="bunny-gag" aria-hidden="true">No Money No Honey? <a href="angebot.html" class="bunny-gag__link">Go to Bunny! 🐰</a></p>
-        <span class="pain-transition__arrow" aria-hidden="true">↓</span>
-      </div>
-    </div>
-  </section>
+    <section class="process section-pad process-scroll" id="process" aria-labelledby="process-title"><div class="process-pin"><div class="section-meta"><span class="mono"><span class="orange-square"></span> 04 / YOUR NEXT CHAPTER</span><span class="mono muted">GROSSE AMBITIONEN. KLARER START.</span></div><div class="section-heading"><h2 id="process-title">VON DER IDEE<br><span class="outline-text">INS MACHEN.</span></h2><p>Kein Sprung ins Unbekannte.<br>Ein gemeinsamer Weg mit klarer Richtung.</p></div><div class="process-constellation"><div class="process-aura" aria-hidden="true"></div><svg class="process-connectors" viewBox="0 0 1200 420" preserveAspectRatio="none" aria-hidden="true"><path class="connector-track" d="M125 125C270 125 260 230 430 230S610 90 750 90 940 215 1070 215"/><path class="connector-energy" pathLength="1" d="M125 125C270 125 260 230 430 230S610 90 750 90 940 215 1070 215"/><circle class="process-spark" cx="0" cy="0" r="3.5"/></svg><article class="process-node" style="--n:0"><div class="process-bubble"><span class="bubble-orbit"></span><span class="bubble-number mono">01</span><span class="bubble-glyph">✳</span><i></i></div><div class="process-node-text"><h3>Wir hören zu.</h3><p>Dein Business, deine Ziele, deine Baustellen. Im kostenlosen Erstgespräch lernen wir uns kennen.</p><span class="mono">THE FIRST HELLO</span></div></article><article class="process-node" style="--n:1"><div class="process-bubble"><span class="bubble-orbit"></span><span class="bubble-number mono">02</span><span class="bubble-glyph">⌁</span><i></i></div><div class="process-node-text"><h3>Wir denken vor.</h3><p>Aus deinen Zielen wird eine konkrete Strategie. Mit passenden Maßnahmen und einem transparenten Angebot.</p><span class="mono">THE GAME PLAN</span></div></article><article class="process-node" style="--n:2"><div class="process-bubble"><span class="bubble-orbit"></span><span class="bubble-number mono">03</span><span class="bubble-glyph">↗</span><i></i></div><div class="process-node-text"><h3>Wir machen.</h3><p>Strategie wird Realität. Mit kurzen Wegen, klarem Fokus und dir als Teil des Teams.</p><span class="mono">LET’S BUILD</span></div></article><article class="process-node" style="--n:3"><div class="process-bubble"><span class="bubble-orbit"></span><span class="bubble-number mono">04</span><span class="bubble-glyph">∞</span><i></i></div><div class="process-node-text"><h3>Wir gehen weiter.</h3><p>Messen, lernen, optimieren. Wir entwickeln weiter, was wirkt — und hinterfragen, was es noch nicht tut.</p><span class="mono">ALWAYS EVOLVING</span></div></article></div><div class="process-active-copy" aria-hidden="true"><span>01 / THE FIRST HELLO</span><p>Dein Business, deine Ziele, deine Baustellen. Wir lernen uns kennen.</p></div><div class="process-control-bar"><span class="mono process-phase">01 / THE FIRST HELLO</span><div class="process-progress-track" aria-hidden="true"><span></span></div><span class="mono process-scroll-label">SCROLL TO CONNECT THE DOTS</span><span class="mono process-progress-number" aria-hidden="true">000</span></div></div></section>
 
-  <!-- SECTION 4: SERVICES -->
-  <section class="section" id="services">
-    <div class="container">
-      <div class="section-header section-header--center anim-init">
-        <p class="section-label">Services</p>
-        <h2 class="section-title" data-i18n="services.title">Was wir für dich tun</h2>
-      </div>
-      <div class="grid-3" style="gap:24px;">
-        <article class="glass-card service-card anim-init anim-delay-1">
-          <img src="assets/rabbits/rabbit-performance.png" alt="Performance Marketing Maskottchen" class="service-card__rabbit" width="100" height="100" loading="lazy"/>
-          <h3 class="service-card__title" data-i18n="service.performance.title">Performance Marketing</h3>
-          <p class="service-card__desc" data-i18n="service.performance.desc">Mehr Umsatz aus jedem Euro Werbebudget — datengetrieben, optimiert, messbar.</p>
-          <a href="services/performance-marketing.html" class="service-card__link" data-i18n="service.learnMore">Mehr erfahren →</a>
-        </article>
-        <article class="glass-card service-card anim-init anim-delay-2">
-          <img src="assets/rabbits/rabbit-content.png" alt="Content Creation Maskottchen" class="service-card__rabbit" width="100" height="100" loading="lazy"/>
-          <h3 class="service-card__title" data-i18n="service.content.title">Content Creation</h3>
-          <p class="service-card__desc" data-i18n="service.content.desc">Content, der scrollt, klickt und kauft. Kein Stockphoto-Nonsense.</p>
-          <a href="services/content-creation.html" class="service-card__link" data-i18n="service.learnMore">Mehr erfahren →</a>
-        </article>
-        <article class="glass-card service-card anim-init anim-delay-3">
-          <img src="assets/rabbits/rabbit-web.png" alt="Webentwicklung Maskottchen" class="service-card__rabbit" width="100" height="100" loading="lazy"/>
-          <h3 class="service-card__title" data-i18n="service.web.title">Webentwicklung</h3>
-          <p class="service-card__desc" data-i18n="service.web.desc">Schnelle, schöne Websites, die konvertieren. Nicht nur gut aussehen.</p>
-          <a href="services/webentwicklung.html" class="service-card__link" data-i18n="service.learnMore">Mehr erfahren →</a>
-        </article>
-        <article class="glass-card service-card anim-init anim-delay-4">
-          <img src="assets/rabbits/rabbit-automation.png" alt="Automation Maskottchen" class="service-card__rabbit" width="100" height="100" loading="lazy"/>
-          <h3 class="service-card__title" data-i18n="service.automation.title">Automation & Agenten</h3>
-          <p class="service-card__desc" data-i18n="service.automation.desc">Lass KI die Arbeit machen, die dich aufhält. Skaliere ohne Mehraufwand.</p>
-          <a href="services/automation-agenten.html" class="service-card__link" data-i18n="service.learnMore">Mehr erfahren →</a>
-        </article>
-        <article class="glass-card service-card anim-init anim-delay-5">
-          <img src="assets/rabbits/rabbit-seo.png" alt="SEO & GEO Maskottchen" class="service-card__rabbit" width="100" height="100" loading="lazy"/>
-          <h3 class="service-card__title" data-i18n="service.seo.title">SEO & GEO</h3>
-          <p class="service-card__desc" data-i18n="service.seo.desc">Werde gefunden — von Menschen und von KI-Suchsystemen.</p>
-          <a href="services/seo-geo.html" class="service-card__link" data-i18n="service.learnMore">Mehr erfahren →</a>
-        </article>
-        <article class="glass-card service-card anim-init anim-delay-6" style="background: rgba(200,245,96,0.05); border-color: rgba(200,245,96,0.2); display:flex; align-items:center; justify-content:center; text-align:center; gap:16px; flex-direction:column;">
-          <div style="font-size:3rem">🍯</div>
-          <h3 class="service-card__title">Noch nicht das Richtige?</h3>
-          <p class="service-card__desc">Wir finden gemeinsam, was du brauchst. Kostenlos & unverbindlich.</p>
-          <a href="angebot.html" class="btn btn--cta" data-i18n="hero.cta1">Angebot einholen</a>
-        </article>
-      </div>
-    </div>
-  </section>
+    <section class="contact-section section-pad honey-cta" id="contact" aria-labelledby="contact-title"><div class="section-meta"><span class="mono"><span class="black-square"></span> 05 / MAKE YOUR MOVE</span><span class="mono">BERLIN MINDSET. NO LIMITS.</span></div><div class="cta-orbits" aria-hidden="true"><i></i><i></i><i></i><span>✳</span></div><div class="contact-headline"><h2 id="contact-title">LET’S MAKE<br>SOME <span>HONEY.</span></h2><button class="contact-orb contact-trigger" aria-label="Kostenloses Erstgespräch anfragen"><span>DEIN NÄCHSTER<br>GROSSER SCHRITT</span><span class="orb-arrow">↗</span><span class="mono">START HERE</span><svg class="orb-ring" viewBox="0 0 220 220" aria-hidden="true"><circle cx="110" cy="110" r="103"/></svg></button></div><div class="contact-bottom"><p>Eine gute Zusammenarbeit beginnt mit einem guten Gespräch.<br>Erzähl uns, was du vorhast. Wir denken schon mal weiter.</p><button class="contact-text contact-trigger">Kostenlos & unverbindlich kennenlernen</button></div></section>
+  </main>
 
-  <!-- SECTION 5: WHY US -->
-  <section style="position:relative;overflow:hidden;background-image:url('assets/why-visual.png');background-size:cover;background-position:center right;min-height:540px;display:flex;align-items:center;">
-    <!-- Gradient overlay: dark left → transparent right -->
-    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,6,18,0.92) 0%,rgba(8,6,18,0.80) 45%,rgba(8,6,18,0.15) 70%,transparent 100%);z-index:0;"></div>
-    <div class="container" style="position:relative;z-index:1;padding-block:80px;">
-      <div class="why-text anim-init anim-init--left" style="max-width:580px;">
-        <p class="why-text__label">Warum wir?</p>
-        <h2 class="why-text__title" data-i18n="why.title">Warum NoMoneyNoHoney.io?</h2>
-        <p class="why-text__body" data-i18n="why.text">Wir sind keine Agentur, die dir PowerPoint-Präsentationen verkauft. Wir sind dein digitales Wachstumsteam — mit Ergebnissen, nicht Versprechen.</p>
-        <div class="why-features">
-          <div class="why-feature"><div class="why-feature__check" aria-hidden="true">✓</div><span class="why-feature__text" data-i18n="why.f1">Kein Bullshit, nur Ergebnisse</span></div>
-          <div class="why-feature"><div class="why-feature__check" aria-hidden="true">✓</div><span class="why-feature__text" data-i18n="why.f2">Volle Transparenz & Reporting</span></div>
-          <div class="why-feature"><div class="why-feature__check" aria-hidden="true">✓</div><span class="why-feature__text" data-i18n="why.f3">KI-gestützte Prozesse</span></div>
-          <div class="why-feature"><div class="why-feature__check" aria-hidden="true">✓</div><span class="why-feature__text" data-i18n="why.f4">Persönlicher Ansprechpartner</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
+<footer class="site-footer footer-v2 footer-refined"><div class="footer-signal"><span class="mono"><i></i> YOUR NEXT CHAPTER STARTS HERE</span><span class="mono">52°31′ N / 13°24′ E</span></div><a class="footer-wordmark" href="/angebot.html" aria-label="Go to Bunny — Projekt anfragen"><span>GO TO</span> BUNNY<span class="footer-wordmark-arrow">↗</span><div class="footer-scan" aria-hidden="true"></div></a><div class="footer-grid"><div class="footer-studio"><a class="brand brand-v2 brand-line" href="/" aria-label="No Money No Honey — Startseite"><svg class="brand-mark brand-mark-v2 brand-mark-line" viewBox="0 0 64 72" aria-hidden="true"><path class="rabbit-line" d="M29 64C20 61 12 54 13 45C14 39 20 35 25 35C22 25 14 7 18 4C23 1 32 20 34 31C38 19 47 2 51 5C56 9 45 31 42 35C51 37 57 44 55 52C53 60 45 65 36 66" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-words">NO MONEY<br>NO HONEY</span></a><p>Gute Ideen brauchen Antrieb.<br>Und manchmal einen Bunny.</p><span class="mono">STRATEGY / CREATIVE / TECHNOLOGY</span></div><div class="footer-column"><h2 class="mono">THE EXPERTISE</h2><a href="/services/performance-marketing.html">Performance Marketing</a><a href="/services/content-creation.html">Content Creation</a><a href="/services/webentwicklung.html">Webentwicklung</a><a href="/services/automation-agenten.html">Automation & KI</a><a href="/services/seo-geo.html">SEO & GEO</a></div><div class="footer-column"><h2 class="mono">THE STUDIO</h2><a href="/#approach">Unser Ansatz</a><a href="/blog.html">Insights</a><a href="/karriere.html">Karriere</a><a href="/angebot.html">Projekt starten</a><a href="/kontakt.html">Kontakt</a></div><div class="footer-reach"><span class="mono">GOOD THINGS START WITH HELLO.</span><a class="footer-mail" href="mailto:kontakt@nomoneynohoney.io">kontakt@nomoneynohoney.io</a><a class="footer-phone" href="tel:+491741717778">+49 174 1717778</a><p class="footer-location">Berlin, Deutschland</p></div></div><div class="footer-bottom mono"><span>© <span id="year">2026</span> NO MONEY NO HONEY.</span><span>BUILT WITH AMBITION. BERLIN.</span><div><a href="/impressum.html">IMPRESSUM</a><a href="/datenschutz.html">DATENSCHUTZ</a><button class="motion-toggle" aria-pressed="false">MOTION: ON</button><a href="#" aria-label="Zurück nach oben">NACH OBEN</a></div></div></footer>
 
-  <!-- SECTION 6: CASE STUDIES -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header section-header--center anim-init">
-        <p class="section-label">Case Studies</p>
-        <h2 class="section-title" data-i18n="cases.title">Was aus Kunden wird, die uns vertrauen</h2>
-      </div>
-      <div class="grid-3">
-        <article class="glass-card case-card anim-init anim-delay-1">
-          <span class="case-card__badge" data-i18n="case1.industry">E-Commerce</span>
-          <p class="case-card__result" data-i18n="case1.result">+312% ROAS in 60 Tagen</p>
-          <div class="case-card__row">
-            <span class="case-card__label">Challenge</span>
-            <span class="case-card__value" data-i18n="case1.challenge">Niedriger ROAS trotz hohem Werbebudget</span>
-          </div>
-          <div class="case-card__row">
-            <span class="case-card__label">Solution</span>
-            <span class="case-card__value" data-i18n="case1.solution">Vollständige Kampagnen-Restrukturierung & Creative Testing</span>
-          </div>
-        </article>
-        <article class="glass-card case-card anim-init anim-delay-2">
-          <span class="case-card__badge" data-i18n="case2.industry">SaaS Startup</span>
-          <p class="case-card__result" data-i18n="case2.result">Von 0 auf Seite 1 in 4 Monaten</p>
-          <div class="case-card__row">
-            <span class="case-card__label">Challenge</span>
-            <span class="case-card__value" data-i18n="case2.challenge">Keine organische Sichtbarkeit bei Launch</span>
-          </div>
-          <div class="case-card__row">
-            <span class="case-card__label">Solution</span>
-            <span class="case-card__value" data-i18n="case2.solution">SEO-Strategie & Content Cluster Aufbau</span>
-          </div>
-        </article>
-        <article class="glass-card case-card anim-init anim-delay-3">
-          <span class="case-card__badge" data-i18n="case3.industry">Local Business</span>
-          <p class="case-card__result" data-i18n="case3.result">30h/Woche gespart</p>
-          <div class="case-card__row">
-            <span class="case-card__label">Challenge</span>
-            <span class="case-card__value" data-i18n="case3.challenge">Zeitverschwendung durch manuelle Prozesse</span>
-          </div>
-          <div class="case-card__row">
-            <span class="case-card__label">Solution</span>
-            <span class="case-card__value" data-i18n="case3.solution">KI-Workflow Automatisierung & CRM Integration</span>
-          </div>
-        </article>
-      </div>
-      <div style="text-align:center; margin-top:40px;" class="anim-init">
-        <a href="angebot.html" class="btn btn--ghost btn--lg" data-i18n="case.viewAll">Alle Cases ansehen</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 7: TESTIMONIALS -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header section-header--center anim-init">
-        <p class="section-label">Testimonials</p>
-        <h2 class="section-title" data-i18n="testimonials.title">Was unsere Kunden sagen</h2>
-      </div>
-      <div class="testimonials-carousel" role="list">
-        <article class="glass-card testimonial-card" role="listitem">
-          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
-          <blockquote class="testimonial-card__quote" data-i18n="t1.quote">"Endlich eine Agentur, die liefert was sie verspricht. Unser ROAS hat sich verdreifacht — in weniger als zwei Monaten."</blockquote>
-          <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar" aria-hidden="true">MM</div>
-            <div>
-              <p class="testimonial-card__name" data-i18n="t1.name">Max M.</p>
-              <p class="testimonial-card__role" data-i18n="t1.role">CEO, Online-Shop</p>
-            </div>
-          </div>
-        </article>
-        <article class="glass-card testimonial-card" role="listitem">
-          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
-          <blockquote class="testimonial-card__quote" data-i18n="t2.quote">"Innerhalb von 3 Monaten haben wir unsere organischen Leads verdoppelt. Das Team ist schnell, direkt und weiß was es tut."</blockquote>
-          <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar" aria-hidden="true">SK</div>
-            <div>
-              <p class="testimonial-card__name" data-i18n="t2.name">Sarah K.</p>
-              <p class="testimonial-card__role" data-i18n="t2.role">Marketing Lead, SaaS</p>
-            </div>
-          </div>
-        </article>
-        <article class="glass-card testimonial-card" role="listitem">
-          <div class="testimonial-card__quote-icon" aria-hidden="true">"</div>
-          <blockquote class="testimonial-card__quote" data-i18n="t3.quote">"Die Automatisierungslösungen haben unser Team komplett entlastet. Wir sparen 30 Stunden pro Woche — echtes Gamechanging."</blockquote>
-          <div class="testimonial-card__author">
-            <div class="testimonial-card__avatar" aria-hidden="true">TB</div>
-            <div>
-              <p class="testimonial-card__name" data-i18n="t3.name">Thomas B.</p>
-              <p class="testimonial-card__role" data-i18n="t3.role">Gründer, Agentur</p>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="testimonials-nav" role="tablist" aria-label="Testimonial Navigation">
-        <button class="testimonials-nav__dot testimonials-nav__dot--active" aria-label="Testimonial 1" role="tab"></button>
-        <button class="testimonials-nav__dot" aria-label="Testimonial 2" role="tab"></button>
-        <button class="testimonials-nav__dot" aria-label="Testimonial 3" role="tab"></button>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 8: PROCESS -->
-  <section class="section" style="background: rgba(168,216,234,0.03);">
-    <div class="container">
-      <div class="section-header section-header--center anim-init">
-        <p class="section-label">So starten wir</p>
-        <h2 class="section-title" data-i18n="process.title">So einfach starten wir zusammen</h2>
-      </div>
-      <div class="process-steps">
-        <div class="process-step anim-init anim-delay-1">
-          <div class="process-step__number" aria-label="Schritt 1">1</div>
-          <div class="process-step__icon" aria-hidden="true">📞</div>
-          <h3 class="process-step__title" data-i18n="process.s1.title">Erstgespräch buchen</h3>
-          <p class="process-step__desc" data-i18n="process.s1.desc">Kostenlos & unverbindlich. Wir lernen uns und dein Business kennen.</p>
-        </div>
-        <div class="process-step anim-init anim-delay-2">
-          <div class="process-step__number" aria-label="Schritt 2">2</div>
-          <div class="process-step__icon" aria-hidden="true">📋</div>
-          <h3 class="process-step__title" data-i18n="process.s2.title">Strategie & Angebot</h3>
-          <p class="process-step__desc" data-i18n="process.s2.desc">Maßgeschneidert auf dein Business und deine Ziele — keine Templates.</p>
-        </div>
-        <div class="process-step anim-init anim-delay-3">
-          <div class="process-step__number" aria-label="Schritt 3">3</div>
-          <div class="process-step__icon" aria-hidden="true">🚀</div>
-          <h3 class="process-step__title" data-i18n="process.s3.title">Umsetzung startet</h3>
-          <p class="process-step__desc" data-i18n="process.s3.desc">Schnell, transparent und mit klaren KPIs von Tag 1.</p>
-        </div>
-        <div class="process-step anim-init anim-delay-4">
-          <div class="process-step__number" aria-label="Schritt 4">4</div>
-          <div class="process-step__icon" aria-hidden="true">📈</div>
-          <h3 class="process-step__title" data-i18n="process.s4.title">Messen & Skalieren</h3>
-          <p class="process-step__desc" data-i18n="process.s4.desc">Kontinuierliche Optimierung für nachhaltige, messbare Ergebnisse.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 9: FINAL CTA -->
-  <section class="section--lg">
-    <div class="container">
-      <div class="final-cta anim-init">
-        <h2 class="final-cta__title">
-          <span class="text-gradient" data-i18n="finalcta.title">Bereit, dass dein Marketing endlich Honey bringt?</span>
-        </h2>
-        <p class="final-cta__sub" data-i18n="finalcta.sub">Kein Commitment. Kein Risiko. Nur ein Gespräch, das alles ändern könnte.</p>
-        <p class="final-cta__bunny">No Money No Honey? — <strong>Go to Bunny! 🐰</strong></p>
-        <a href="angebot.html" class="btn btn--cta btn--lg btn--pulse" data-i18n="finalcta.cta">Kostenloses Erstgespräch buchen</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<!-- FOOTER -->
-<footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <a href="/" class="footer__logo">NoMoneyNoHoney.io</a>
-        <p class="footer__tagline" data-i18n="footer.tagline">Marketing, das wirklich funktioniert.</p>
-        <div class="footer__social">
-          <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
-          <a href="#" class="footer__social-link" aria-label="Instagram">ig</a>
-          <a href="#" class="footer__social-link" aria-label="Twitter/X">𝕏</a>
-        </div>
-      </div>
-      <div class="footer__col">
-        <h4 data-i18n="footer.services">Services</h4>
-        <ul>
-          <li><a href="services/performance-marketing.html" data-i18n="nav.service.performance">Performance Marketing</a></li>
-          <li><a href="services/content-creation.html" data-i18n="nav.service.content">Content Creation</a></li>
-          <li><a href="services/webentwicklung.html" data-i18n="nav.service.web">Webentwicklung</a></li>
-          <li><a href="services/automation-agenten.html" data-i18n="nav.service.automation">Automation & Agenten</a></li>
-          <li><a href="services/seo-geo.html" data-i18n="nav.service.seo">SEO & GEO</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 data-i18n="footer.company">Unternehmen</h4>
-        <ul>
-          <li><a href="karriere.html" data-i18n="footer.career">Karriere</a></li>
-          <li><a href="blog.html" data-i18n="footer.blog">Blog</a></li>
-          <li><a href="angebot.html" data-i18n="nav.quote">Angebot einholen</a></li>
-          <li><a href="kontakt.html" data-i18n="footer.contact">Kontakt</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 data-i18n="footer.legal">Rechtliches</h4>
-        <ul>
-          <li><a href="impressum.html" data-i18n="footer.imprint">Impressum</a></li>
-          <li><a href="datenschutz.html" data-i18n="footer.privacy">Datenschutz</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <p data-i18n="footer.copyright">© 2025 NoMoneyNoHoney.io. Alle Rechte vorbehalten.</p>
-      <p style="font-size:0.8rem; color:var(--color-text-muted);">Made with 🍯 in Germany</p>
-    </div>
-  </div>
-</footer>
-
-<!-- FLOATING BUNNY WIDGET -->
-<div class="bunny-float" id="bunnyFloat" role="complementary" aria-label="NoMoneyNoHoney Maskottchen">
-  <button class="bunny-float__btn" id="bunnyToggle" aria-expanded="false" aria-label="No Money No Honey - Go to Bunny">
-    <span class="bunny-float__emoji" aria-hidden="true">🐰</span>
-  </button>
-  <div class="bunny-float__popup" id="bunnyPopup" aria-hidden="true">
-    <p class="bunny-float__phrase">No Money No Honey?</p>
-    <p class="bunny-float__punchline">→ <strong>Go to Bunny!</strong></p>
-    <a href="tel:+491741717778" class="bunny-float__cta">📞 +49 174 1717778</a>
-    <a href="angebot.html" class="bunny-float__cta bunny-float__cta--secondary" style="margin-top:8px; background: transparent; border: 1px solid var(--color-accent-lime); color: var(--color-accent-lime);">Angebot einholen ✨</a>
-  </div>
-</div>
-
-<!-- EXIT INTENT TOAST -->
-<div class="exit-toast" id="exitToast" role="alert" aria-live="assertive" aria-hidden="true">
-  <button class="exit-toast__close" id="exitToastClose" aria-label="Schließen">✕</button>
-  <p class="exit-toast__text">Psst… No Money No Honey? 🐰</p>
-  <p class="exit-toast__sub"><strong>Go to Bunny</strong> — dein kostenloses Erstgespräch wartet.</p>
-  <a href="angebot.html" class="exit-toast__cta">Los geht's →</a>
-</div>
-
-<script src="js/i18n.js" defer></script>
-<script src="js/main.js" defer></script>
-<script src="js/animations.js" defer></script>
+  <dialog class="contact-dialog" aria-labelledby="dialog-title"><div class="dialog-content"><div class="dialog-top mono"><span><span class="orange-square"></span> THE FIRST HELLO</span><button class="close-dialog" aria-label="Dialog schließen">✕</button></div><h2 id="dialog-title">GROSSE IDEEN?<br><span class="orange-text">WIR HÖREN ZU.</span></h2><p>Erzähl uns kurz von deinem Vorhaben. Wir freuen uns darauf, dich und dein Business kennenzulernen.</p><form id="project-form"><div class="form-grid"><label>Dein Name<input name="name" autocomplete="name" required placeholder="Wie heißt du?"></label><label>Deine E-Mail<input type="email" name="email" autocomplete="email" required placeholder="du@unternehmen.de"></label></div><label>Worum geht’s?<select name="service"><option>Ich möchte gemeinsam herausfinden, was passt.</option><option>Performance Marketing</option><option>Content Creation</option><option>Webentwicklung</option><option>Automation & KI-Agenten</option><option>SEO & GEO</option></select></label><label>Deine Idee<textarea name="message" rows="3" required placeholder="Was möchtest du bewegen?"></textarea></label><p class="form-note">Der nächste Schritt öffnet dein E-Mail-Programm mit deiner vorbereiteten Anfrage. Deine Angaben werden hier nicht gespeichert.</p><button class="button" type="submit">ANFRAGE PER E-MAIL ÖFFNEN <span>↗</span></button><p class="email-fallback" hidden>Dein E-Mail-Entwurf ist vorbereitet. Falls sich kein Programm öffnet, schreib uns direkt an <a href="mailto:kontakt@nomoneynohoney.io">kontakt@nomoneynohoney.io</a> oder ruf uns an.</p></form><div class="dialog-direct"><span class="mono">LIEBER DIREKT?</span><a href="tel:+491741717778">+49 174 1717778 ↗</a></div></div></dialog>
 </body>
 </html>

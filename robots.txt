@@ -1,23 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /private/
 
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-Sitemap: https://www.nomoneynohoney.io/sitemap.xml
+Sitemap: https://nomoneynohoney.io/sitemap.xml

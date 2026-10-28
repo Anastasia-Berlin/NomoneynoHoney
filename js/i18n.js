@@ -30,6 +30,9 @@ const TRANSLATIONS = {
     'stats.satisfaction': '98%',
     'stats.satisfactionLabel': 'Kundenzufriedenheit',
 
+    'break.scroll': 'WEITER SCROLLEN ↓',
+    'break.kicker': 'MITTELMASS HAT GENUG FANS.',
+    'break.description': 'Deine Marke hat mehr verdient als einen Platz im Feed. Gib ihr einen Platz im Kopf.',
     'pain.hint': 'Wischen oder blättern ↗',
     'pain.title': 'Erkennst du dich hier wieder?',
     'pain.p1': 'Du investierst in Ads, aber weißt nicht, was wirklich funktioniert.',
@@ -316,6 +319,9 @@ const TRANSLATIONS = {
     'stats.satisfaction': '98%',
     'stats.satisfactionLabel': 'Client Satisfaction',
 
+    'break.scroll': 'KEEP SCROLLING ↓',
+    'break.kicker': 'AVERAGE HAS ENOUGH FANS.',
+    'break.description': 'Your brand deserves more than a place in the feed. Give it a place in their minds.',
     'pain.hint': 'Swipe or browse ↗',
     'pain.title': 'Sound Familiar?',
     'pain.p1': 'You\'re investing in ads, but don\'t know what\'s actually working.',

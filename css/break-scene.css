@@ -1,0 +1,31 @@
+/* A scroll-driven brand moment. The static view is the safe default. */
+.break-scene { position: relative; background: #090711; }
+.break-scene__stage { position: relative; height: min(90svh, 900px); min-height: 560px; overflow: hidden; isolation: isolate; background: #090711 url('../assets/bunny-breakthrough.jpg') center / cover no-repeat; }
+.break-scene.is-motion { height: 230vh; }
+.break-scene.is-motion .break-scene__stage { position: sticky; top: 0; height: 100svh; min-height: 0; background-image: none; }
+.break-scene__slices { position: absolute; inset: 0; display: none; z-index: -1; perspective: 1400px; }
+.break-scene.is-motion .break-scene__slices { display: flex; }
+.break-scene__slice { flex: 0 0 calc(12.5% + 1px); margin-right: -1px; height: 100%; background-image: url('../assets/bunny-breakthrough.jpg'); background-repeat: no-repeat; backface-visibility: hidden; }
+.break-scene__shade { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg,rgba(5,3,12,.55),rgba(5,3,12,.14)),linear-gradient(0deg,rgba(5,3,12,.75),transparent 50%,rgba(5,3,12,.5)); }
+.break-scene__top, .break-scene__bottom { position: absolute; left: clamp(20px, 5vw, 75px); right: clamp(20px, 5vw, 75px); display: flex; justify-content: space-between; gap: 15px; color: #f7d4cf; font-size: .65rem; line-height: 1.5; font-weight: 700; letter-spacing: .14em; }
+.break-scene__top { top: 100px; }
+.break-scene__bottom { bottom: 35px; align-items: flex-end; }
+.break-scene__percent { color: #ff8cae; font-size: clamp(2rem,5vw,4rem); letter-spacing: -.06em; line-height: .9; }
+.break-scene__copy { position: absolute; top: 50%; left: 20px; right: 20px; text-align: center; transform: translateY(-50%); }
+.break-scene__kicker { color: #ffd3a9; font-size: .7rem; font-weight: 700; letter-spacing: .18em; }
+.break-scene__copy h2 { margin: 24px 0 0; color: #fff; font-family: 'Space Grotesk',sans-serif; font-size: clamp(4rem, 12vw, 10rem); font-weight: 800; line-height: .86; letter-spacing: -.06em; }
+.break-scene__copy h2 span { color: transparent; -webkit-text-stroke: 1.5px #ff87aa; }
+.break-scene__copy p { color: #fff; font-size: clamp(.9rem,1.4vw,1.1rem); max-width: 520px; margin: 28px auto 0; line-height: 1.6; }
+@media(max-width: 768px) {
+ .break-scene.is-motion { height: 200vh; }
+ .break-scene__stage { min-height: 500px; }
+ .break-scene__top { top: 90px; font-size: .55rem; }
+ .break-scene__bottom { bottom: 25px; font-size: .55rem; }
+ .break-scene__copy h2 { font-size: clamp(3.5rem, 14vw, 6rem); letter-spacing: -.055em; }
+ .break-scene__copy p { max-width: 310px; }
+}
+@media(prefers-reduced-motion: reduce) {
+ .break-scene.is-motion { height: auto; }
+ .break-scene.is-motion .break-scene__stage { position: relative; height: 80svh; min-height: 500px; background-image: url('../assets/bunny-breakthrough.jpg'); }
+ .break-scene.is-motion .break-scene__slices { display: none; }
+}

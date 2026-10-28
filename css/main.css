@@ -609,9 +609,18 @@ p {
   z-index: 2;
 }
 
-/* Mobile: Video ausblenden, Bild als Fallback */
+/* Show the muted inline hero video on mobile, with the background image as fallback. */
 @media (max-width: 768px) {
-  .hero__video-bg { display: none; }
+  .hero__video-bg {
+    display: block;
+    object-position: 72% center;
+  }
+  .hero::before {
+    background: linear-gradient(180deg,
+      rgba(8, 6, 18, 0.55) 0%,
+      rgba(8, 6, 18, 0.76) 45%,
+      rgba(8, 6, 18, 0.88) 100%);
+  }
 }
 
 /* ─── TICKER ─── */

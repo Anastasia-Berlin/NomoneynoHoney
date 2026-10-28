@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" fill="none" role="img" aria-label="Content Creation Rabbit Mascot">
+  <defs>
+    <filter id="glow-cont">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <radialGradient id="body-grad-cont" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C8E8F0"/>
+      <stop offset="100%" stop-color="#A8D8EA"/>
+    </radialGradient>
+    <radialGradient id="glow-bg-cont" cx="50%" cy="100%" r="50%">
+      <stop offset="0%" stop-color="#A8D8EA" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#A8D8EA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Glow -->
+  <ellipse cx="100" cy="190" rx="70" ry="20" fill="url(#glow-bg-cont)"/>
+
+  <!-- Ears -->
+  <ellipse cx="70" cy="50" rx="15" ry="36" fill="url(#body-grad-cont)" filter="url(#glow-cont)"/>
+  <ellipse cx="130" cy="50" rx="15" ry="36" fill="url(#body-grad-cont)" filter="url(#glow-cont)"/>
+  <ellipse cx="70" cy="53" rx="7.5" ry="25" fill="#E8B4C0" opacity="0.7"/>
+  <ellipse cx="130" cy="53" rx="7.5" ry="25" fill="#E8B4C0" opacity="0.7"/>
+
+  <!-- Beret hat -->
+  <ellipse cx="100" cy="68" rx="40" ry="10" fill="#7B5EA7"/>
+  <circle cx="100" cy="60" r="26" fill="#7B5EA7"/>
+  <circle cx="115" cy="56" r="5" fill="#9B7EC7"/>
+
+  <!-- Body -->
+  <ellipse cx="100" cy="157" rx="50" ry="54" fill="url(#body-grad-cont)" filter="url(#glow-cont)"/>
+
+  <!-- Head -->
+  <circle cx="100" cy="100" r="44" fill="url(#body-grad-cont)" filter="url(#glow-cont)"/>
+
+  <!-- Eyes — happy/creative -->
+  <ellipse cx="84" cy="96" rx="10" ry="11" fill="white"/>
+  <ellipse cx="116" cy="96" rx="10" ry="11" fill="white"/>
+  <circle cx="86" cy="97" r="7" fill="#2D1B4E"/>
+  <circle cx="118" cy="97" r="7" fill="#2D1B4E"/>
+  <circle cx="88" cy="94" r="2.5" fill="white"/>
+  <circle cx="120" cy="94" r="2.5" fill="white"/>
+  <!-- Star sparkles near eyes -->
+  <text x="70" y="88" font-size="10" fill="#C8F560">✦</text>
+  <text x="127" y="88" font-size="10" fill="#C8F560">✦</text>
+
+  <!-- Nose -->
+  <ellipse cx="100" cy="111" rx="5" ry="3.5" fill="#E896A8"/>
+  <!-- Smile -->
+  <path d="M 90 117 Q 100 126 110 117" stroke="#C0607A" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Cheeks -->
+  <ellipse cx="78" cy="113" rx="10" ry="6" fill="#F2A0B0" opacity="0.4"/>
+  <ellipse cx="122" cy="113" rx="10" ry="6" fill="#F2A0B0" opacity="0.4"/>
+
+  <!-- Camera body (left arm) -->
+  <g transform="translate(38, 130)">
+    <rect x="0" y="0" width="32" height="24" rx="5" fill="#2D1B4E"/>
+    <rect x="4" y="-6" width="12" height="8" rx="3" fill="#2D1B4E"/>
+    <!-- Lens -->
+    <circle cx="16" cy="12" r="9" fill="#1a0f30"/>
+    <circle cx="16" cy="12" r="7" fill="#0a0a20"/>
+    <circle cx="13" cy="9" r="2.5" fill="white" opacity="0.4"/>
+    <!-- Flash -->
+    <rect x="24" y="4" width="6" height="4" rx="2" fill="#FFD700" opacity="0.8"/>
+  </g>
+
+  <!-- Left arm holding camera -->
+  <path d="M 66 140 Q 55 148 50 155" stroke="#A8D8EA" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <circle cx="50" cy="155" r="7" fill="#B8E0EC"/>
+
+  <!-- Paintbrush (right arm) -->
+  <g transform="translate(140, 115) rotate(40)">
+    <!-- Handle -->
+    <rect x="-3" y="0" width="6" height="50" rx="3" fill="#8B6914"/>
+    <!-- Ferrule -->
+    <rect x="-4" y="0" width="8" height="8" rx="2" fill="#C0C0C0"/>
+    <!-- Bristles -->
+    <path d="M -4 -24 Q 0 -32 4 -24 L 4 0 L -4 0 Z" fill="#C8F560"/>
+  </g>
+
+  <!-- Right arm holding brush -->
+  <path d="M 134 130 Q 148 120 152 110" stroke="#A8D8EA" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <circle cx="152" cy="110" r="7" fill="#B8E0EC"/>
+
+  <!-- Paint splats -->
+  <circle cx="165" cy="90" r="6" fill="#C8F560" opacity="0.7"/>
+  <circle cx="172" cy="100" r="4" fill="#7B5EA7" opacity="0.7"/>
+  <circle cx="160" cy="78" r="5" fill="#A8D8EA" opacity="0.7"/>
+
+  <!-- Tail -->
+  <circle cx="55" cy="170" r="11" fill="#C8E8F5"/>
+
+  <!-- Feet -->
+  <ellipse cx="80" cy="202" rx="18" ry="9" fill="#A8D8EA"/>
+  <ellipse cx="120" cy="202" rx="18" ry="9" fill="#A8D8EA"/>
+</svg>

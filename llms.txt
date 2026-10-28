@@ -1,0 +1,75 @@
+# NoMoneyNoHoney.io
+
+> NoMoneyNoHoney.io ist eine Full-Service Digital Marketing Agentur, die Performance Marketing, Content Creation, Webentwicklung, KI-Automation und SEO/GEO Optimierung für wachstumsorientierte Unternehmen anbietet.
+
+> NoMoneyNoHoney.io is a full-service digital marketing agency offering performance marketing, content creation, web development, AI automation, and SEO/GEO optimization for growth-oriented businesses.
+
+## About
+
+NoMoneyNoHoney.io is a results-driven digital marketing agency combining cutting-edge AI technology with proven marketing strategies. We work with e-commerce brands, SaaS companies, local businesses, and B2B companies across Germany and Europe. Our philosophy: no bullshit, only results.
+
+**Tagline:** Kein Budget? Kein Honey. (No Budget? No Honey.)
+**Founded:** 2023
+**Location:** Germany (Remote-first)
+**Languages:** German, English
+**Website:** https://www.nomoneynohoney.io
+
+## Services
+
+### 1. Performance Marketing
+Data-driven advertising on Google Ads, Meta Ads (Facebook & Instagram), TikTok, and Pinterest. Specializing in campaign restructuring, ROAS optimization, creative testing, and advanced tracking (GA4, server-side, cookieless attribution).
+- Average ROAS increase: +247%
+- Managed ad budget: over €3.2 million
+- Platforms: Google Ads, Meta Ads, TikTok Ads, Pinterest Ads
+
+### 2. Content Creation
+Strategic content production that converts. Services include social media content (Instagram, LinkedIn, TikTok), copywriting for websites and ads, video scripts and production, UGC, and full content strategy development.
+
+### 3. Web Development
+Conversion-optimized websites built with modern technology (Next.js, React). Focus on Core Web Vitals, UX/UI design, and measurable conversion rate improvements. Specializing in glassmorphism design aesthetics and high-performance frontend development.
+
+### 4. Marketing Automation & AI Agents
+Custom AI workflows, chatbots, and marketing automation systems using tools like Make, Zapier, and n8n. CRM automation, lead nurturing flows, and intelligent customer communication systems that operate 24/7. Average time saved: 30+ hours/week per client.
+
+### 5. SEO & GEO Optimization
+Traditional SEO (on-page, technical, link building) combined with Generative Engine Optimization (GEO) — making businesses discoverable in AI-powered search tools like ChatGPT, Perplexity, Claude, and Google's AI Overviews.
+
+## Key Statistics
+- +247% Average ROAS increase for performance marketing clients
+- 50+ satisfied clients
+- €3.2M+ managed advertising budget
+- 98% client satisfaction rate
+- 30+ hours/week saved per automation client
+
+## Unique Selling Points
+- No bullshit, only measurable results
+- Full transparency and real-time reporting
+- AI-powered processes and workflows
+- Personal account manager for every client
+- Free discovery call, no commitment required
+- Remote-first team across Germany
+
+## Client Types
+- E-commerce and online shops
+- SaaS and software companies
+- Local businesses and service providers
+- B2B companies
+- Startups and scale-ups
+
+## Contact
+- Website: https://www.nomoneynohoney.io
+- Email: hello@nomoneynohoney.io
+- Free discovery call: https://www.nomoneynohoney.io/angebot.html
+- Career opportunities: https://www.nomoneynohoney.io/karriere.html
+
+## Pages
+- Homepage: https://www.nomoneynohoney.io/
+- Performance Marketing: https://www.nomoneynohoney.io/services/performance-marketing.html
+- Content Creation: https://www.nomoneynohoney.io/services/content-creation.html
+- Web Development: https://www.nomoneynohoney.io/services/webentwicklung.html
+- Automation & Agents: https://www.nomoneynohoney.io/services/automation-agenten.html
+- SEO & GEO: https://www.nomoneynohoney.io/services/seo-geo.html
+- Career: https://www.nomoneynohoney.io/karriere.html
+- Get Quote: https://www.nomoneynohoney.io/angebot.html
+- Blog: https://www.nomoneynohoney.io/blog.html
+- Contact: https://www.nomoneynohoney.io/kontakt.html

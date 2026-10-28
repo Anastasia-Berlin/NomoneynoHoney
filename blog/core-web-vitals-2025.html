@@ -1,29 +1,221 @@
-<!doctype html>
-<html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#10100e">
-<title>Core Web Vitals: Schnell ist ein Gefühl. Und messbar. — No Money No Honey</title><meta name="description" content="Core Web Vitals mit LCP, INP und CLS verstehen. Felddaten, Labortests und ein sinnvoll priorisierter Plan für schnellere Websites.">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/fonts.css"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/experience.css"><link rel="stylesheet" href="/editorial.css"><link rel="stylesheet" href="/visual-refinement.css"><link rel="stylesheet" href="/process-scroll.css"><link rel="stylesheet" href="/shell-refinement.css">
-<script src="/app.js" defer></script><script src="/experience.js" defer></script><script src="/editorial.js" defer></script>
-<noscript><style>.intro-loader{display:none}.reveal{opacity:1;transform:none}.line>span{transform:none}.process-node{opacity:1}</style></noscript>
-<meta name="robots" content="index,follow">
-<link rel="canonical" href="https://nomoneynohoney.io/blog/core-web-vitals-2025.html">
-<meta property="og:url" content="https://nomoneynohoney.io/blog/core-web-vitals-2025.html">
-</head><body class="interior-page editorial-body ed-article-page">
-  <a class="skip-link" href="#main">Zum Inhalt</a>
-  
-  <div class="noise" aria-hidden="true"></div>
-  <div class="scroll-progress" aria-hidden="true"></div>
-  <div class="cursor-label" aria-hidden="true">EXPLORE ↗</div>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Core Web Vitals: Warum deine Website 2 Sekunden zu langsam ist | NoMoneyNoHoney.io</title>
+  <meta name="description" content="LCP, CLS, INP — was Core Web Vitals wirklich bedeuten und wie du deine Website-Performance in 30 Tagen messbar verbessern kannst. Mit Tools und konkreten Tipps."/>
+  <meta name="keywords" content="Core Web Vitals 2025, LCP verbessern, CLS beheben, INP optimieren, Website Performance, Lighthouse Score, Google PageSpeed, Web Performance Optimierung"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.nomoneynohoney.io/blog/core-web-vitals-2025.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="Core Web Vitals: Warum deine Website 2 Sekunden zu langsam ist"/>
+  <meta property="og:description" content="LCP, CLS, INP erklärt — und wie du deine Website in 30 Tagen auf 98 Lighthouse Score bringst."/>
+  <meta property="og:image" content="https://www.nomoneynohoney.io/assets/og-image.png"/>
+  <meta property="article:published_time" content="2025-02-18"/>
+  <meta property="article:author" content="NoMoneyNoHoney.io"/>
+  <meta property="article:section" content="Webentwicklung"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Core Web Vitals: Warum deine Website 2 Sekunden zu langsam ist","datePublished":"2025-02-18","author":{"@type":"Organization","name":"NoMoneyNoHoney.io","url":"https://www.nomoneynohoney.io"},"publisher":{"@type":"Organization","name":"NoMoneyNoHoney.io"},"description":"LCP, CLS, INP erklärt — mit konkreten Tipps zur Website-Performance-Optimierung.","mainEntityOfPage":"https://www.nomoneynohoney.io/blog/core-web-vitals-2025.html"}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/main.css"/><link rel="stylesheet" href="../css/components.css"/><link rel="stylesheet" href="../css/animations.css"/>
+</head>
+<body>
+<div class="bg-mesh" aria-hidden="true"><div class="bg-mesh__blob bg-mesh__blob--1"></div><div class="bg-mesh__blob bg-mesh__blob--2"></div><div class="bg-mesh__blob bg-mesh__blob--3"></div><div class="bg-mesh__blob bg-mesh__blob--4"></div></div>
 
-<header class="site-header"><a class="brand brand-v2 brand-line" href="/" aria-label="No Money No Honey — Startseite"><svg class="brand-mark brand-mark-v2 brand-mark-line" viewBox="0 0 64 72" aria-hidden="true"><path class="rabbit-line" d="M29 64C20 61 12 54 13 45C14 39 20 35 25 35C22 25 14 7 18 4C23 1 32 20 34 31C38 19 47 2 51 5C56 9 45 31 42 35C51 37 57 44 55 52C53 60 45 65 36 66" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-words">NO MONEY<br>NO HONEY</span></a><nav class="desktop-nav" aria-label="Hauptnavigation"><details class="expertise-menu"><summary>Expertise<i aria-hidden="true"></i></summary><div class="expertise-dropdown"><a href="/services/performance-marketing.html">Performance Marketing</a><a href="/services/content-creation.html">Content Creation</a><a href="/services/webentwicklung.html">Webentwicklung</a><a href="/services/automation-agenten.html">Automation & KI</a><a href="/services/seo-geo.html">SEO & GEO</a></div></details><a href="/#approach">Unser Ansatz</a><a href="/blog.html">Insights</a><a href="/karriere.html">Karriere</a></nav><div class="header-right"><a class="header-contact-link mono" href="/kontakt.html">BERLIN</a><button class="button button-small contact-trigger">LET’S TALK <span>↗</span></button><button class="menu-toggle" aria-label="Menü öffnen" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span></button></div></header><nav class="mobile-menu" id="mobile-menu" aria-label="Mobile Navigation" hidden><a class="mobile-home" href="/">Start</a><p class="mono mobile-category">EXPERTISE</p><a class="mobile-service" href="/services/performance-marketing.html">Performance Marketing</a><a class="mobile-service" href="/services/content-creation.html">Content Creation</a><a class="mobile-service" href="/services/webentwicklung.html">Webentwicklung</a><a class="mobile-service" href="/services/automation-agenten.html">Automation & KI</a><a class="mobile-service" href="/services/seo-geo.html">SEO & GEO</a><div class="mobile-other"><a href="/blog.html">Insights</a><a href="/karriere.html">Karriere</a><a href="/kontakt.html">Kontakt</a></div><button class="contact-trigger">Projekt starten</button></nav><main id="main" class="editorial-page ed-article-page"><section class="ed-hero ed-article-hero">
-      <div class="ed-meta mono"><span><i></i>THE HONEY JOURNAL / TECH / 04</span><span>NO MONEY NO HONEY / BERLIN</span></div><div class="ed-hero-layout"><div class="ed-hero-copy"><h1>WENIGER WARTEN.<br><em>MEHR ERLEBEN.</em></h1><p>Laden, reagieren, stabil bleiben. Wie du eine Website schneller machst, ohne nur einer Zahl hinterherzulaufen.</p></div><div class="ed-art ed-art-vitals" aria-hidden="true">
-      <div class="ed-art-grid"></div><div class="ed-orbit ed-orbit-a"></div><div class="ed-orbit ed-orbit-b"></div>
-      <div class="ed-orbit ed-orbit-c"></div><div class="ed-chrome"></div><span class="ed-art-word">ms</span>
-      <i class="ed-art-point ed-art-point-a"></i><i class="ed-art-point ed-art-point-b"></i>
-      <span class="ed-cross ed-cross-a">+</span><span class="ed-cross ed-cross-b">+</span>
-      <span class="ed-art-label mono">LOAD → INTERACT → STAY STABLE</span><span class="ed-art-code mono">NMNH / EXPERIMENTAL FORM</span>
-    </div></div>
-      <div class="ed-hero-bottom mono"><a href="#ed-content">IN DEN GEDANKEN EINTAUCHEN ↓</a><span>GOOD IDEAS DESERVE A NEXT CHAPTER.</span></div>
-    </section><div class="ed-article-byline mono"><a href="/blog.html">← ALLE INSIGHTS</a><span>NO MONEY NO HONEY / 6 MIN</span><span>ORIGINAL 18.02.2025<br>ÜBERARBEITET 25.10.2026</span></div>
-        <div class="ed-reading-layout" id="ed-content"><aside class="ed-toc"><span class="mono">IN DIESEM GEDANKEN</span><nav aria-label="Artikelinhalt"><a href="#gedanke-1"><span>01</span>Das Erlebnis beginnt vor dem ersten Klick.</a><a href="#gedanke-2"><span>02</span>Drei Messgrößen. Drei unterschiedliche Probleme.</a><a href="#gedanke-3"><span>03</span>Labor und echte Nutzung beantworten andere Fragen.</a><a href="#gedanke-4"><span>04</span>Die richtigen Stellschrauben zuerst.</a><a href="#gedanke-5"><span>05</span>Motion bekommt ein Budget.</a><a href="#gedanke-6"><span>06</span>Verbessern. Vergleichen. Beobachten.</a></nav><a class="ed-toc-contact mono" href="/angebot.html">VON DER IDEE ZUR PRAXIS ↗</a></aside><article class="ed-article-body"><section id="gedanke-1" class="ed-article-section ed-reveal"><span class="ed-chapter mono">01 / GEDANKE</span><h2>Das Erlebnis beginnt vor dem ersten Klick.</h2><p>Eine Seite kann optisch stark sein und sich trotzdem schwerfällig anfühlen. Das Hero-Bild erscheint spät, ein Menü reagiert verzögert oder ein nachladender Block verschiebt gerade den Button. Diese Momente unterbrechen die Nutzung. Sie lassen sich genauer untersuchen als mit dem pauschalen Urteil „zu langsam“.</p><p>Deshalb betrachten wir sowohl die erste Darstellung als auch den weiteren Weg: Scrollen, Navigation, Formulare und wiederholte Besuche. Eine immersive Website muss ihre Inszenierung so organisieren, dass Inhalte und Interaktionen zugänglich bleiben.</p></section><section id="gedanke-2" class="ed-article-section ed-reveal"><span class="ed-chapter mono">02 / GEDANKE</span><h2>Drei Messgrößen. Drei unterschiedliche Probleme.</h2><p><strong>LCP — Largest Contentful Paint</strong> beschreibt den Zeitpunkt, zu dem das größte sichtbare Inhaltsobjekt dargestellt wird. Der empfohlene gute Bereich liegt bei höchstens 2,5 Sekunden.</p><p><strong>INP — Interaction to Next Paint</strong> misst die Reaktionsfähigkeit auf Interaktionen. Als gut gelten höchstens 200 Millisekunden. <strong>CLS — Cumulative Layout Shift</strong> erfasst unerwartete Layoutverschiebungen; der gute Bereich reicht bis 0,1.</p><p>Die Bewertung der Core Web Vitals erfolgt am 75. Perzentil realer Seitenaufrufe, getrennt nach Gerätetyp. Ein guter Einzeltest am schnellen Entwicklerrechner ersetzt diese Perspektive nicht.</p><p class="ed-source">Definitionen und Schwellenwerte: <a href="https://web.dev/articles/vitals?hl=de" target="_blank" rel="noopener">web.dev: Web Vitals ↗</a>.</p></section><section id="gedanke-3" class="ed-article-section ed-reveal"><span class="ed-chapter mono">03 / GEDANKE</span><h2>Labor und echte Nutzung beantworten andere Fragen.</h2><p>Labortests schaffen reproduzierbare Bedingungen. Sie helfen, eine Ursache zu finden und Änderungen miteinander zu vergleichen. Felddaten zeigen dagegen, wie die Website unter tatsächlichen Geräten, Verbindungen und Nutzungsmustern erlebt wird.</p><p>In PageSpeed Insights sollten beide Bereiche bewusst gelesen werden. Fehlen Felddaten für eine kleine oder neue Website, ist das kein Beweis für gute oder schlechte Performance. Ein Lighthouse-Score ist ein diagnostisches Signal aus einem Testlauf. Eine dauerhaft schnelle Website entsteht durch den Blick auf konkrete Ursachen und reale Nutzung.</p><p class="ed-source">Werkzeuge einordnen: <a href="https://web.dev/articles/vitals-measurement-getting-started?hl=de" target="_blank" rel="noopener">web.dev: Web Vitals messen ↗</a>.</p></section><section id="gedanke-4" class="ed-article-section ed-reveal"><span class="ed-chapter mono">04 / GEDANKE</span><h2>Die richtigen Stellschrauben zuerst.</h2><p><strong>Bilder:</strong> Passende Abmessungen, komprimierte Formate und eine bewusste Ladepriorität verhindern, dass das wichtigste Bild hinter unwichtigen Ressourcen warten muss. Später sichtbare Bilder dürfen später laden.</p><p><strong>Layout:</strong> Definierte Bildgrößen und reservierter Platz für dynamische Inhalte sorgen dafür, dass das Dokument stabil bleibt. Schriften müssen so eingebunden sein, dass Text früh lesbar wird und der Wechsel möglichst wenig verschiebt.</p><p><strong>JavaScript:</strong> Lange Aufgaben können Eingaben blockieren. Wir prüfen, welcher Code wann gebraucht wird, welche Effekte außerhalb des sichtbaren Bereichs pausieren können und welche Fremdskripte überhaupt einen Zweck erfüllen.</p></section><section id="gedanke-5" class="ed-article-section ed-reveal"><span class="ed-chapter mono">05 / GEDANKE</span><h2>Motion bekommt ein Budget.</h2><p>Gute Bewegung hilft dem Verständnis und verstärkt die Marke. Sie ist keine Rechtfertigung für ruckelndes Scrollen. Für jede Animation überlegen wir: Welche Geschichte erzählt sie? Muss sie kontinuierlich laufen? Bleibt der Inhalt ohne sie verständlich? Wie verhält sie sich bei reduzierter Bewegung und auf einem kleinen Gerät?</p><p>Das Ziel ist ein zusammenhängendes Erlebnis. Dazu gehören native Scrollbewegung, direkt nutzbare Bedienelemente, sichtbarer Tastaturfokus und eine Alternative für Menschen, die weniger Bewegung bevorzugen. Technische Qualität und gestalterische Qualität werden gemeinsam geplant.</p></section><section id="gedanke-6" class="ed-article-section ed-reveal"><span class="ed-chapter mono">06 / GEDANKE</span><h2>Verbessern. Vergleichen. Beobachten.</h2><p>Ein pragmatischer Start: erst den aktuellen Zustand messen, dann den größten Engpass beheben. Nach jedem sinnvollen Änderungspaket wird unter vergleichbaren Bedingungen erneut geprüft. Anschließend zeigen reale Nutzungsdaten, ob die Verbesserung auch außerhalb des Tests ankommt.</p><p>Unsere <a href="/services/webentwicklung.html">Webentwicklung</a> verbindet diesen Blick mit UX, Design und Conversion-Optimierung. Schnell ist kein isoliertes Gütesiegel. Es ist die Voraussetzung dafür, dass Menschen die Qualität deiner Website überhaupt erleben können.</p></section><aside class="ed-takeaway ed-reveal"><span class="mono">DER GEDANKE ZUM MITNEHMEN</span><p>Optimiere den Moment, den Menschen erleben. Der Score hilft dir, ihn besser zu verstehen.</p><span aria-hidden="true">↗</span></aside><a class="ed-next-article" href="/blog/geo-vs-seo-ki-suche.html"><span class="mono">NÄCHSTER GEDANKE / SEO</span><strong>SEO & GEO: Sei eine verständliche Antwort.</strong><span aria-hidden="true">↗</span></a></article></div><section class="ed-endcap ed-reveal"><div class="ed-meta mono"><span><i></i>VOM LESEN INS MACHEN</span><span>LET’S MAKE SOME HONEY</span></div>
-      <div><h2>DEIN THEMA.<br><em>UNSER NÄCHSTER SCHRITT.</em></h2><a class="ed-round-link" href="/angebot.html" aria-label="PROJEKT BESPRECHEN"><span>↗</span><small class="mono">PROJEKT BESPRECHEN</small></a></div><p>Erzähl uns, wo du gerade stehst. Wir denken mit dir weiter.</p>
-    </section></main><footer class="site-footer footer-v2 footer-refined"><div class="footer-signal"><span class="mono"><i></i> YOUR NEXT CHAPTER STARTS HERE</span><span class="mono">52°31′ N / 13°24′ E</span></div><a class="footer-wordmark" href="/angebot.html" aria-label="Go to Bunny — Projekt anfragen"><span>GO TO</span> BUNNY<span class="footer-wordmark-arrow">↗</span><div class="footer-scan" aria-hidden="true"></div></a><div class="footer-grid"><div class="footer-studio"><a class="brand brand-v2 brand-line" href="/" aria-label="No Money No Honey — Startseite"><svg class="brand-mark brand-mark-v2 brand-mark-line" viewBox="0 0 64 72" aria-hidden="true"><path class="rabbit-line" d="M29 64C20 61 12 54 13 45C14 39 20 35 25 35C22 25 14 7 18 4C23 1 32 20 34 31C38 19 47 2 51 5C56 9 45 31 42 35C51 37 57 44 55 52C53 60 45 65 36 66" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-words">NO MONEY<br>NO HONEY</span></a><p>Gute Ideen brauchen Antrieb.<br>Und manchmal einen Bunny.</p><span class="mono">STRATEGY / CREATIVE / TECHNOLOGY</span></div><div class="footer-column"><h2 class="mono">THE EXPERTISE</h2><a href="/services/performance-marketing.html">Performance Marketing</a><a href="/services/content-creation.html">Content Creation</a><a href="/services/webentwicklung.html">Webentwicklung</a><a href="/services/automation-agenten.html">Automation & KI</a><a href="/services/seo-geo.html">SEO & GEO</a></div><div class="footer-column"><h2 class="mono">THE STUDIO</h2><a href="/#approach">Unser Ansatz</a><a href="/blog.html">Insights</a><a href="/karriere.html">Karriere</a><a href="/angebot.html">Projekt starten</a><a href="/kontakt.html">Kontakt</a></div><div class="footer-reach"><span class="mono">GOOD THINGS START WITH HELLO.</span><a class="footer-mail" href="mailto:kontakt@nomoneynohoney.io">kontakt@nomoneynohoney.io</a><a class="footer-phone" href="tel:+491741717778">+49 174 1717778</a><p class="footer-location">Berlin, Deutschland</p></div></div><div class="footer-bottom mono"><span>© <span id="year">2026</span> NO MONEY NO HONEY.</span><span>BUILT WITH AMBITION. BERLIN.</span><div><a href="/impressum.html">IMPRESSUM</a><a href="/datenschutz.html">DATENSCHUTZ</a><button class="motion-toggle" aria-pressed="false">MOTION: ON</button><a href="#" aria-label="Zurück nach oben">NACH OBEN</a></div></div></footer><dialog class="contact-dialog" aria-labelledby="dialog-title"><div class="dialog-content"><div class="dialog-top mono"><span><span class="orange-square"></span> THE FIRST HELLO</span><button class="close-dialog" aria-label="Dialog schließen">✕</button></div><h2 id="dialog-title">GROSSE IDEEN?<br><span class="orange-text">WIR HÖREN ZU.</span></h2><p>Erzähl uns kurz von deinem Vorhaben. Wir freuen uns darauf, dich und dein Business kennenzulernen.</p><form id="project-form"><div class="form-grid"><label>Dein Name<input name="name" autocomplete="name" required placeholder="Wie heißt du?"></label><label>Deine E-Mail<input type="email" name="email" autocomplete="email" required placeholder="du@unternehmen.de"></label></div><label>Worum geht’s?<select name="service"><option>Ich möchte gemeinsam herausfinden, was passt.</option><option>Performance Marketing</option><option>Content Creation</option><option>Webentwicklung</option><option>Automation & KI-Agenten</option><option>SEO & GEO</option></select></label><label>Deine Idee<textarea name="message" rows="3" required placeholder="Was möchtest du bewegen?"></textarea></label><p class="form-note">Der nächste Schritt öffnet dein E-Mail-Programm mit deiner vorbereiteten Anfrage. Deine Angaben werden hier nicht gespeichert.</p><button class="button" type="submit">ANFRAGE PER E-MAIL ÖFFNEN <span>↗</span></button><p class="email-fallback" hidden>Dein E-Mail-Entwurf ist vorbereitet. Falls sich kein Programm öffnet, schreib uns direkt an <a href="mailto:kontakt@nomoneynohoney.io">kontakt@nomoneynohoney.io</a> oder ruf uns an.</p></form><div class="dialog-direct"><span class="mono">LIEBER DIREKT?</span><a href="tel:+491741717778">+49 174 1717778 ↗</a></div></div></dialog></body></html>
+<header class="header" id="header">
+  <nav class="header__nav container">
+    <a href="../" class="header__logo">NoMoneyNoHoney.io</a>
+    <div class="header__menu"><ul class="header__nav-list">
+      <li><a href="../" class="header__nav-link">Home</a></li>
+      <li class="header__nav-item">
+        <button class="header__nav-link header__dropdown-toggle" aria-expanded="false"><span>Services</span><svg class="header__dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></button>
+        <div class="header__dropdown">
+          <a href="../services/performance-marketing.html" class="header__dropdown-item"><img src="../assets/rabbits/rabbit-performance.svg" alt="" class="header__dropdown-mini" width="32" height="32"/><span>Performance Marketing</span></a>
+          <a href="../services/content-creation.html" class="header__dropdown-item"><img src="../assets/rabbits/rabbit-content.svg" alt="" class="header__dropdown-mini" width="32" height="32"/><span>Content Creation</span></a>
+          <a href="../services/webentwicklung.html" class="header__dropdown-item"><img src="../assets/rabbits/rabbit-web.svg" alt="" class="header__dropdown-mini" width="32" height="32"/><span>Webentwicklung</span></a>
+          <a href="../services/automation-agenten.html" class="header__dropdown-item"><img src="../assets/rabbits/rabbit-automation.svg" alt="" class="header__dropdown-mini" width="32" height="32"/><span>Automation & Agenten</span></a>
+          <a href="../services/seo-geo.html" class="header__dropdown-item"><img src="../assets/rabbits/rabbit-seo.svg" alt="" class="header__dropdown-mini" width="32" height="32"/><span>SEO & GEO</span></a>
+        </div>
+      </li>
+      <li><a href="../karriere.html" class="header__nav-link">Karriere</a></li>
+      <li><a href="../blog.html" class="header__nav-link header__nav-link--active">Blog</a></li>
+    </ul></div>
+    <div class="header__actions">
+      <button class="lang-toggle" id="langToggle"><span id="langFlag">🇩🇪</span><span id="langText">DE</span></button>
+      <a href="../angebot.html" class="btn btn--cta">Angebot einholen</a>
+    </div>
+    <button class="header__hamburger" id="hamburgerBtn" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+<div class="header__mobile-overlay" id="mobileOverlay">
+  <button class="lang-toggle" id="mobileLangToggle"><span id="mobileLangFlag">🇩🇪</span><span>DE / EN</span></button>
+  <nav class="header__mobile-nav">
+    <a href="../" class="header__mobile-link">Home</a>
+    <a href="../services/performance-marketing.html" class="header__mobile-link">Performance Marketing</a>
+    <a href="../services/content-creation.html" class="header__mobile-link">Content Creation</a>
+    <a href="../services/webentwicklung.html" class="header__mobile-link">Webentwicklung</a>
+    <a href="../services/automation-agenten.html" class="header__mobile-link">Automation & Agenten</a>
+    <a href="../services/seo-geo.html" class="header__mobile-link">SEO & GEO</a>
+    <a href="../karriere.html" class="header__mobile-link">Karriere</a>
+    <a href="../blog.html" class="header__mobile-link">Blog</a>
+    <a href="../angebot.html" class="btn btn--cta btn--lg" style="margin-top:16px">Angebot einholen</a>
+  </nav>
+</div>
+
+<main>
+  <div class="article-hero">
+    <div class="container">
+      <nav class="article-breadcrumb" aria-label="Breadcrumb">
+        <a href="../">Home</a><span class="article-breadcrumb__sep">›</span>
+        <a href="../blog.html">Blog</a><span class="article-breadcrumb__sep">›</span>
+        <span>Core Web Vitals 2025</span>
+      </nav>
+
+      <span class="blog-card__category blog-card__category--tech">Tech</span>
+      <h1 class="article-title" style="margin-top:16px;">Core Web Vitals: Warum deine Website 2 Sekunden zu langsam ist</h1>
+
+      <div class="article-meta">
+        <span class="article-meta__item">📅 18. Februar 2025</span>
+        <span class="article-meta__item">⏱ 7 min Lesezeit</span>
+        <span class="article-meta__item">✍️ NoMoneyNoHoney.io</span>
+      </div>
+
+      <p class="article-intro">
+        Jede Sekunde, die deine Website länger lädt, kostet dich Besucher, Rankings und Umsatz.
+        Das ist keine Meinung — das sind Googles eigene Studiendaten. Und trotzdem haben die meisten
+        Websites Core Web Vitals, die im roten Bereich hängen. Wir erklären, was LCP, CLS und INP
+        wirklich bedeuten, wie du sie misst und — vor allem — wie du sie in 30 Tagen gezielt verbesserst.
+      </p>
+
+      <figure class="article-hero__image">
+        <div class="article-hero__image-inner" role="img" aria-label="Core Web Vitals Dashboard mit LCP, CLS und INP Werten — grün für gut, gelb für verbesserungswürdig, rot für schlecht">
+          <span style="font-size:5rem;position:relative;z-index:1;">⚡</span>
+          <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(200,245,96,0.2) 0%,transparent 60%),radial-gradient(ellipse at 70% 50%,rgba(168,216,234,0.15) 0%,transparent 60%);"></div>
+          <div style="position:absolute;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:16px;z-index:1;flex-wrap:wrap;justify-content:center;">
+            <span class="badge badge--blue">LCP</span>
+            <span class="badge badge--blue">CLS</span>
+            <span class="badge badge--blue">INP</span>
+            <span class="badge badge--lime">Lighthouse Score</span>
+          </div>
+        </div>
+        <figcaption class="article-inline-image__caption">Core Web Vitals messen die echte Nutzererfahrung — Google nutzt sie als Ranking-Faktor</figcaption>
+      </figure>
+
+      <div class="article-keyword-box">
+        <span class="badge badge--blue">Core Web Vitals</span>
+        <span class="badge badge--blue">LCP optimieren</span>
+        <span class="badge badge--blue">CLS beheben</span>
+        <span class="badge badge--blue">INP verbessern</span>
+        <span class="badge badge--blue">Lighthouse</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="article-layout">
+        <aside class="article-toc" aria-label="Inhaltsverzeichnis">
+          <p class="article-toc__title">Inhaltsverzeichnis</p>
+          <ol class="article-toc__list">
+            <li><a href="#was-sind-cwv">Was sind Core Web Vitals?</a></li>
+            <li><a href="#lcp">LCP: Warum deine Seite zu langsam lädt</a></li>
+            <li><a href="#cls">CLS: Das unsichtbare Layout-Problem</a></li>
+            <li><a href="#inp">INP: Die neue Interaktivitäts-Metrik</a></li>
+            <li><a href="#tools">Tools zum Messen</a></li>
+            <li><a href="#30-tage">In 30 Tagen besser werden</a></li>
+            <li><a href="#fazit">Fazit</a></li>
+          </ol>
+        </aside>
+
+        <article class="article-body">
+
+          <h2 id="was-sind-cwv">Was sind Core Web Vitals — und warum sollte dich das interessieren?</h2>
+          <p>Core Web Vitals sind Googles standardisierte Metriken für die Nutzererfahrung einer Website. Sie messen nicht, wie schön deine Seite aussieht, sondern wie sie sich <em>anfühlt</em>: Lädt sie schnell? Springt das Layout herum? Reagiert sie sofort auf Klicks?</p>
+          <p>Seit dem Page Experience Update sind Core Web Vitals ein direkter Google-Ranking-Faktor. Das bedeutet: Eine schlechte Performance kostet dich nicht nur Besucher, die abspringen — sie kostet dich auch Rankings. <a href="../services/seo-geo.html">Gute SEO</a> beginnt deshalb heute immer mit einer sauberen technischen Basis.</p>
+
+          <div class="article-callout">
+            <p class="article-callout__label">📊 Die Zahlen sprechen eine klare Sprache</p>
+            <p>Google-Studien zeigen: Jede <strong>100ms LCP-Verbesserung</strong> erhöht die Conversion Rate im Schnitt um 8%. Bei E-Commerce-Websites mit 1 Mio. € Jahresumsatz = 80.000 € Mehrumsatz durch technische Optimierung allein.</p>
+          </div>
+
+          <h2 id="lcp">LCP — Largest Contentful Paint: Warum deine Seite zu langsam lädt</h2>
+          <p>LCP misst, wie lange es dauert, bis das <strong>größte sichtbare Element</strong> im Viewport geladen ist — typischerweise ein Hero-Bild, ein H1 oder ein Video. Google-Benchmark: <strong>unter 2,5 Sekunden</strong>. Alles über 4 Sekunden gilt als "schlecht".</p>
+          <p>Die häufigsten LCP-Killer: Nicht-optimierte Bilder (WebP statt JPEG), fehlende Preload-Hints für kritische Ressourcen, langsame Server-Antwortzeiten (TTFB über 600ms), blockierendes JavaScript und CSS.</p>
+
+          <figure class="article-inline-image">
+            <div class="article-inline-image__visual" role="img" aria-label="LCP Benchmark-Vergleich: unter 2,5 Sekunden ist gut (grün), 2,5 bis 4 Sekunden muss verbessert werden (gelb), über 4 Sekunden ist schlecht (rot)">
+              <div style="display:flex;gap:16px;z-index:1;position:relative;">
+                <div class="glass-card" style="padding:20px;text-align:center;border-color:rgba(100,220,100,0.4);min-width:120px;">
+                  <div style="font-size:1.5rem;margin-bottom:6px;">✅</div>
+                  <div style="font-size:0.9rem;font-weight:700;color:#6ddc6d;">&lt; 2,5s</div>
+                  <div style="font-size:0.72rem;color:var(--color-text-muted);margin-top:4px;">Gut</div>
+                </div>
+                <div class="glass-card" style="padding:20px;text-align:center;border-color:rgba(255,165,0,0.4);min-width:120px;">
+                  <div style="font-size:1.5rem;margin-bottom:6px;">⚠️</div>
+                  <div style="font-size:0.9rem;font-weight:700;color:#ffa500;">2,5–4s</div>
+                  <div style="font-size:0.72rem;color:var(--color-text-muted);margin-top:4px;">Verbesserungswürdig</div>
+                </div>
+                <div class="glass-card" style="padding:20px;text-align:center;border-color:rgba(255,80,80,0.4);min-width:120px;">
+                  <div style="font-size:1.5rem;margin-bottom:6px;">❌</div>
+                  <div style="font-size:0.9rem;font-weight:700;color:#ff5050;">&gt; 4s</div>
+                  <div style="font-size:0.72rem;color:var(--color-text-muted);margin-top:4px;">Schlecht</div>
+                </div>
+              </div>
+            </div>
+            <figcaption class="article-inline-image__caption">LCP-Benchmarks nach Google — so schnell muss das größte sichtbare Element laden</figcaption>
+          </figure>
+
+          <h2 id="cls">CLS — Cumulative Layout Shift: Das unsichtbare Layout-Problem</h2>
+          <p>CLS misst, wie stark sich deine Seite während des Ladens visuell verschiebt. Du kennst das: Du willst auf einen Button klicken, das Layout springt — und du klickst auf das Falsche. Frustrierend für Nutzer, teuer für Conversions. Google-Benchmark: <strong>unter 0,1</strong>.</p>
+          <p>Typische CLS-Ursachen: Bilder ohne definierte Dimensionen (width/height), nachträglich geladene Ads oder Embeds, dynamisch eingefügte Banner, Webfonts, die beim Laden das Layout verschieben. Die Lösung ist fast immer dasselbe: <strong>Platzhalterdimensionen für alle Elemente definieren</strong>, bevor sie geladen sind.</p>
+
+          <h2 id="inp">INP — Interaction to Next Paint: Die neue Interaktivitäts-Metrik</h2>
+          <p>INP hat seit März 2024 FID (First Input Delay) abgelöst und misst die <strong>gesamte Reaktionszeit</strong> einer Seite auf Nutzerinteraktionen — nicht nur den ersten Klick. Benchmark: <strong>unter 200ms</strong>. Schlecht: über 500ms.</p>
+          <p>INP-Probleme entstehen meist durch schweres JavaScript, das den Main Thread blockiert. Long Tasks (über 50ms) sind der häufigste Schuldige. Lösung: JavaScript-Execution in kleinere Chunks aufteilen, Code-Splitting nutzen und nicht-kritisches JS verzögert laden.</p>
+
+          <h2 id="tools">Tools zum Messen — diese solltest du kennen</h2>
+          <ul>
+            <li><strong>Google PageSpeed Insights</strong> — Kostenlos, zeigt Lab- und Field-Daten. Der erste Anlaufpunkt.</li>
+            <li><strong>Lighthouse</strong> (in Chrome DevTools) — Detaillierter Audit direkt im Browser, ideal für Entwickler.</li>
+            <li><strong>Google Search Console</strong> → Core Web Vitals Report — Zeigt echte Nutzerdaten aus deinem Traffic.</li>
+            <li><strong>WebPageTest.org</strong> — Advanced Testing mit Filmstrip, Wasserfall und Global-Testing.</li>
+            <li><strong>Chrome User Experience Report (CrUX)</strong> — Aggregierte Felddaten über echte Chrome-Nutzer.</li>
+          </ul>
+
+          <div class="article-callout article-callout--purple">
+            <p class="article-callout__label">💡 Wichtig zu verstehen</p>
+            <p>Lighthouse zeigt <strong>Lab-Daten</strong> (simuliert). Google Search Console zeigt <strong>Field-Daten</strong> (echte Nutzer). Für Rankings zählen die Field-Daten. Optimiere nach Lab — messe den Erfolg in Field.</p>
+          </div>
+
+          <h2 id="30-tage">In 30 Tagen besser werden — unser Prioritäts-Playbook</h2>
+          <p><strong>Woche 1 — Audit &amp; Quick Wins:</strong> Bilder in WebP konvertieren, lazy loading aktivieren, Bild-Dimensionen definieren. Das allein verbessert LCP und CLS in den meisten Fällen messbar.</p>
+          <p><strong>Woche 2 — Caching &amp; Server:</strong> Browser-Caching konfigurieren, CDN einbinden, TTFB unter 200ms bringen. Bei WordPress: WP Rocket oder LiteSpeed Cache.</p>
+          <p><strong>Woche 3 — JavaScript &amp; CSS:</strong> Render-blocking Resources eliminieren, CSS Critical Path inlinen, nicht-kritisches JS defer/async laden. Code-Splitting bei React/Next.js implementieren.</p>
+          <p><strong>Woche 4 — Fonts &amp; Third-Party Scripts:</strong> Google Fonts self-hosten, Font-Display: swap setzen, Third-Party Scripts auditieren und nicht-kritische entfernen oder verzögern.</p>
+          <p>Unser <a href="../services/webentwicklung.html">Webentwicklungs-Team</a> hat diesen Prozess in über 50 Website-Projekten verfeinert. Das Ergebnis: Ø 98 Lighthouse Score bei Auslieferung — keine leere Versprechen.</p>
+
+          <h2 id="fazit">Fazit: Performance ist kein nettes Extra, sondern Grundlage</h2>
+          <p>Core Web Vitals sind Googles Messung dafür, ob deine Website respektiert, dass Zeit der wertvollste Rohstoff deiner Besucher ist. Eine langsame Website sagt: "Deine Zeit ist mir egal." Eine schnelle Website sagt: "Ich bin bereit, wenn du es bist." Welche Botschaft willst du senden?</p>
+
+          <div class="article-cta">
+            <h2 class="article-cta__title">Wie schnell ist deine Website wirklich?</h2>
+            <p class="article-cta__sub">Wir machen einen kostenlosen Performance-Check und zeigen dir, welche 3 Maßnahmen die größte Wirkung haben — priorisiert nach ROI.</p>
+            <a href="../angebot.html" class="btn btn--cta btn--lg btn--pulse">Kostenlosen Performance-Check anfragen →</a>
+          </div>
+
+          <a href="../blog.html" class="article-back">← Zurück zum Blog</a>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="container"><div class="footer__grid">
+  <div class="footer__brand"><a href="../" class="footer__logo">NoMoneyNoHoney.io</a><p class="footer__tagline">Marketing, das wirklich funktioniert.</p><div class="footer__social"><a href="#" class="footer__social-link" aria-label="LinkedIn">in</a><a href="#" class="footer__social-link" aria-label="Instagram">ig</a><a href="#" class="footer__social-link" aria-label="Twitter/X">𝕏</a></div></div>
+  <div class="footer__col"><h4>Services</h4><ul><li><a href="../services/performance-marketing.html">Performance Marketing</a></li><li><a href="../services/content-creation.html">Content Creation</a></li><li><a href="../services/webentwicklung.html">Webentwicklung</a></li><li><a href="../services/automation-agenten.html">Automation & Agenten</a></li><li><a href="../services/seo-geo.html">SEO & GEO</a></li></ul></div>
+  <div class="footer__col"><h4>Unternehmen</h4><ul><li><a href="../karriere.html">Karriere</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../kontakt.html">Kontakt</a></li></ul></div>
+  <div class="footer__col"><h4>Rechtliches</h4><ul><li><a href="../impressum.html">Impressum</a></li><li><a href="../datenschutz.html">Datenschutz</a></li></ul></div>
+</div><div class="footer__bottom"><p>© 2025 NoMoneyNoHoney.io. Alle Rechte vorbehalten.</p><p style="font-size:0.8rem;color:var(--color-text-muted)">Made with 🍯 in Germany</p></div></div></footer>
+<script src="../js/i18n.js" defer></script><script src="../js/main.js" defer></script><script src="../js/animations.js" defer></script>
+</body></html>

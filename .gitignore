@@ -1,4 +1,14 @@
+# macOS
 .DS_Store
-**/.DS_Store
-.env
-.env.*
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log

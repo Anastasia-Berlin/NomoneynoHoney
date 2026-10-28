@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule (^|/)\.git(/|$) - [F,L]
+<FilesMatch "^\.">
+Require all denied
+</FilesMatch>
+# Keep links from the replacement website working after restoration.
+RedirectMatch 302 ^/(angebot|blog|datenschutz|impressum|karriere|kontakt|blog/geo-vs-seo-ki-suche|blog/content-strategie-feed-stirbt|blog/google-ads-2025-kampagnen-typen|blog/core-web-vitals-2025|blog/ki-agenten-marketing|blog/roas-vs-profit|services/seo-geo|services/automation-agenten|services/performance-marketing|services/content-creation|services/webentwicklung)/$ /$1.html

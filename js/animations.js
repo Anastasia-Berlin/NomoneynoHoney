@@ -9,6 +9,10 @@ function initScrollAnimations() {
   const targets = document.querySelectorAll('.anim-init');
   if (!targets.length) return;
 
+  if (!('IntersectionObserver' in window)) {
+    targets.forEach(el => el.classList.add('anim-visible'));
+    return;
+  }
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -26,7 +30,7 @@ function initScrollAnimations() {
 
 function initCountingAnimations() {
   const counters = document.querySelectorAll('[data-count]');
-  if (!counters.length) return;
+  if (!counters.length || !('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -81,7 +85,7 @@ function animateCount(el) {
 
 function initParticles() {
   const container = document.getElementById('heroParticles');
-  if (!container) return;
+  if (!container || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   const colors = ['#A8D8EA', '#7B5EA7', '#C8F560', '#ffffff'];
   const count = window.innerWidth < 768 ? 15 : 30;

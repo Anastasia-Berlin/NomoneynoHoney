@@ -1,0 +1,81 @@
+/* No Money No Honey — an energetic, deliberately paced motion language. */
+.motion-ready .hero__label,
+.motion-ready .hero__h1,
+.motion-ready .hero__sub,
+.motion-ready .hero__ctas {
+  animation: honey-arrive 850ms cubic-bezier(.16, 1, .3, 1) both;
+}
+.motion-ready .hero__h1 { animation-delay: 100ms; }
+.motion-ready .hero__sub { animation-delay: 200ms; }
+.motion-ready .hero__ctas { animation-delay: 300ms; }
+@keyframes honey-arrive {
+  from { opacity: 0; transform: translate3d(0, 22px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+.motion-ready .anim-init {
+  transform: translate3d(0, 32px, 0);
+  transition: opacity 750ms cubic-bezier(.22, 1, .36, 1),
+              transform 900ms cubic-bezier(.16, 1, .3, 1);
+}
+.motion-ready .anim-init--left { transform: translate3d(-25px, 12px, 0); }
+.motion-ready .anim-delay-1 { transition-delay: 30ms; }
+.motion-ready .anim-delay-2 { transition-delay: 90ms; }
+.motion-ready .anim-delay-3 { transition-delay: 150ms; }
+.motion-ready .anim-delay-4 { transition-delay: 210ms; }
+.motion-ready .anim-delay-5 { transition-delay: 270ms; }
+.motion-ready .anim-delay-6 { transition-delay: 330ms; }
+
+/* A line of light makes the four-step journey feel connected to the scroll. */
+.motion-ready .process-steps::after {
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: 12.5%;
+  width: 75%;
+  height: 3px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #a8d8ea, #ff6b9d, #c8f560);
+  transform: scaleX(var(--journey-progress, 0));
+  transform-origin: left center;
+  box-shadow: 0 0 16px rgba(255,107,157,.5);
+  pointer-events: none;
+}
+.motion-ready .process-step__number {
+  transition: transform 650ms cubic-bezier(.16, 1, .3, 1), box-shadow 650ms ease;
+}
+.motion-ready .process-step.anim-visible .process-step__number {
+  animation: honey-number-in 650ms cubic-bezier(.16, 1, .3, 1) both;
+}
+@keyframes honey-number-in {
+  from { transform: scale(.75) rotate(-12deg); }
+  to { transform: scale(1) rotate(0); }
+}
+.motion-ready .service-card__rabbit {
+  transform: translate3d(0, var(--bunny-drift, 0px), 0) rotate(var(--bunny-tilt, 0deg));
+  transition: transform 600ms cubic-bezier(.16, 1, .3, 1), filter 600ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .motion-ready .service-card:hover .service-card__rabbit,
+  .motion-ready .service-card:focus-within .service-card__rabbit {
+    transform: translate3d(0, -9px, 0) rotate(-5deg) scale(1.06);
+    filter: drop-shadow(0 12px 20px rgba(255,107,157,.28));
+  }
+  .motion-ready .service-card__link { transition: color 250ms ease, letter-spacing 350ms ease; }
+  .motion-ready .service-card:hover .service-card__link { letter-spacing: .035em; }
+}
+@media (max-width: 768px) {
+  .motion-ready .anim-init { transform: translate3d(0, 18px, 0); }
+  .motion-ready .anim-delay-1, .motion-ready .anim-delay-2,
+  .motion-ready .anim-delay-3, .motion-ready .anim-delay-4,
+  .motion-ready .anim-delay-5, .motion-ready .anim-delay-6 { transition-delay: 0ms; }
+  .motion-ready .process-steps::after { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .motion-ready .hero__label, .motion-ready .hero__h1,
+  .motion-ready .hero__sub, .motion-ready .hero__ctas,
+  .motion-ready .process-step.anim-visible .process-step__number { animation: none; }
+  .motion-ready .anim-init { opacity: 1; transform: none; transition: none; }
+  .motion-ready .service-card__rabbit { transform: none; transition: none; }
+  .motion-ready .process-steps::after { transform: scaleX(1); }
+  html { scroll-behavior: auto; }
+}

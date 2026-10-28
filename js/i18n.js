@@ -1,5 +1,6 @@
 const TRANSLATIONS = {
   de: {
+    'quote.service.app': 'App-Entwicklung',
     'nav.home': 'Home',
     'nav.services': 'Services',
     'nav.career': 'Karriere',
@@ -7,7 +8,7 @@ const TRANSLATIONS = {
     'nav.quote': 'Angebot einholen',
     'nav.service.performance': 'Performance Marketing',
     'nav.service.content': 'Content Creation',
-    'nav.service.web': 'Webentwicklung',
+    'nav.service.web': 'Web- & App-Entwicklung',
     'nav.service.automation': 'Automation & Agenten',
     'nav.service.seo': 'SEO & GEO',
 
@@ -17,7 +18,7 @@ const TRANSLATIONS = {
     'hero.cta2': 'Services entdecken',
     'hero.label': '🚀 Full-Service Digital Marketing',
 
-    'ticker.items': 'Performance Marketing • Content Creation • Webentwicklung • Automation & Agenten • SEO & GEO •',
+    'ticker.items': 'Performance Marketing • Content Creation • Web- & App-Entwicklung • Automation & Agenten • SEO & GEO •',
 
     'stats.title': 'Zahlen, die für sich sprechen. Wir auch — aber die sagen mehr.',
     'stats.roas': '+247%',
@@ -40,8 +41,8 @@ const TRANSLATIONS = {
     'service.performance.desc': 'Mehr Umsatz aus jedem Euro Werbebudget — datengetrieben, optimiert, messbar.',
     'service.content.title': 'Content Creation',
     'service.content.desc': 'Content, der scrollt, klickt und kauft. Kein Stockphoto-Nonsense.',
-    'service.web.title': 'Webentwicklung',
-    'service.web.desc': 'Schnelle, schöne Websites, die konvertieren. Nicht nur gut aussehen.',
+    'service.web.title': 'Web- & App-Entwicklung',
+    'service.web.desc': 'Websites und individuelle Apps, die gut aussehen, intuitiv funktionieren und dein Business voranbringen.',
     'service.automation.title': 'Automation & Agenten',
     'service.automation.desc': 'Lass KI die Arbeit machen, die dich aufhält. Skaliere ohne Mehraufwand.',
     'service.seo.title': 'SEO & GEO',
@@ -238,7 +239,7 @@ const TRANSLATIONS = {
     'scc.f4.desc': 'Redaktionsplanung, Tone-of-Voice, Content Cluster — alles aus einem Guss.',
 
     'sweb.hero.h1': 'Deine Website sollte Kunden gewinnen. Tut sie das?',
-    'sweb.hero.sub': 'Wir bauen Websites, die schnell sind, gut aussehen und tatsächlich konvertieren.',
+    'sweb.hero.sub': 'Wir entwickeln Websites und individuelle Apps — von der ersten Idee über das Design bis zur Umsetzung.',
     'sweb.pain.p1': 'Deine Website lädt 5 Sekunden — und Besucher sind weg.',
     'sweb.pain.p2': 'Du hast Traffic, aber keine Anfragen. Conversion Rate = 0,3%.',
     'sweb.pain.p3': 'Deine Website wirkt altbacken — und das spiegelt sich in deinem Vertrauen.',
@@ -248,8 +249,8 @@ const TRANSLATIONS = {
     'sweb.f2.desc': 'LCP, CLS, FID — wir treffen alle Google-Benchmarks.',
     'sweb.f3.title': 'UX/UI Design',
     'sweb.f3.desc': 'Glassmorphism, moderne Ästhetik — deine Marke in Perfektion.',
-    'sweb.f4.title': 'Next.js & React',
-    'sweb.f4.desc': 'Moderne Technologien für maximale Performance.',
+    'sweb.f4.title': 'Websites & Apps',
+    'sweb.f4.desc': 'Individuelle Websites und Apps, passend zu deinen Abläufen und deinen Nutzern.',
 
     'saut.hero.h1': 'Automatisiere die Arbeit. Nicht dich.',
     'saut.hero.sub': 'KI-Agenten und Marketing Automation, die dir Zeit zurückgeben und dein Business skalieren.',
@@ -284,6 +285,7 @@ const TRANSLATIONS = {
   },
 
   en: {
+    'quote.service.app': 'App Development',
     'nav.home': 'Home',
     'nav.services': 'Services',
     'nav.career': 'Career',
@@ -291,7 +293,7 @@ const TRANSLATIONS = {
     'nav.quote': 'Get Quote',
     'nav.service.performance': 'Performance Marketing',
     'nav.service.content': 'Content Creation',
-    'nav.service.web': 'Web Development',
+    'nav.service.web': 'Web & App Development',
     'nav.service.automation': 'Automation & Agents',
     'nav.service.seo': 'SEO & GEO',
 
@@ -301,7 +303,7 @@ const TRANSLATIONS = {
     'hero.cta2': 'Discover Services',
     'hero.label': '🚀 Full-Service Digital Marketing',
 
-    'ticker.items': 'Performance Marketing • Content Creation • Web Development • Automation & Agents • SEO & GEO •',
+    'ticker.items': 'Performance Marketing • Content Creation • Web & App Development • Automation & Agents • SEO & GEO •',
 
     'stats.title': 'Numbers that speak for themselves. So do we — but these say more.',
     'stats.roas': '+247%',
@@ -324,8 +326,8 @@ const TRANSLATIONS = {
     'service.performance.desc': 'More revenue from every euro of ad spend — data-driven, optimized, measurable.',
     'service.content.title': 'Content Creation',
     'service.content.desc': 'Content that scrolls, clicks and converts. No stock photo nonsense.',
-    'service.web.title': 'Web Development',
-    'service.web.desc': 'Fast, beautiful websites that convert. Not just look good.',
+    'service.web.title': 'Web & App Development',
+    'service.web.desc': 'Websites and custom apps that look great, feel intuitive and move your business forward.',
     'service.automation.title': 'Automation & Agents',
     'service.automation.desc': 'Let AI do the work that\'s holding you back. Scale without extra effort.',
     'service.seo.title': 'SEO & GEO',
@@ -522,7 +524,7 @@ const TRANSLATIONS = {
     'scc.f4.desc': 'Editorial planning, tone of voice, content clusters — all cohesive.',
 
     'sweb.hero.h1': 'Your Website Should Win Clients. Does It?',
-    'sweb.hero.sub': 'We build websites that are fast, look great and actually convert.',
+    'sweb.hero.sub': 'We develop websites and custom apps — from the first idea and design to implementation.',
     'sweb.pain.p1': 'Your website loads in 5 seconds — and visitors are gone.',
     'sweb.pain.p2': 'You have traffic but no inquiries. Conversion rate = 0.3%.',
     'sweb.pain.p3': 'Your website looks outdated — and that shows in trust.',
@@ -532,8 +534,8 @@ const TRANSLATIONS = {
     'sweb.f2.desc': 'LCP, CLS, FID — we hit all Google benchmarks.',
     'sweb.f3.title': 'UX/UI Design',
     'sweb.f3.desc': 'Glassmorphism, modern aesthetics — your brand in perfection.',
-    'sweb.f4.title': 'Next.js & React',
-    'sweb.f4.desc': 'Modern technologies for maximum performance.',
+    'sweb.f4.title': 'Websites & Apps',
+    'sweb.f4.desc': 'Custom websites and apps built around your workflows and users.',
 
     'saut.hero.h1': 'Automate The Work. Not Yourself.',
     'saut.hero.sub': 'AI agents and marketing automation that give you time back and scale your business.',

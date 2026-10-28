@@ -30,6 +30,7 @@ const TRANSLATIONS = {
     'stats.satisfaction': '98%',
     'stats.satisfactionLabel': 'Kundenzufriedenheit',
 
+    'pain.hint': 'Wischen oder blättern ↗',
     'pain.title': 'Erkennst du dich hier wieder?',
     'pain.p1': 'Du investierst in Ads, aber weißt nicht, was wirklich funktioniert.',
     'pain.p2': 'Deine Website existiert — aber Google findet sie auf Seite 47.',
@@ -315,6 +316,7 @@ const TRANSLATIONS = {
     'stats.satisfaction': '98%',
     'stats.satisfactionLabel': 'Client Satisfaction',
 
+    'pain.hint': 'Swipe or browse ↗',
     'pain.title': 'Sound Familiar?',
     'pain.p1': 'You\'re investing in ads, but don\'t know what\'s actually working.',
     'pain.p2': 'Your website exists — but Google finds it on page 47.',

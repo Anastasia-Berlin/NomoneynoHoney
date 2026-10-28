@@ -1,0 +1,37 @@
+/* A small editorial deck: readable without JavaScript, playful when enhanced. */
+.pain-deck { max-width: 920px; margin: 0 auto; outline-offset: 8px; }
+.pain-deck__stage { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.pain-deck__card { min-height: 270px; padding: 32px; border: 1px solid rgba(255,167,156,.28); border-radius: 24px; background: #211720; box-shadow: 0 26px 80px rgba(0,0,0,.28); }
+.pain-deck__number { display: block; color: #ffae99; font-size: .72rem; font-weight: 700; letter-spacing: .15em; margin-bottom: 32px; }
+.pain-deck__card .pain-card__icon { font-size: 2.5rem; }
+.pain-deck__card .pain-card__text { font-size: clamp(1.12rem, 2vw, 1.55rem); font-weight: 700; line-height: 1.3; }
+.pain-deck__signature { display: block; margin-top: 26px; color: #f6a8bb; font-size: .65rem; letter-spacing: .14em; }
+.pain-deck__signature b { color: #ffe0a0; }
+.pain-deck__controls { display: flex; align-items: center; justify-content: center; gap: 22px; margin-top: 18px; }
+.pain-deck__controls[hidden], .pain-deck__hint[hidden] { display: none; }
+.pain-deck__arrow { width: 48px; height: 48px; border-radius: 50%; background: #211720; border: 1px solid rgba(255,174,153,.42); color: #fff; font-size: 1.35rem; cursor: pointer; transition: transform .25s ease, background .25s ease; }
+.pain-deck__arrow:hover { background: #a93459; transform: translateY(-3px); }
+.pain-deck__arrow:focus-visible, .pain-deck:focus-visible { outline: 3px solid #ffc571; }
+.pain-deck__count { color: #fff; font-size: .85rem; font-weight: 700; letter-spacing: .12em; }
+.pain-deck__count span { color: #ff9b9f; }
+.pain-deck__hint { margin: 12px 0 0; text-align: center; color: #d1aab7; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
+.pain-deck.is-enhanced .pain-deck__stage { position: relative; display: block; height: 360px; touch-action: pan-y; }
+.pain-deck.is-enhanced .pain-deck__card { position: absolute; left: 50%; top: 20px; width: min(410px, 68%); height: 310px; transition: transform 650ms cubic-bezier(.16,1,.3,1), opacity 500ms ease, box-shadow 500ms ease; transform: translateX(-50%) scale(.88); opacity: .7; }
+.pain-deck.is-enhanced .pain-deck__card[data-position="0"] { z-index: 3; opacity: 1; transform: translateX(-50%) rotate(0deg); background: linear-gradient(140deg,#392126,#1c1522 75%); box-shadow: 0 28px 85px rgba(0,0,0,.48), 0 0 50px rgba(255,107,157,.12); }
+.pain-deck.is-enhanced .pain-deck__card[data-position="1"] { z-index: 2; transform: translateX(calc(-50% + 155px)) translateY(15px) rotate(10deg) scale(.94); }
+.pain-deck.is-enhanced .pain-deck__card[data-position="2"] { z-index: 1; transform: translateX(calc(-50% - 155px)) translateY(15px) rotate(-10deg) scale(.94); }
+.pain-deck.is-enhanced:not(.is-in-view) .pain-deck__card { transform: translateX(-50%) rotate(0deg) scale(.95); }
+@media (max-width: 700px) {
+ .pain-deck__stage { grid-template-columns: 1fr; }
+ .pain-deck.is-enhanced .pain-deck__stage { height: 320px; }
+ .pain-deck.is-enhanced .pain-deck__card { width: min(310px, 76%); height: 275px; padding: 26px; }
+ .pain-deck.is-enhanced .pain-deck__card[data-position="1"] { transform: translateX(calc(-50% + 40px)) translateY(12px) rotate(7deg) scale(.95); }
+ .pain-deck.is-enhanced .pain-deck__card[data-position="2"] { transform: translateX(calc(-50% - 40px)) translateY(12px) rotate(-7deg) scale(.95); }
+ .pain-deck__number { margin-bottom: 20px; }
+ .pain-deck__signature { margin-top: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+ .pain-deck.is-enhanced .pain-deck__card, .pain-deck__arrow { transition: none; }
+ .pain-deck.is-enhanced:not(.is-in-view) .pain-deck__card[data-position="1"] { transform: translateX(calc(-50% + 40px)); }
+ .pain-deck.is-enhanced:not(.is-in-view) .pain-deck__card[data-position="2"] { transform: translateX(calc(-50% - 40px)); }
+}

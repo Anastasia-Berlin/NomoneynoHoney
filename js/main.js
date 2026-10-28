@@ -155,10 +155,26 @@ function initMultiStepForm() {
     });
   });
 
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
     if (!validateStep(currentStep)) return;
-    submitForm();
+    const email = form.querySelector('#emailInput');
+    if (!email.checkValidity()) { email.reportValidity(); return; }
+    const button = form.querySelector('[type=submit]');
+    const error = document.getElementById('quoteSendError');
+    const data = { type: 'angebot', name: form.querySelector('#nameInput').value, email: email.value,
+      website: form.querySelector('#websiteInput').value, phone: form.querySelector('#phoneInput').value,
+      message: form.querySelector('#messageInput').value, privacy: form.querySelector('#privacyCheck').checked,
+      services: [...form.querySelectorAll('input[name=services]:checked')].map(el => el.closest('.service-checkbox-item')?.querySelector('label')?.innerText || el.value),
+      budget: form.querySelector('.budget-btn--active')?.innerText || '' };
+    button.disabled = true; error.hidden = true;
+    try {
+      const response = await fetch('/api/contact.php', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)});
+      const result = await response.json();
+      if (!response.ok || !result.ok) throw new Error(result.message || 'Versand fehlgeschlagen.');
+      submitForm();
+    } catch (err) { error.textContent = err.message || 'Versand fehlgeschlagen. Bitte schreibe an kontakt@nomoneynohoney.io.'; error.hidden = false; }
+    finally { button.disabled = false; }
   });
 
   function validateStep(index) {
@@ -166,7 +182,7 @@ function initMultiStepForm() {
     let valid = true;
     step.querySelectorAll('[required]').forEach(input => {
       const group = input.closest('.form-group');
-      if (!input.value.trim()) {
+      if ((input.type === 'checkbox' && !input.checked) || (input.type !== 'checkbox' && !input.value.trim())) {
         group && group.classList.add('form-group--error');
         valid = false;
       } else {

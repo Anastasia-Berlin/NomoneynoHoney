@@ -38,6 +38,34 @@ if ($type === 'kontakt') { $lines[] = 'Thema: ' . $subject; $lines[] = 'Sternzei
 else { $lines[] = 'Leistungen: ' . implode(', ', $services); $lines[] = 'Budget: ' . field($data, 'budget'); }
 $lines[] = ''; $lines[] = 'Nachricht:'; $lines[] = $message !== '' ? $message : '(keine Angabe)';
 $headers = ['From' => 'No Money No Honey <kontakt@nomoneynohoney.io>', 'Reply-To' => $email, 'Content-Type' => 'text/plain; charset=UTF-8', 'X-Mailer' => 'NMNH Website'];
-$ok = @mail('kontakt@nomoneynohoney.io', $type === 'angebot' ? 'Neue Angebotsanfrage' : 'Neue Kontaktanfrage', implode("\n", $lines), $headers);
+$subjectLine = $type === 'angebot' ? 'Neue Angebotsanfrage' : 'Neue Kontaktanfrage';
+$configPath = dirname(__DIR__, 2) . '/.nmnh-smtp-password.txt';
+if (is_file($configPath)) {
+  $smtpPassword = trim((string) @file_get_contents($configPath));
+  if ($smtpPassword === '') respond(503, 'Der Versand ist gerade nicht möglich. Bitte schreibe direkt an kontakt@nomoneynohoney.io.');
+  require __DIR__ . '/vendor/phpmailer/Exception.php';
+  require __DIR__ . '/vendor/phpmailer/PHPMailer.php';
+  require __DIR__ . '/vendor/phpmailer/SMTP.php';
+  try {
+    $mailer = new \PHPMailer\PHPMailer\PHPMailer(true);
+    $mailer->isSMTP();
+    $mailer->Host = 'smtp.hostinger.com';
+    $mailer->SMTPAuth = true;
+    $mailer->Username = 'kontakt@nomoneynohoney.io';
+    $mailer->Password = $smtpPassword;
+    $mailer->SMTPSecure = \PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_SMTPS;
+    $mailer->Port = 465;
+    $mailer->Timeout = 15;
+    $mailer->CharSet = 'UTF-8';
+    $mailer->setFrom('kontakt@nomoneynohoney.io', 'No Money No Honey');
+    $mailer->addAddress('kontakt@nomoneynohoney.io');
+    $mailer->addReplyTo($email);
+    $mailer->Subject = $subjectLine;
+    $mailer->Body = implode("\n", $lines);
+    $ok = $mailer->send();
+  } catch (\Throwable $e) { $ok = false; }
+} else {
+  respond(503, 'Der Versand ist gerade nicht möglich. Bitte schreibe direkt an kontakt@nomoneynohoney.io.');
+}
 if (!$ok) respond(503, 'Der Versand ist gerade nicht möglich. Bitte schreibe direkt an kontakt@nomoneynohoney.io.');
 respond(200, 'Deine Anfrage wurde übermittelt.');

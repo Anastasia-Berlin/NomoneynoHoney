@@ -1,13 +1,14 @@
 /* A scroll-driven brand moment. The static view is the safe default. */
+body.break-scene-active .bunny-float { visibility: hidden; pointer-events: none; }
 .break-scene { position: relative; background: #090711; }
 .break-scene__stage { position: relative; height: min(90svh, 900px); min-height: 560px; overflow: hidden; isolation: isolate; background: #090711; }
-.break-scene__stage::before { content: ''; position: absolute; inset: 0; z-index: -2; background: url('../assets/bunny-breakthrough.jpg') center / cover no-repeat; filter: grayscale(1) sepia(1) saturate(3.2) hue-rotate(285deg) brightness(.82); }
+.break-scene__stage::before { content: ''; position: absolute; inset: 0; z-index: -2; background: radial-gradient(ellipse at 75% 24%, #a73d68 0%, #411828 27%, transparent 64%), radial-gradient(ellipse at 20% 85%, #662042 0%, transparent 58%), #090711; }
 .break-scene.is-motion .break-scene__stage::before { display: none; }
 .break-scene.is-motion { height: 230vh; }
 .break-scene.is-motion .break-scene__stage { position: sticky; top: 0; height: 100svh; min-height: 0; background-image: none; }
 .break-scene__slices { position: absolute; inset: 0; display: none; z-index: -1; perspective: 1400px; }
 .break-scene.is-motion .break-scene__slices { display: flex; }
-.break-scene__slice { flex: 0 0 calc(12.5% + 1px); margin-right: -1px; height: 100%; background-image: url('../assets/bunny-breakthrough.jpg'); background-repeat: no-repeat; backface-visibility: hidden; filter: grayscale(1) sepia(1) saturate(3.2) hue-rotate(285deg) brightness(.82); }
+.break-scene__slice { flex: 0 0 calc(12.5% + 1px); margin-right: -1px; height: 100%; background-image: radial-gradient(ellipse at 75% 24%, #a73d68 0%, #411828 27%, transparent 64%), radial-gradient(ellipse at 20% 85%, #662042 0%, transparent 58%), linear-gradient(#170b16,#090711); background-repeat: no-repeat; backface-visibility: hidden; }
 .break-scene__shade { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg,rgba(5,3,12,.55),rgba(5,3,12,.14)),linear-gradient(0deg,rgba(5,3,12,.75),transparent 50%,rgba(5,3,12,.5)); }
 .break-scene__top, .break-scene__bottom { position: absolute; left: clamp(20px, 5vw, 75px); right: clamp(20px, 5vw, 75px); display: flex; justify-content: space-between; gap: 15px; color: #f7d4cf; font-size: .65rem; line-height: 1.5; font-weight: 700; letter-spacing: .14em; }
 .break-scene__top { top: 100px; }

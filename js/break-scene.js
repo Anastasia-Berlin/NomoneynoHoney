@@ -6,6 +6,11 @@
   const copy = section.querySelector('.break-scene__copy');
   const percent = section.querySelector('.break-scene__percent');
   const media = matchMedia('(prefers-reduced-motion: reduce)');
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(entries => {
+      document.body.classList.toggle('break-scene-active', entries[0].isIntersecting);
+    }, { threshold: .1 }).observe(stage);
+  }
   const clamp = n => Math.max(0, Math.min(1, n));
   let frame = 0;
   function measure() {

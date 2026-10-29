@@ -335,6 +335,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const response = await fetch('/api/contact.php', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload)});
       const result = await response.json();
       if (!response.ok || !result.ok) throw new Error(result.message || 'Versand fehlgeschlagen.');
+      if (subject !== 'bewerbung' && typeof window.gtag === 'function') {
+        try { window.gtag('event', 'generate_lead', { form_type: 'contact' }); } catch (_) {}
+      }
       form.style.display = 'none'; success.style.display = 'block';
     } catch (err) {
       errorDiv.textContent = err.message || 'Versand fehlgeschlagen. Bitte schreibe an kontakt@nomoneynohoney.io.';

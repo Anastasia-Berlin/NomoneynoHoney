@@ -172,6 +172,9 @@ function initMultiStepForm() {
       const response = await fetch('/api/contact.php', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)});
       const result = await response.json();
       if (!response.ok || !result.ok) throw new Error(result.message || 'Versand fehlgeschlagen.');
+      if (typeof window.gtag === 'function') {
+        try { window.gtag('event', 'generate_lead', { form_type: 'quote' }); } catch (_) {}
+      }
       submitForm();
     } catch (err) { error.textContent = err.message || 'Versand fehlgeschlagen. Bitte schreibe an kontakt@nomoneynohoney.io.'; error.hidden = false; }
     finally { button.disabled = false; }

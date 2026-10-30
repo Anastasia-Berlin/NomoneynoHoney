@@ -41,15 +41,32 @@
     }
   }
   if (choice === 'yes') startAnalytics();
+  // Only measure known navigation targets; never send form content, link text or query strings.
+  const trackedPaths = {
+    '/angebot.html': 'angebot', '/kontakt.html': 'kontakt',
+    '/services/performance-marketing.html': 'performance_marketing',
+    '/services/content-creation.html': 'content_creation',
+    '/services/webentwicklung.html': 'web_app_entwicklung',
+    '/services/automation-agenten.html': 'automation',
+    '/services/seo-geo.html': 'seo_geo', '/karriere.html': 'karriere', '/blog.html': 'blog'
+  };
+  document.addEventListener('click', event => {
+    if (choice !== 'yes' || !loaded || typeof window.gtag !== 'function') return;
+    const link = event.target.closest && event.target.closest('a[href]');
+    if (!link || link.closest('.nmnh-consent')) return;
+    const url = new URL(link.href, location.href);
+    if (url.origin !== location.origin || !trackedPaths[url.pathname]) return;
+    window.gtag('event', 'navigation_click', { destination: trackedPaths[url.pathname] });
+  });
   function init() {
     const css = document.createElement('style');
-    css.textContent = '.nmnh-consent[hidden]{display:none!important}.nmnh-consent{position:fixed;z-index:2147483000;inset:auto 16px 16px;max-width:620px;margin:auto;background:#171218;color:#fff;border:1px solid #eaa1c3;border-radius:16px;padding:20px;box-shadow:0 12px 50px #0008;font:15px/1.5 system-ui,sans-serif}.nmnh-consent strong{font-size:19px}.nmnh-consent p{margin:9px 0 14px}.nmnh-consent a{color:#ffd0e5;text-decoration:underline}.nmnh-consent-actions{display:flex;gap:10px;flex-wrap:wrap}.nmnh-consent button,.nmnh-consent-open{cursor:pointer;font:inherit;border-radius:8px;padding:10px 16px;border:1px solid #f3b3d1;background:transparent;color:#fff}.nmnh-consent .accept{background:#f3b3d1;color:#171218}.nmnh-consent-open{position:fixed;z-index:2147482999;bottom:8px;left:8px;background:#171218;color:#fff;font-size:12px;padding:5px 9px}';
+    css.textContent = '.nmnh-consent[hidden]{display:none!important}.nmnh-consent{position:fixed;z-index:2147483000;inset:auto 16px 16px;max-width:620px;margin:auto;background:#171218;color:#fff;border:1px solid #eaa1c3;border-radius:16px;padding:20px;box-shadow:0 12px 50px #0008;font:15px/1.5 system-ui,sans-serif}.nmnh-consent strong{font-size:19px}.nmnh-consent p{margin:9px 0 14px}.nmnh-consent a{color:#ffd0e5;text-decoration:underline}.nmnh-consent-actions{display:flex;gap:10px;flex-wrap:wrap}.nmnh-consent button,.nmnh-consent-open{cursor:pointer;font:inherit;border-radius:8px;padding:10px 16px;border:1px solid #f3b3d1;background:transparent;color:#fff}.nmnh-consent .accept,.nmnh-consent .reject{background:#f3b3d1;color:#171218;min-width:150px;font-weight:600}.nmnh-consent-open{position:fixed;z-index:2147482999;bottom:8px;left:8px;background:#171218;color:#fff;font-size:12px;padding:5px 9px}';
     document.head.appendChild(css);
     const banner = document.createElement('section');
     banner.className = 'nmnh-consent';
     banner.setAttribute('role', 'dialog');
     banner.setAttribute('aria-label', 'Datenschutzeinstellungen');
-    banner.innerHTML = '<strong>Deine Privatsphäre</strong><p>Mit deiner Einwilligung verwenden wir Google Analytics, um Besuche und Seitenaufrufe auszuwerten. Dabei können Daten an Google und in die USA übertragen werden. Du kannst ablehnen und deine Wahl jederzeit ändern. Mehr in unserer <a href="/datenschutz.html#analyse">Datenschutzerklärung</a>.</p><div class="nmnh-consent-actions"><button type="button" class="reject">Nur notwendige</button><button type="button" class="accept">Analyse erlauben</button></div>';
+    banner.innerHTML = '<strong>Hilf uns, besser zu werden.</strong><p>Mit Google Analytics verstehen wir, welche Inhalte und Angebote für dich interessant sind. Dafür erfassen wir mit deiner Zustimmung Seitenaufrufe und ausgewählte Klicks. Dabei können Daten an Google und in die USA übertragen werden. Du kannst deine Wahl jederzeit ändern. Mehr in unserer <a href="/datenschutz.html#analyse">Datenschutzerklärung</a>.</p><div class="nmnh-consent-actions"><button type="button" class="reject">Analyse ablehnen</button><button type="button" class="accept">Analyse erlauben</button></div>';
     banner.hidden = choice === 'yes' || choice === 'no';
     document.body.appendChild(banner);
     const open = document.createElement('button');

@@ -263,7 +263,7 @@ const TRANSLATIONS = {
     'saut.pain.p3': 'Dein Vertrieb verbringt zu viel Zeit mit Verwaltung statt mit Kundengesprächen.',
     'saut.f1.title': 'Vertriebsprozesse optimieren',
     'saut.f1.desc': 'Wir analysieren deinen Ablauf von der Anfrage bis zum Abschluss und beseitigen Engpässe.',
-    'saut.f2.title': 'Capture & qualify leads',
+    'saut.f2.title': 'Leads erfassen & qualifizieren',
     'saut.f2.desc': 'Anfragen strukturiert erfassen, vorqualifizieren und an die richtigen Personen weiterleiten.',
     'saut.f3.title': 'Follow-ups & Workflows automatisieren',
     'saut.f3.desc': 'Erinnerungen, E-Mail-Flows und wiederkehrende Aufgaben passend zu deinem Vertriebsablauf verbinden.',
